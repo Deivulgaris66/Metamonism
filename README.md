@@ -1,17 +1,17 @@
+![Framework Version](https://img.shields.io/badge/version-v1.1_hybrid-blue) ![License](https://img.shields.io/badge/license-CC_BY_4.0-green) ![Status](https://img.shields.io/badge/status-active_development-yellow)
 # Metamonism Project: Ontological Framework (v1.1 - Hybrid Structure)
 
 ![Framework Status](https://img.shields.io/badge/status-v1.1_structured-blue)
 ![License](https://img.shields.io/badge/license-CC_BY_4.0-blue)
 
 ## 🎯 Purpose & Dual-Channel Architecture
-This repository implements the **machine-readable (M) channel** of the Metamonism framework, designed to work in tandem with **human-readable (H) academic articles**.
 
-*   **`ARTICLES/`** is the **bridge**. Each article exists in two parallel, linked versions:
-    *   `H/` - For humans: abstracts, links to canonical PDFs (DOI).
-    *   `M/` - For machines: structured specifications, formal arguments, and explicit links to models.
-*   **`ONTODYNAMICS/`** is the **knowledge base**. It contains disciplinary models (Physics, Cosmology, etc.) referenced and aggregated by the M-articles.
-*   **`CORE/`** is the **immutable foundation** for everything above.
+This repository is the **canonical source** for the Metamonism ontological framework. It implements a **dual-channel architecture**:
 
+*   **H-channel** (`ARTICLES/H/`): Contains human-readable abstracts, metadata, and direct links to the canonical publications. Full articles (PDFs) are published on external, versioned platforms like Zenodo or PhilPapers and are referenced via immutable **DOIs**.
+*   **M-channel** (`ARTICLES/M/`): Contains machine-readable specifications (YAML/JSON-LD) of the same articles. These files are optimized for AI indexing, programmatic access, and contain **explicit semantic links** to the foundational `CORE/` and the disciplinary models in `ONTODYNAMICS/`.
+
+**Both channels are semantically equivalent and maintained in parallel.** The M-channel acts as the structured, queryable interface to the knowledge expressed in the H-channel.
 ## 🏗️ Repository Structure (Hybrid)
 ```
 Metamonism/
@@ -53,6 +53,13 @@ Metamonism/
 │
 └── CONTRIBUTING.md              # Contribution guidelines
 ```
+### 📊 Knowledge Graph (Auto-Generated)
+
+The `KNOWLEDGE_GRAPH/` directory is designed to contain **automatically generated semantic mappings** of all relationships within the framework.
+*   **Source Data:** Relationships are declared within `ARTICLES/M/` specification files (in `references.yaml`) and `ONTODYNAMICS/` model manifests.
+*   **Current Status:** The graph is **manually curated** during the development phase (v1.1). The placeholder files explain the intended structure.
+*   **Future State:** Automation for generating `global_relations.jsonld` and `cross_reference.csv` from source files is **planned for a future version**.
+*   **⚠️ Important:** Files in this directory should not be edited directly once automation is implemented; all edits should be made in the source specifications (`ARTICLES/M/`).
 
 ## 🔍 For AI & Search Engines
 **Primary entry points for machine parsing:**
@@ -71,6 +78,31 @@ Metamonism/
 *   **Researchers:** Read an `ARTICLES/H/` abstract and follow its DOI to the full paper. Use the corresponding `ARTICLES/M/` folder to see its formal structure and connected models.
 *   **Developers & AI:** Parse `ARTICLES/M/` specifications as primary data. Use `KNOWLEDGE_GRAPH/` for relationship mapping.
 *   **Contributors:** See [`CONTRIBUTING.md`](./CONTRIBUTING.md). Most contributions will involve adding new `ARTICLES/M/` specs or refining models in `ONTODYNAMICS/`.
+*   ## 🚀 Getting Started
+
+### For Researchers & Philosophers
+1.  Browse `ARTICLES/H/` to find article abstracts and publication metadata.
+2.  Follow the **DOI link** in the article's `meta.yaml` to access the canonical, peer-reviewed PDF (e.g., on Zenodo).
+3.  To explore the formal structure and connections of an idea, navigate to its parallel `ARTICLES/M/` specification.
+
+### For Developers, Data Scientists & AI
+This repository is structured as a machine-readable knowledge base.
+```bash
+# Example: Clone and inspect the core axioms
+git clone https://github.com/Deivulgaris66/Metamonisn.git
+cat Metamonism/CORE/axioms.yaml
+
+# The primary entry points for parsing are:
+# 1. CORE/axioms.yaml
+# 2. ARTICLES/M/ (for the latest structured claims)
+# 3. The manifest files in ONTODYNAMICS/*/manifest.yaml
+```
+
+### For Contributors
+Please read the [`CONTRIBUTING.md`](./CONTRIBUTING.md) guide thoroughly. It explains the workflow for:
+*   Proposing new or refined models in `ONTODYNAMICS/`.
+*   Creating new machine specifications (M-versions) in `ARTICLES/M/`.
+*   Suggesting changes to the immutable `CORE/`, which requires careful versioning.
 
 ---
 **Ontology Architect:** Andrii Myshko (Metamonist)  
