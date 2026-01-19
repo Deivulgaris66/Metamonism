@@ -1,7 +1,5 @@
-source_type,source_id,source_file,relation,target_type,target_id,target_file,description
-axiom,axiom_indifference_ban,CORE/axioms.yaml,isDefinedBy,article,article_1_foundation,ARTICLES/H_Article_1_Foundation/meta.yaml,"Primary exposition and justification"
-article,article_1_foundation,ARTICLES/H_Article_1_Foundation/meta.yaml,hintsAt,model,model_physics,ONTODYNAMICS/PHYSICS/manifest.yaml,"Suggests application to physics"
-model,model_quantum_mechanics,ONTODYNAMICS/PHYSICS/quantum_mechanics.yaml,uses,axiom,axiom_indifference_ban,CORE/axioms.yaml,"Builds upon the core axiom"
-model,model_quantum_mechanics,ONTODYNAMICS/PHYSICS/quantum_mechanics.yaml,isFoundationFor,model,model_chemical_bonding,ONTODYNAMICS/CHEMISTRY/bonding.yaml,"Chemical bonds emerge from QM principles"
-// TODO: Populate this table as the primary, human-editable map of all relationships in the project.
-// Keep it in sync with the more formal global_relations.jsonld.
+source_type,source_id,source_file,relation,target_type,target_id,target_file,description,status
+system,placeholder,KNOWLEDGE_GRAPH/README.md,explains,user,reader,N/A,"This is a placeholder CSV file. It will be populated with actual relationships (e.g., between core axioms and article specs) as the project develops.","placeholder"
+# TODO: The rows below are examples of the future format.
+#article,article_1_foundation,ARTICLES/M/01_Foundation/article.yaml,defines,axiom,indifference_ban,CORE/axioms.yaml,"Primary definition of the core axiom.","planned"
+#model,model_redshift,ONTODYNAMICS/COSMOLOGY/redshift.yaml,uses,axiom,indifference_ban,CORE/axioms.yaml,"Redshift model applies the indifference ban.","planned"
