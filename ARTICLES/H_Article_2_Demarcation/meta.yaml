@@ -1,0 +1,23 @@
+# ARTICLES/H_Article_2_Demarcation/meta.yaml
+# Purpose: Machine-readable metadata for the article on demarcation.
+
+publication:
+  title: "Demarcation: Why Metamonism is Not Philosophy"
+  h_version_doi: "TODO: https://doi.org/10.xxxx/zenodo.xxxxxx" # PRIMARY LINK TO H-VERSION
+  h_version_url: "TODO: [Alternative URL]"
+  author: "Andrii Myshko (Metamonist)"
+  release_date: "TODO: 2024-XX-XX"
+  status: "published"
+
+# CRITICAL: This article clarifies the STATUS of the framework itself.
+specification_relations:
+  - targets: ["../../CORE/"]
+    relation_type: "clarifies_status_of"
+    description: "The article argues that the core is an ontological framework, not a speculative philosophical system."
+  - targets: ["../../ONTODYNAMICS/PHYSICS/quantum_mechanics.yaml", "../../ONTODYNAMICS/COSMOLOGY/redshift.yaml"]
+    relation_type: "provides_grounds_for"
+    description: "By establishing the framework's scientific nature, it grounds the falsifiability of its derivative models."
+
+# Link to discussion (GitHub Issue). To be created later.
+discussion:
+  github_issue_url: "TODO: https://github.com/Deivulgaris66/Metamonisn/issues/X"
