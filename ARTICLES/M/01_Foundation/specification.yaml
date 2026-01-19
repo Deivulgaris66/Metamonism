@@ -1,0 +1,27 @@
+# ARTICLES/M/01_Foundation/specification.yaml
+# Version: 0.1 (Draft)
+# Purpose: Structured breakdown of Article 1's logical propositions.
+
+meta:
+  title: "Specification for 'Metamonism as the Foundation of All Sciences'"
+  h_version_doi: "TODO: [Same as H/meta.yaml]"
+  status: "draft"
+
+# TODO: Decompose the article's narrative into atomic, machine-friendly propositions.
+# Each proposition should have an ID and can be linked to core elements.
+propositions:
+  - id: "prop_fragmentation_problem"
+    statement: "Contemporary science suffers from conceptual fragmentation due to incompatible ontological commitments across disciplines."
+    type: "problem_statement"
+    relevance: "Motivates the need for a unifying framework."
+
+  - id: "prop_solution_is_ontological"
+    statement: "The solution must be ontological, not merely methodological, providing a common ground for theoretical representation."
+    type: "argument"
+    relevance: "Justifies the framework's nature."
+
+  - id: "prop_core_axiom_intro"
+    statement: "The Indifference Ban Axiom ('Absolute identity is ontologically impossible') serves as this minimal ontological ground."
+    type: "core_postulate"
+    # This proposition directly defines a core element.
+    defines_core_element: "axiom_indifference_ban"
