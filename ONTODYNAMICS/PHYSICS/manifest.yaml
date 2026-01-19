@@ -1,0 +1,24 @@
+# ONTODYNAMICS/PHYSICS/manifest.yaml
+# Version: 0.1 (Draft)
+# Purpose: Describes the "Physics" section within Ontodynamics, its connection to the core and internal structure.
+
+meta:
+  title: "Physics within the Metamonism Framework"
+  description: "TODO: Application of core principles (diff, fix) to the description of physical phenomena and laws."
+  version: "0.1"
+  core_dependency: "CORE/v1.0" # References the core version this section relies on.
+
+# TODO: List the key models (files) of this section and their brief purpose.
+models:
+  - file: "quantum_mechanics.yaml"
+    purpose: "TODO: Description of quantum superposition and collapse through actualization (fix) operators."
+  - file: "thermodynamics.yaml"
+    purpose: "TODO: Interpretation of entropy and irreversibility as aspects of the fundamental diff process."
+  - file: "gravity.yaml"
+    purpose: "TODO: Model of gravitational interaction as a shielding effect within the ontological field."
+
+# TODO: Specify connections (isomorphisms) to other Ontodynamics sections.
+relations:
+  - target: "../COSMOLOGY/"
+    type: "isomorphic_to"
+    description: "TODO: Gravity and thermodynamics of large-scale structure."
