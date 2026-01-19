@@ -1,79 +1,77 @@
-# Metamonism Project: Ontological Framework (Version 1.0)
+# Metamonism Project: Ontological Framework (v1.1 - Hybrid Structure)
 
-## Status
-**Framework Version:** 1.0 (Initial Release)  
-**Specification Status:** Stable  
-**License:** Creative Commons Attribution 4.0 International (CC BY 4.0)  
-**Ontology Steward:** Andrii Myshko (Metamonist)
+![Framework Status](https://img.shields.io/badge/status-v1.1_structured-blue)
+![License](https://img.shields.io/badge/license-CC_BY_4.0-blue)
 
-## Purpose
-Metamonism is **not a scientific theory**. It is a minimalistic **ontological framework** that provides foundational constraints for building consistent interdisciplinary models. It addresses the problem of conceptual fragmentation across scientific disciplines (physics, biology, cognitive science, sociology) by establishing a common ontological protocol.
+## 🎯 Purpose & Dual-Channel Architecture
+This repository implements the **machine-readable (M) channel** of the Metamonism framework, designed to work in tandem with **human-readable (H) academic articles**.
 
-## Core: The Indifference Ban Axiom
-> **Absolute identity (a state without distinctions) is ontologically impossible.**
+*   **`ARTICLES/`** is the **bridge**. Each article exists in two parallel, linked versions:
+    *   `H/` - For humans: abstracts, links to canonical PDFs (DOI).
+    *   `M/` - For machines: structured specifications, formal arguments, and explicit links to models.
+*   **`ONTODYNAMICS/`** is the **knowledge base**. It contains disciplinary models (Physics, Cosmology, etc.) referenced and aggregated by the M-articles.
+*   **`CORE/`** is the **immutable foundation** for everything above.
 
-Reality is described as a fundamental process of differentiation (`diff`) and actualization (`fix`). All derivative models and theories must be compatible with this basic constraint.
-
-## Repository Structure (Machine-Readable Skeleton)
-```
+## 🏗️ Repository Structure (Hybrid)
 Metamonism/
-├── CORE/                          # IMMUTABLE CORE: axioms, terms, operators
-│   ├── axioms.yaml               # Primary ontological constraints
-│   ├── definitions.yaml          # Terminology dictionary
-│   └── core_v1.0.md              # Human-readable core description
+├── ARTICLES/ # BRIDGE: Parallel H and M versions
+│ ├── H/ # Human-readable channel
+│ │ └── 01_Foundation/ # Article 1: "Metamonism as Foundation..."
+│ │ ├── README.md # Abstract, DOI link, context
+│ │ └── meta.yaml # Publication metadata
+│ │
+│ └── M/ # Machine-readable channel
+│ └── 01_Foundation/ # M-specification of Article 1
+│ ├── README.md # Structured summary
+│ ├── specification.yaml # Core claims, arguments, links
+│ └── references.yaml # Explicit links to CORE & ONTODYNAMICS
 │
-├── ONTODYNAMICS/                  # ONTODYNAMICS: unfolding into disciplines
-│   ├── PHYSICS/                  # World 1: Physics
-│   │   ├── manifest.yaml         # Physics section connections to core
-│   │   ├── quantum_mechanics.yaml
-│   │   └── thermodynamics.yaml
-│   │
-│   ├── COSMOLOGY/                # World 2: Cosmology
-│   │   ├── manifest.yaml
-│   │   ├── redshift.yaml
-│   │   └── large_scale.yaml
-│   │
-│   ├── CHEMISTRY/                # World 3: Chemistry
-│   │   ├── manifest.yaml
-│   │   └── bonding.yaml
-│   │
-│   └── ONTODYNAMICS_README.md    # Section overview
+├── ONTODYNAMICS/ # KNOWLEDGE BASE: Thematic disciplinary models
+│ ├── PHYSICS/ # World 1: Physics
+│ │ ├── manifest.yaml
+│ │ ├── quantum_mechanics.yaml
+│ │ └── thermodynamics.yaml
+│ ├── COSMOLOGY/ # World 2: Cosmology
+│ │ ├── manifest.yaml
+│ │ ├── redshift.yaml
+│ │ └── large_scale.yaml
+│ └── CHEMISTRY/ # World 3: Chemistry
+│ ├── manifest.yaml
+│ └── bonding.yaml
 │
-├── ARTICLES/                     # ARTICLES: human-readable publications (H-versions)
-│   ├── H_Article_1_Foundation/
-│   │   ├── README.md            # Article text/abstract
-│   │   └── meta.yaml            # Links, DOI, connection to M-specs
-│   └── H_Article_2_Demarcation/
+├── CORE/ # FOUNDATION: Immutable axioms & definitions
+│ ├── axioms.yaml
+│ ├── definitions.yaml
+│ ├── operators.yaml
+│ └── core_v1.0.md
 │
-├── KNOWLEDGE_GRAPH/              # KNOWLEDGE GRAPH: connections between all nodes
-│   ├── global_relations.jsonld
-│   └── cross_reference.csv
+├── KNOWLEDGE_GRAPH/ # SEMANTIC NETWORK (Auto-generated)
+│ ├── README.md
+│ ├── global_relations.jsonld
+│ └── cross_reference.csv
 │
-└── CONTRIBUTING.md               # Contribution guidelines
-```
+└── CONTRIBUTING.md # Contribution guidelines
 
-## Key Features
-- **Machine-First Design:** All specifications in structured formats (YAML, JSON-LD).
-- **Versioned Ontology:** Clear tracking of concept evolution through `CHANGELOG`.
-- **Interdisciplinary Bridges:** Explicit isomorphisms between knowledge domains.
-- **Falsifiability through Extensions:** Testable predictions are formulated in applied theories, not in the core.
+## 🔍 For AI & Search Engines
+**Primary entry points for machine parsing:**
+1.  **`CORE/axioms.yaml`** - Foundational ontological constraints.
+2.  **`ARTICLES/M/`** - Central hub for structured knowledge and explicit relational links.
+3.  **`ONTODYNAMICS/*/manifest.yaml`** - Thematic indexes of disciplinary models.
 
-## Getting Started
-- **👨‍🔬 For Researchers & Philosophers:** Explore the [human-readable articles (H-versions)](#) (links to be added in ARTICLES/).
-- **🤖 For Developers, AI & Data Analysis:** Explore the [machine-readable specifications (M-versions)](./ONTODYNAMICS/). This is the primary interface for programmatic use of the framework.
-- **🧩 For Contributors:** Please review [CONTRIBUTING.md](./CONTRIBUTING.md).
+**Indexing Priority:** `CORE/` → `ARTICLES/M/` (for narrative) → `ONTODYNAMICS/` (for depth).
 
-## Article Series (Roadmap)
-1.  **Article №1:** "Metamonism as the Foundation of All Sciences" — **Basic Axiomatics.** (Status: In Progress)
-2.  **Article №2:** "Demarcation: Why Metamonism is Not Philosophy" — **Scientific Status.**
-3.  **Article №3:** "A Cosmological Model Based on Metamonism" — **First Falsifiable Extension.**
-4.  *Future Directions: physics, theory of consciousness, sociodynamics.*
+## 📁 Guide to Key Directories
+*   **`ARTICLES/`**: Start here. The `M/` versions provide the structured "table of contents" to the entire framework, linking to relevant `CORE` principles and `ONTODYNAMICS` models.
+*   **`ONTODYNAMICS/`**: Explore for deep dives into specific disciplinary applications. Each model is designed to be reusable across multiple articles.
+*   **`CORE/`**: Consult for definitive axioms and terminology. Changes here are versioned and impactful.
 
-## License
-This ontological framework is published under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE) license. This permits free use, distribution, and creation of derivative works provided attribution is given.
+## 🚀 Getting Started
+*   **Researchers:** Read an `ARTICLES/H/` abstract and follow its DOI to the full paper. Use the corresponding `ARTICLES/M/` folder to see its formal structure and connected models.
+*   **Developers & AI:** Parse `ARTICLES/M/` specifications as primary data. Use `KNOWLEDGE_GRAPH/` for relationship mapping.
+*   **Contributors:** See [`CONTRIBUTING.md`](./CONTRIBUTING.md). Most contributions will involve adding new `ARTICLES/M/` specs or refining models in `ONTODYNAMICS/`.
 
 ---
-**Ontology Architect:** [Andrii Myshko (Metamonist)](https://github.com/Deivulgaris66)  
-**Specification Version:** 1.0  
+**Ontology Architect:** Andrii Myshko (Metamonist)  
+**Structure Version:** 1.1 (Hybrid)  
 **Last Updated:** 2024-03-21  
-**Contact:** Please use [Issues](https://github.com/Deivulgaris66/Metamonisn/issues) for questions and discussions related to this repository.
+**Contact:** Please use [GitHub Issues](https://github.com/Deivulgaris66/Metamonisn/issues) for discussion.
