@@ -1,0 +1,14 @@
+# ARTICLES/H/01_Foundation/meta.yaml
+# Purpose: Metadata for the human-readable (H) version of Article 1.
+
+publication:
+  title: "Metamonism as the Foundation of All Sciences"
+  h_version_doi: "TODO: https://doi.org/10.xxxx/zenodo.xxxxxx" # PRIMARY LINK
+  h_version_url: "TODO: [arXiv or other URL]"
+  author: "Andrii Myshko (Metamonist)"
+  release_date: "TODO: 2024-XX-XX"
+  status: "published"
+
+# This H-version is connected to its M-version counterpart.
+relation:
+  m_version_counterpart: "../M/01_Foundation/"
