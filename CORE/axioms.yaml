@@ -1,11 +1,18 @@
 # CORE/axioms.yaml
-# Version: 1.0 (Skeleton)
-# Purpose: Contains the primary ontological axioms of the framework.
-# IMPORTANT: Changes in this file lead to a minor or major version change of CORE.
+# Version: 1.0 (Canonical)
+# Language: English (Primary)
+# Purpose: The single, operational axiom of the Metamonism framework.
+# Principle: The prohibition of identity directly necessitates distinction.
 
-# TODO: Define and formalize the Indifference Ban Axiom.
 axioms:
-  - id: "axiom_indifference_ban"
-    statement: "TODO: Absolute identity (a state without distinctions) is ontologically impossible."
-    is_primary: true
-    notes: "This is the central axiom. Requires precise wording and definition of 'identity' and 'distinction'."
+  - id: "axiom_actuality_ban_of_identity"
+    statement: |
+      The Axiom of Reality's Actualization prohibits absolute identity, i.e., the absence of distinction.
+      Consequently, everything actual must adhere to this prohibition by possessing distinction.
+    type: "primary_constraint"
+    status: "canonical"
+    notes: |
+      This is the foundational operational rule.
+      It does not describe reality but constrains it: identity is impossible.
+      Therefore, to be actual is to satisfy this constraint by necessarily bearing distinction.
+      Distinction is not an option but the only possible form of compliance with the prohibition.
