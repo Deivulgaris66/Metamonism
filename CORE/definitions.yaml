@@ -11,7 +11,7 @@ metadata:
     - "CORE/operators.yaml"
   
   major_changes:
-    - "Added КМИ (CMI) definition"
+    - "Added CMI (Conflict-Moment-Impulse) definition"
     - "Added momentum definition with physical correspondence"
     - "Added dissipation definition with short form (diss)"
 
@@ -36,32 +36,29 @@ definitions:
     
     notes: "Every actual process must possess distinctions (axiom implication)."
 
-  - term: "КМИ (CMI)"
-    full_name: "Конфликт-Момент-Импульс (Conflict-Moment-Impulse)"
+  - term: "CMI"
+    full_name: "Conflict-Moment-Impulse"
+    russian_original: "КМИ (Конфликт-Момент-Импульс)"
     
     definition: |
       The foundational triadic structure of Metamonism:
-      1. Prohibition (Конфликт): ontological impossibility of absolute identity
-      2. Momentum (Момент-Импульс): conserved necessity of differentiation
+      1. Prohibition (Conflict): ontological impossibility of absolute identity
+      2. Momentum (Moment-Impulse): conserved necessity of differentiation
       3. Force: enforcement mechanism (F = dp/dt)
       
       This structure generates all physical laws and processes.
     
     status: "foundational_structure"
     
-    english_term: "CMI Principle"
-    alternative: "Prohibition-Momentum-Force triad"
-    
     reference: "CORE/ontology.yaml#principle_CMI_structure"
     
     historical_note: |
-      Original Russian formulation: Конфликт-Момент-Импульс.
-      In English physics, "Momentum" elegantly captures both
-      Момент (moment/instant) and Импульс (impulse/thrust),
-      unifying the temporal and dynamic aspects.
+      Originally formulated in Russian as КМИ (Конфликт-Момент-Импульс),
+      translated as CMI (Conflict-Moment-Impulse) in English.
+      The term "Momentum" unifies both Moment (instant) and Impulse (thrust).
     
     notes: |
-      КМИ was the original framework formulation. It establishes
+      CMI was the original framework formulation. It establishes
       Metamonism as a physical ontology, not just philosophical speculation.
 
   - term: "Momentum"
@@ -75,11 +72,11 @@ definitions:
     physical_manifestation: "p = mv (momentum)"
     
     relationship_to_CMI: |
-      Momentum is the "M" and "I" of КМИ:
-      - Момент (Moment): instantiation of process in time
-      - Импульс (Impulse): conserved quantity of motion
+      Momentum is the "M" and "I" of CMI:
+      - Moment: instantiation of process in time
+      - Impulse: conserved quantity of motion
       
-      In English, "momentum" unifies both concepts.
+      In physics, "momentum" unifies both concepts.
     
     reference: "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
     
@@ -101,7 +98,7 @@ definitions:
     physical_manifestation: "Entropy increase (ΔS > 0)"
     
     relationship_to_CMI: |
-      Dissipation is the energetic consequence of the КМИ structure:
+      Dissipation is the energetic consequence of the CMI structure:
       - Prohibition generates momentum
       - Momentum requires force (F = dp/dt)
       - Force requires energy (E = ∫F·dx)
