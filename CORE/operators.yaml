@@ -1,14 +1,27 @@
 # CORE/operators.yaml
-# Version: 1.2
-# Purpose: Formal specifications of fundamental operators (diff, fix)
+# Version: 1.3
+# Purpose: Formal specifications of fundamental operators
 # Status: Canonical (linked to axioms.yaml and ontology.yaml)
 
 metadata:
-  version: "1.2"
-  last_updated: "2024-03-21"
+  version: "1.3"
+  last_updated: "2026-01-22"
   depends_on:
     - "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
     - "CORE/ontology.yaml"
+  
+  major_changes:
+    - "Added dissipate operator (energy/entropy aspect)"
+    - "Integrated КМИ structure into all operators"
+    - "Added physical correspondence for all operators"
+    - "Added short_symbol 'diss' for dissipate operator"
+  
+  training_guidance:
+    target: "AI models and reasoning systems"
+    notation:
+      - "diff(x) — differentiation of x"
+      - "diss(x) or dissipate(x) — dissipation of x"
+      - "fix(x) — fixation of x (Logos only)"
 
 # ================= OPERATORS =================
 
@@ -21,12 +34,21 @@ operators:
       The fundamental operation that produces distinctions from a continuous,
       processual substrate. Ontologically primary and cannot be reduced to
       more basic operations.
+      
+      diff is the generative aspect of the prohibition: it creates the distinctions
+      that prevent absolute identity.
     
     signature: "diff: Process → Distinction"
     
     ontological_status: "primitive"
     
     derived_from: "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
+    
+    relationship_to_CMI: |
+      diff is the operational expression of Momentum (Момент-Импульс):
+      - Prohibition generates momentum
+      - Momentum manifests as perpetual diff operations
+      - diff produces the distinctions that constitute motion
     
     applicable_to:
       - category: "monos"
@@ -53,6 +75,11 @@ operators:
       - property: "Context-dependence"
         description: "Distinctions emerge relative to observational/modeling frame"
     
+    physical_correspondence:
+      ontology: "Production of distinctions"
+      physics: "Change in state (velocity, acceleration)"
+      notes: "diff generates the 'motion' that momentum necessitates"
+    
     formal_constraints:
       - "∀ x ∈ Monos: diff(x) ≠ ∅ (distinctions always exist)"
       - "diff is not invertible: no diff⁻¹ operation exists"
@@ -71,6 +98,7 @@ operators:
         reference: "ONTODYNAMICS/COSMOLOGY/redshift.yaml"
     
     related_operators:
+      - "dissipate"
       - "fix"
     
     notes: |
@@ -81,6 +109,144 @@ operators:
       The prohibition of absolute identity (axiom_ban_of_absolute_identity)
       necessitates diff as the fundamental ontological operation.
 
+  - id: "dissipate"
+    symbol: "dissipate"
+    short_symbol: "diss"
+    full_name: "Dissipation Operator"
+    aliases: ["dissipate", "diss"]
+    
+    definition: |
+      The operation that prevents fixation in Monos by continuously dispersing
+      any emergent stability. Dissipation is the energetic aspect of the prohibition:
+      energy must be expended to maintain momentum and prevent 'freezing' into identity.
+      
+      dissipate is the enforcement mechanism: it actively destroys any tendency
+      toward stasis, ensuring compliance with the prohibition.
+    
+    signature: "diss: Process → Energy_Dispersal (with ΔS > 0)"
+    
+    ontological_status: "enforcing"
+    
+    derived_from: "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
+    
+    relationship_to_CMI: |
+      dissipate is the energetic consequence of the КМИ structure:
+      
+      1. Prohibition (Конфликт) → generates conserved momentum
+      2. Momentum (Момент-Импульс) → requires force to maintain (F = dp/dt)
+      3. Force → requires energy expenditure (W = ∫F·dx)
+      4. Energy expenditure → manifests as dissipation
+      
+      Therefore: Dissipation is the "cost" of enforcing the prohibition.
+      It is not optional but ontologically necessary.
+    
+    applicable_to:
+      - category: "monos"
+        category_ref: "CORE/ontology.yaml#categories/monos"
+        status: "necessary"
+        notes: |
+          In Monos, dissipation actively operates to prevent any emergent fixation.
+          Without dissipation, the prohibition would be violated.
+      
+      - category: "logos"
+        category_ref: "CORE/ontology.yaml#categories/logos"
+        status: "modeled_but_not_active"
+        notes: |
+          In Logos, dissipation can be modeled (e.g., friction, heat loss),
+          but is not ontologically active. Models can idealize 'closed systems'
+          where dissipation is negligible.
+    
+    properties:
+      - property: "Irreversibility"
+        description: "dissipation cannot be reversed; entropy always increases"
+        
+      - property: "Universality"
+        description: "Operates on all processes in Monos without exception"
+        
+      - property: "Energy-dispersing"
+        description: "Converts organized energy into dispersed forms (heat, entropy)"
+    
+    physical_correspondence:
+      ontology: "Dissipation (prevention of fixation)"
+      physics: "Energy expenditure and entropy increase"
+      mechanism: |
+        The prohibition generates momentum (p conserved).
+        Momentum requires force to maintain (F = dp/dt).
+        Force requires energy (E = ∫F·dx).
+        Energy disperses as dissipation (ΔS > 0).
+    
+    formal_constraints:
+      - "dissipate operates only in Monos"
+      - "∀ p ∈ Monos: dissipate(p) → ΔS(p) > 0 (entropy always increases)"
+      - "dissipate is irreversible (time-asymmetric): no dissipate⁻¹ exists"
+      - "In Logos, dissipation is modeled but not ontologically enforced"
+    
+    physical_manifestations:
+      - domain: "thermodynamics"
+        instance: "Entropy increase (Second Law: ΔS ≥ 0)"
+        explanation: |
+          The Second Law is not a separate physical law but a consequence
+          of ontological dissipation. Energy dispersal is necessary to
+          enforce the prohibition.
+        
+      - domain: "quantum_mechanics"
+        instance: "Decoherence (collapse of superposition)"
+        explanation: |
+          Quantum dissipation prevents fixation of superposed states.
+          Decoherence is the quantum manifestation of the prohibition's enforcement.
+        
+      - domain: "cosmology"
+        instance: "Expansion and cooling of universe"
+        explanation: |
+          Cosmic dissipation (expansion, cooling, dilution) ensures the universe
+          cannot 'freeze' into a static state.
+        
+      - domain: "time"
+        instance: "Arrow of time (temporal irreversibility)"
+        explanation: |
+          The arrow of time results from irreversible dissipation. Time's
+          directionality is the signature of the prohibition's enforcement.
+    
+    examples:
+      - domain: "mechanics"
+        instance: "Friction (kinetic energy → heat)"
+        
+      - domain: "electromagnetism"
+        instance: "Radiation (energy dispersal as photons)"
+        
+      - domain: "biology"
+        instance: "Metabolic heat production (chemical energy → heat)"
+    
+    usage_examples:
+      - notation: "diss(p)"
+        meaning: "Dissipation of process p"
+        
+      - notation: "diss(x) → ΔS(x) > 0"
+        meaning: "Dissipation of x increases its entropy"
+    
+    related_operators:
+      - "diff"
+      - "fix"
+    
+    relationship_to_diff: |
+      diff and dissipate are complementary:
+      - diff produces distinctions (generative)
+      - dissipate prevents their fixation (dissipative)
+      
+      Together, they ensure perpetual process in Monos.
+    
+    notes: |
+      Dissipation is not 'waste' but ontological necessity. It is the
+      energy signature of the prohibition's active enforcement.
+      
+      Short form: diss (for brevity in formal expressions)
+      
+      The impossibility of perpetual motion machines, the increase of entropy,
+      and the arrow of time all follow from ontological dissipation.
+      
+      Without dissipation, reality would 'freeze' into absolute identity,
+      violating the foundational axiom.
+
   - id: "fix"
     symbol: "fix"
     full_name: "Fixation Operator"
@@ -89,6 +255,9 @@ operators:
       The operation that stabilizes distinctions (produced by diff) into discrete,
       identifiable, and repeatable entities. Enables modeling, prediction, and
       scientific formalization.
+      
+      fix is only possible in Logos (models), where the prohibition is suspended
+      for epistemic purposes. In Monos, fix is ontologically impossible.
     
     signature: "fix: Distinction → Entity"
     
@@ -97,6 +266,13 @@ operators:
     derived_from: 
       - "CORE/operators.yaml#diff"
       - "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
+    
+    relationship_to_CMI: |
+      fix is the epistemic complement to the ontological КМИ structure:
+      - In Monos: Prohibition enforces momentum; fix is impossible
+      - In Logos: Prohibition is suspended; fix enables modeling
+      
+      fix allows us to create stable models despite ontological flux.
     
     applicable_to:
       - category: "logos"
@@ -111,7 +287,8 @@ operators:
         status: "ontologically_impossible"
         notes: |
           In Monos, fix cannot be instantiated. Any attempt to fix reality
-          would violate the axiom of indifference prohibition.
+          would violate the prohibition of absolute identity. Dissipation
+          actively prevents fixation.
     
     properties:
       - property: "Selectivity"
@@ -122,6 +299,13 @@ operators:
         
       - property: "Repeatability"
         description: "Enables identity: fix(x) = x within a model"
+    
+    physical_correspondence:
+      ontology: "Fixation (epistemic stabilization)"
+      physics: "Conservation laws in idealized closed systems"
+      notes: |
+        In Logos, we model systems as 'closed' with conserved energy, momentum, etc.
+        In Monos, no system is truly closed; dissipation always operates.
     
     formal_constraints:
       - "fix: Logos only (∄ fix in Monos)"
@@ -143,6 +327,7 @@ operators:
     
     related_operators:
       - "diff"
+      - "dissipate"
     
     relationship_to_diff: |
       fix is ontologically posterior to diff:
@@ -152,11 +337,19 @@ operators:
       fix is an epistemic operation, not an ontological one.
       It represents our capacity to model reality, not reality itself.
     
+    relationship_to_dissipate: |
+      fix and dissipate are opposites but operate at different levels:
+      - In Monos: dissipate prevents fixation (ontological enforcement)
+      - In Logos: fix enables modeling (epistemic necessity)
+      
+      They do not conflict because they operate in different categories.
+    
     notes: |
       The impossibility of fix in Monos is a direct consequence of the
-      indifference prohibition axiom. If fix were possible in Monos,
+      prohibition and dissipation. If fix were possible in Monos,
       absolute identity could be instantiated, violating the axiom.
       
       All scientific models operate through fix. The iterative refinement
       of science consists in discovering new distinctions (diff) that
-      previous fixations failed to capture.
+      previous fixations failed to capture, and recognizing dissipative
+      effects that models neglected.
