@@ -11,7 +11,7 @@ metadata:
   status: "deployment-ready"
   
   major_changes:
-    - "Added КМИ (Conflict-Moment-Impulse) historical context"
+    - "Added CMI (Conflict-Moment-Impulse) historical context"
     - "Integrated physical interpretation (momentum, force, dissipation)"
     - "Established prohibition as source of conserved momentum"
   
@@ -31,7 +31,7 @@ axioms:
   - id: "axiom_ban_of_absolute_identity"
     short_name: "Indifference Prohibition Axiom"
     alternative_names: 
-      - "КМИ Axiom (Conflict-Moment-Impulse)"
+      - "CMI Axiom (Conflict-Moment-Impulse)"
       - "Prohibition-Momentum Axiom"
     
     statement: |
@@ -43,13 +43,14 @@ axioms:
       manifests physically as the conservation of impulse (p = mv).
     
     historical_context: |
-      Originally formulated as КМИ (Конфликт-Момент-Импульс):
-      - Конфликт (Conflict): the ontological prohibition of identity
-      - Момент (Moment): the instantiation of process in time
-      - Импульс (Impulse): the conserved necessity of motion
+      Originally formulated in Russian as КМИ (Конфликт-Момент-Импульс),
+      translated as CMI (Conflict-Moment-Impulse) in English:
+      - Conflict (Конфликт): the ontological prohibition of identity
+      - Moment (Момент): the instantiation of process in time
+      - Impulse (Импульс): the conserved necessity of motion
       
-      In English, the term "Momentum" elegantly unifies both Момент (moment/instant)
-      and Импульс (impulse/thrust), capturing the conserved nature of the process.
+      The term "Momentum" elegantly unifies both Moment (instant) and Impulse (thrust),
+      capturing the conserved nature of the process.
     
     physical_interpretation: |
       The prohibition corresponds to conservation of momentum at the physical level.
@@ -65,11 +66,11 @@ axioms:
     formal_expression: "¬∃ x : (x ≡ x ∧ ¬diff(x))"
     
     triadic_structure:
-      - level: "Prohibition (Конфликт)"
+      - level: "Prohibition (Conflict)"
         description: "Ontological source: absolute identity is forbidden"
         physical_correspondence: "Conservation laws"
         
-      - level: "Momentum (Момент-Импульс)"
+      - level: "Momentum (Moment-Impulse)"
         description: "Conserved necessity: differentiation cannot cease"
         physical_correspondence: "p = mv (momentum)"
         
