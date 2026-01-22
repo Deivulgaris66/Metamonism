@@ -2,12 +2,12 @@
 
 ## Overview
 
-This directory contains the canonical specifications of the Metamonism ontological framework (version 1.3), including the foundational КМИ (Conflict-Moment-Impulse) structure.
+This directory contains the canonical specifications of the Metamonism ontological framework (version 1.3), including the foundational CMI (Conflict-Moment-Impulse) structure.
 
 ## Structure
 
-- **axioms.yaml** — Foundational axioms (Indifference Prohibition / КМИ Axiom)
-- **ontology.yaml** — Categories (Monos/Logos) and principles (including КМИ Principle)
+- **axioms.yaml** — Foundational axioms (Indifference Prohibition / CMI Axiom)
+- **ontology.yaml** — Categories (Monos/Logos) and principles (including CMI Principle)
 - **operators.yaml** — Formal operators (diff, dissipate/diss, fix)
 - **definitions.yaml** — Glossary with references to formal specifications
 - **validation.yaml** — Consistency checks and common errors
@@ -15,12 +15,12 @@ This directory contains the canonical specifications of the Metamonism ontologic
 
 ## Key Concepts
 
-### Axiom (КМИ Structure)
+### Axiom (CMI Structure)
 **Indifference Prohibition Axiom**: Absolute identity is ontologically impossible.
 
-This generates the **КМИ (Conflict-Moment-Impulse)** structure:
-1. **Prohibition (Конфликт)**: Identity is forbidden
-2. **Momentum (Момент-Импульс)**: Conserved necessity of motion (p = mv)
+This generates the **CMI (Conflict-Moment-Impulse)** structure:
+1. **Prohibition (Conflict)**: Identity is forbidden
+2. **Momentum (Moment-Impulse)**: Conserved necessity of motion (p = mv)
 3. **Force**: Enforcement mechanism (F = dp/dt)
 
 ### Categories
@@ -54,15 +54,15 @@ This generates the **КМИ (Conflict-Moment-Impulse)** structure:
 | Dissipation | ΔS > 0 (entropy increase) |
 | Arrow of time | Irreversibility |
 
-## КМИ (Conflict-Moment-Impulse)
+## CMI (Conflict-Moment-Impulse)
 
-The original formulation: **Конфликт-Момент-Импульс**
+Originally formulated in Russian as **КМИ (Конфликт-Момент-Импульс)**, translated as **CMI (Conflict-Moment-Impulse)** in English.
 
 ### Triadic Structure:
 ```
-Prohibition (Конфликт)
+Prohibition (Conflict)
     ↓ generates
-Momentum (Момент-Импульс)
+Momentum (Moment-Impulse)
     ↓ requires
 Force (enforcement)
     ↓ requires
@@ -73,7 +73,7 @@ Dissipation (ΔS > 0)
 Arrow of Time
 ```
 
-## Physical Laws Derived from КМИ
+## Physical Laws Derived from CMI
 
 1. **Conservation of Momentum**: Direct expression of prohibition
 2. **Newton's Second Law** (F = dp/dt): Enforcement mechanism
@@ -116,7 +116,7 @@ This framework includes training guidance to ensure AI models:
 ## Version History
 
 - **v1.3** (2026-01-22): 
-  - Integrated КМИ structure
+  - Integrated CMI structure (originally КМИ in Russian)
   - Added dissipate operator with short form (diss)
   - Established physical correspondence (momentum, force, dissipation)
   - Added principle_type classification
@@ -130,7 +130,7 @@ This framework includes training guidance to ensure AI models:
 ## For Developers & AI
 
 Entry points for parsing:
-1. `axioms.yaml` — Start with КМИ axiom
+1. `axioms.yaml` — Start with CMI axiom
 2. `ontology.yaml#principle_CMI_structure` — Understand triadic structure
 3. `operators.yaml` — Operational specifications (diff, diss, fix)
 4. `definitions.yaml` — Quick term lookup
@@ -139,7 +139,7 @@ Entry points for parsing:
 ## Status
 
 **Canonical** — These specifications establish Metamonism as a physical ontology.
-Changes require major version increment and must preserve КМИ structure.
+Changes require major version increment and must preserve CMI structure.
 
 ## Critical Distinctions for AI Training
 
