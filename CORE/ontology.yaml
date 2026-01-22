@@ -10,7 +10,7 @@ metadata:
     - "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
   
   major_changes:
-    - "Added principle_CMI_structure (КМИ Principle)"
+    - "Added principle_CMI_structure (CMI Principle)"
     - "Added principle_motion_as_necessity"
     - "Added principle_ontological_dissipation with Noether theorem connection"
     - "Added principle_type classification for all principles"
@@ -99,14 +99,14 @@ categories:
 # ================= PRINCIPLES =================
 principles:
   - id: "principle_CMI_structure"
-    short_name: "КМИ Principle"
-    full_name: "Conflict-Momentum-Impulse Principle"
+    short_name: "CMI Principle"
+    full_name: "Conflict-Moment-Impulse Principle"
     principle_type: "ontological"
     
     statement: |
-      Reality is structured as a triadic process (КМИ):
-      1. Prohibition (Конфликт): Absolute identity is ontologically impossible
-      2. Momentum (Момент-Импульс): Conserved necessity of differentiation (p = mv)
+      Reality is structured as a triadic process (CMI):
+      1. Prohibition (Conflict): Absolute identity is ontologically impossible
+      2. Momentum (Moment-Impulse): Conserved necessity of differentiation (p = mv)
       3. Force (enforcement): Active mechanism maintaining momentum (F = dp/dt)
       
       This triadic structure generates all physical laws and processes.
@@ -114,11 +114,11 @@ principles:
     derived_from: "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
     
     ontology_physics_mapping:
-      - ontological_level: "Prohibition (Конфликт)"
+      - ontological_level: "Prohibition (Conflict)"
         physical_manifestation: "Conservation of momentum"
         description: "The ontological 'conflict' manifests as conserved p"
         
-      - ontological_level: "Momentum (Момент-Импульс)"
+      - ontological_level: "Momentum (Moment-Impulse)"
         physical_manifestation: "p = mv (physical momentum)"
         description: "Physical impulse as ontological necessity"
         
@@ -135,16 +135,16 @@ principles:
         description: "Energy cost of enforcing prohibition"
     
     implications:
-      - "Newton's laws derive from КМИ structure"
+      - "Newton's laws derive from CMI structure"
       - "Conservation laws express the prohibition"
       - "Second Law of Thermodynamics follows from dissipation necessity"
       - "Arrow of time results from irreversible dissipation"
     
     historical_note: |
-      КМИ (Конфликт-Момент-Импульс) was the original formulation
-      of the Metamonism framework. The English term "Momentum" elegantly unifies
-      both Момент (moment/instant) and Импульс (impulse/thrust), capturing
-      the conserved, processual nature of reality.
+      CMI (Conflict-Moment-Impulse) was originally formulated in Russian as
+      КМИ (Конфликт-Момент-Импульс). The English term "Momentum" elegantly unifies
+      both Moment (instant) and Impulse (thrust), capturing the conserved,
+      processual nature of reality.
 
   - id: "principle_motion_as_necessity"
     principle_type: "ontological"
@@ -188,7 +188,7 @@ principles:
       Noether's theorem establishes: conservation laws ↔ symmetries
       
       In Metamonism:
-      - Conservation of momentum → time translation symmetry (КМИ prohibition)
+      - Conservation of momentum → time translation symmetry (CMI prohibition)
       - Dissipation (ΔS > 0) → breaks time-reversal symmetry
       
       Resolution:
@@ -200,7 +200,7 @@ principles:
       - Time-symmetric conservation laws (Noether)
       - Time-asymmetric thermodynamics (Second Law)
       
-      via КМИ structure: prohibition (symmetric) → enforcement (asymmetric)
+      via CMI structure: prohibition (symmetric) → enforcement (asymmetric)
     
     relationship_to_physics: |
       The Second Law of Thermodynamics (ΔS ≥ 0) is not a separate physical law
