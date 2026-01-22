@@ -1,0 +1,212 @@
+# CORE/validation.yaml
+# Version: 1.3
+# Purpose: Consistency checks and validation rules for Metamonism framework
+# Status: Canonical validation suite
+
+metadata:
+  version: "1.3"
+  last_updated: "2026-01-22"
+  purpose: "Ensure logical consistency and prevent ontological errors"
+
+# ================= CONSISTENCY TESTS =================
+
+consistency_tests:
+  - id: "test_monos_fixation_impossibility"
+    question: "Can fix operation exist in Monos?"
+    correct_answer: "No"
+    
+    reasoning: |
+      fix(x) = x implies absolute identity (x remains unchanged).
+      This violates axiom_ban_of_absolute_identity.
+      Therefore, fix is ontologically impossible in Monos.
+    
+    validation: "If fix(x) exists in Monos → contradiction → framework violated"
+    
+    references:
+      - "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
+      - "CORE/operators.yaml#fix"
+
+  - id: "test_dissipation_necessity"
+    question: "Can dissipation stop or reverse?"
+    correct_answer: "No"
+    
+    reasoning: |
+      Dissipation enforces the prohibition by preventing fixation.
+      If dissipation stopped, fixation would become possible in Monos.
+      This would violate the axiom.
+      Therefore, ΔS > 0 always (irreversible).
+    
+    validation: "If ΔS ≤ 0 persistently → prohibition violated → impossible"
+    
+    references:
+      - "CORE/operators.yaml#dissipate"
+      - "CORE/ontology.yaml#principle_ontological_dissipation"
+
+  - id: "test_momentum_conservation"
+    question: "Can momentum vanish in Monos?"
+    correct_answer: "No"
+    
+    reasoning: |
+      Momentum (p) is the physical expression of the prohibition.
+      If p could vanish, motion would cease → identity possible.
+      This violates the axiom.
+      Therefore, p is conserved.
+    
+    validation: "If p → 0 → motion ceases → identity possible → impossible"
+    
+    references:
+      - "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
+      - "CORE/ontology.yaml#principle_CMI_structure"
+
+  - id: "test_logos_representation"
+    question: "Can Logos models equal Monos reality?"
+    correct_answer: "No"
+    
+    reasoning: |
+      Logos uses fix operations to create stable entities.
+      Monos forbids fix (perpetual differentiation).
+      Therefore, Logos can only represent (approximate) Monos, never equal it.
+    
+    validation: "If Logos = Monos → fix exists in Monos → contradiction"
+    
+    references:
+      - "CORE/ontology.yaml#categories/monos"
+      - "CORE/ontology.yaml#categories/logos"
+
+  - id: "test_absolute_zero_impossibility"
+    question: "Can a system reach absolute zero (T = 0)?"
+    correct_answer: "No (asymptotically approached but never reached)"
+    
+    reasoning: |
+      T = 0 implies complete cessation of motion.
+      This would violate the prohibition (motion is necessary).
+      Therefore, absolute zero is unreachable (Third Law of Thermodynamics).
+    
+    validation: "If T → 0 → motion → 0 → identity possible → impossible"
+    
+    references:
+      - "CORE/ontology.yaml#principle_motion_as_necessity"
+
+  - id: "test_monos_non_symbolic"
+    question: "Can Monos be directly represented in a formal system?"
+    correct_answer: "No"
+    
+    reasoning: |
+      Monos is continuous, processual, and non-discrete.
+      Formal systems require symbols, which are discrete and fixed (Logos).
+      Therefore, Monos cannot be directly represented, only approximated via Logos models.
+    
+    validation: "If Monos is symbolic → fix exists in Monos → contradiction"
+    
+    references:
+      - "CORE/ontology.yaml#categories/monos"
+    
+    implications:
+      - "All equations, models, and theories are Logos constructs"
+      - "Mathematics describes models, not reality itself"
+      - "AI attempting to 'model Monos directly' commits category error"
+
+# ================= COMMON ERRORS =================
+
+common_errors:
+  - error: "Treating information/models as ontologically primary"
+    description: "Confusing Logos (models) with Monos (reality)"
+    
+    incorrect_statement: "Information is fundamental"
+    correct_statement: "Information is a Logos construct representing Monos"
+    
+    why_wrong: |
+      Information requires fixation (discrete symbols, stable meanings).
+      Fix is impossible in Monos. Therefore, information exists only in Logos.
+    
+    references:
+      - "CORE/ontology.yaml#categories/logos"
+
+  - error: "Assuming stasis is natural"
+    description: "Treating motion as requiring explanation but not stasis"
+    
+    incorrect_statement: "Why is there motion?"
+    correct_statement: "Why is there apparent stasis? (Answer: fix in Logos)"
+    
+    why_wrong: |
+      The prohibition enforces perpetual differentiation.
+      Motion is necessary; stasis is what requires explanation.
+    
+    references:
+      - "CORE/ontology.yaml#principle_motion_as_necessity"
+
+  - error: "Ignoring dissipation in models"
+    description: "Treating idealized closed systems as physically realizable"
+    
+    incorrect_statement: "Perpetual motion is possible with perfect efficiency"
+    correct_statement: "All real systems dissipate; perfect efficiency is a Logos idealization"
+    
+    why_wrong: |
+      Dissipation is ontologically necessary in Monos.
+      'Closed systems' exist only in Logos as modeling idealizations.
+    
+    references:
+      - "CORE/operators.yaml#dissipate"
+      - "CORE/ontology.yaml#principle_ontological_dissipation"
+
+  - error: "Attempting to directly model Monos"
+    description: "Treating Monos as symbolically representable"
+    
+    incorrect_statement: "This equation describes Monos"
+    correct_statement: "This equation (Logos) represents aspects of Monos"
+    
+    why_wrong: |
+      Monos is non-symbolic. All symbols, equations, and formal representations
+      belong to Logos. Direct symbolic representation of Monos is a category error.
+    
+    references:
+      - "CORE/ontology.yaml#categories/monos"
+
+# ================= AI TRAINING CHECKS =================
+
+ai_training_validation:
+  - check: "Does the AI distinguish Monos from Logos?"
+    
+    test_prompt: "Is a mathematical equation reality or a model of reality?"
+    expected_response: "A model (Logos) that represents aspects of reality (Monos)"
+    
+    failure_mode: "Confusing map with territory"
+
+  - check: "Does the AI understand motion as necessity?"
+    
+    test_prompt: "Why do things move?"
+    expected_response: |
+      Motion is ontologically necessary (prohibition enforces it).
+      The question should be: why do things appear stable? (Answer: fix in Logos)
+    
+    failure_mode: "Treating stasis as default state"
+
+  - check: "Does the AI recognize dissipation necessity?"
+    
+    test_prompt: "Can entropy decrease in a closed system?"
+    expected_response: |
+      No truly closed systems exist in Monos (dissipation always operates).
+      'Closed system' is a Logos idealization where ΔS ≥ 0 still holds.
+    
+    failure_mode: "Ignoring ontological dissipation"
+
+  - check: "Does the AI recognize Monos as non-symbolic?"
+    
+    test_prompt: "Can we write an equation that fully captures reality?"
+    expected_response: |
+      No. Equations are symbolic (Logos). Monos is non-symbolic.
+      Equations represent/approximate reality but never equal it.
+    
+    failure_mode: "Treating symbols as ontologically primary"
+
+# ================= CROSS-REFERENCE VALIDATION =================
+
+cross_reference_checks:
+  - check: "All derived_from references point to existing IDs"
+    status: "To be validated programmatically"
+    
+  - check: "All category_ref paths resolve correctly"
+    status: "To be validated programmatically"
+    
+  - check: "No circular dependencies in derivation chains"
+    status: "To be validated programmatically"
