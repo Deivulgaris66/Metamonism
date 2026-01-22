@@ -12,9 +12,9 @@
 
 **The Indifference Prohibition Axiom**: Absolute identity (a state without distinctions) is ontologically impossible.
 
-This prohibition generates the **КМИ (Conflict-Moment-Impulse)** structure:
-- **Prohibition (Конфликт)**: Identity is ontologically forbidden
-- **Momentum (Момент-Импульс)**: Conserved necessity of differentiation (p = mv)
+This prohibition generates the **CMI (Conflict-Moment-Impulse)** structure:
+- **Prohibition (Conflict)**: Identity is ontologically forbidden
+- **Momentum (Moment-Impulse)**: Conserved necessity of differentiation (p = mv)
 - **Force**: Active enforcement mechanism (F = dp/dt)
 
 From this single axiom, all physical laws—including conservation of momentum, the Second Law of Thermodynamics, and the arrow of time—can be derived.
@@ -25,7 +25,7 @@ From this single axiom, all physical laws—including conservation of momentum, 
 ```
 Metamonism/
 ├── CORE/                    # 🔴 Immutable ontological foundation (v1.3)
-│   ├── axioms.yaml          # Foundational axiom (КМИ)
+│   ├── axioms.yaml          # Foundational axiom (CMI)
 │   ├── ontology.yaml        # Categories (Monos/Logos) and principles
 │   ├── operators.yaml       # Operators: diff, diss, fix
 │   ├── definitions.yaml     # Glossary of terms
@@ -72,7 +72,9 @@ The **CORE** directory contains the canonical specifications of Metamonism. All 
 - **`diss`** (dissipate): Prevents fixation; enforces entropy increase
 - **`fix`**: Stabilizes entities (Logos only)
 
-### КМИ Structure (Conflict-Moment-Impulse)
+### CMI Structure (Conflict-Moment-Impulse)
+
+Originally formulated in Russian as **КМИ (Конфликт-Момент-Импульс)**, translated as **CMI (Conflict-Moment-Impulse)** in English.
 ```
 Prohibition → Momentum → Force → Energy → Dissipation → Arrow of Time
 ```
@@ -109,19 +111,19 @@ Each article exists in two parallel, semantically equivalent versions:
 
 ## 🟡 ONTODYNAMICS: Disciplinary Applications
 
-ONTODYNAMICS contains falsifiable theories derived from the CORE axiom. Each discipline shows how КМИ structure manifests in its domain.
+ONTODYNAMICS contains falsifiable theories derived from the CORE axiom. Each discipline shows how CMI structure manifests in its domain.
 
 ### Planned Developments
 
 #### **PHYSICS**
 - `thermodynamics.yaml` — Second Law derived from dissipation
 - `quantum_mechanics.yaml` — Decoherence as ontological dissipation
-- `conservation_laws.yaml` — Conservation from КМИ structure
+- `conservation_laws.yaml` — Conservation from CMI structure
 
 #### **COSMOLOGY**
 - `expansion.yaml` — Universe expansion as cosmic dissipation
 - `big_bang.yaml` — Singularity as violation attempt of prohibition
-- `dark_energy.yaml` — Cosmological constant from КМИ
+- `dark_energy.yaml` — Cosmological constant from CMI
 
 #### **CHEMISTRY**
 - `bonding.yaml` — Chemical bonds as fix operations in Logos
@@ -138,7 +140,7 @@ ONTODYNAMICS contains falsifiable theories derived from the CORE axiom. Each dis
 
 ### Phase 1: Foundation (✅ Complete)
 - [x] CORE v1.3 specification
-- [x] КМИ structure integration
+- [x] CMI structure integration
 - [x] Validation suite
 - [x] AI training guidance
 
@@ -172,7 +174,7 @@ We welcome contributions that:
 
 #### For New Disciplinary Models:
 1. Start from `CORE/` axioms and operators
-2. Show explicit derivation from КМИ structure
+2. Show explicit derivation from CMI structure
 3. Formulate falsifiable predictions
 4. Maintain ontological consistency
 
@@ -190,7 +192,7 @@ We welcome contributions that:
 
 ### Primary Entry Points
 1. **`CORE/axioms.yaml`** — Foundational constraint
-2. **`CORE/ontology.yaml#principle_CMI_structure`** — КМИ triadic structure
+2. **`CORE/ontology.yaml#principle_CMI_structure`** — CMI triadic structure
 3. **`CORE/operators.yaml`** — Operational specifications (diff, diss, fix)
 4. **`ARTICLES/M/`** — Structured knowledge hub
 
@@ -210,7 +212,7 @@ CORE/ → ARTICLES/M/ → ONTODYNAMICS/
 ## 📚 Key Publications
 
 ### Canonical Specifications
-- **CORE v1.3** (2026-01-22): Ontological framework with КМИ structure
+- **CORE v1.3** (2026-01-22): Ontological framework with CMI structure
   - DOI: *[Pending]*
   - Location: `CORE/`
 
