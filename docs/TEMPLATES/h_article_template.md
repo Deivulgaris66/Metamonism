@@ -14,7 +14,7 @@
 
 [150-250 word abstract]
 
-**Keywords**: metamonism, ontology, КМИ, [domain-specific keywords]
+**Keywords**: metamonism, ontology, CMI, [domain-specific keywords]
 
 ---
 
@@ -36,7 +36,7 @@
 
 [Explain relevant CORE principles]
 
-### 2.1 The КМИ Structure
+### 2.1 The CMI Structure
 
 [Brief explanation of Conflict-Moment-Impulse if relevant]
 
