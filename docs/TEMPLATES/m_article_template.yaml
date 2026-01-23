@@ -1,0 +1,206 @@
+# ARTICLES/M/[number]_[title]/specification.yaml
+# Version: 1.0
+# Purpose: Machine-readable specification of article
+# H-version: ARTICLES/H/[number]_[title]/README.md
+
+metadata:
+  article_id: "[unique_article_id]"  # e.g., "article_01_foundation"
+  title: "[Full Article Title]"
+  short_title: "[Short Title]"
+  
+  version: "1.0"
+  date: "YYYY-MM-DD"
+  last_updated: "YYYY-MM-DD"
+  
+  authors:
+    - name: "[Author Name]"
+      affiliation: "[Institution/None]"
+      orcid: "[ORCID ID if available]"
+  
+  h_version:
+    location: "ARTICLES/H/[number]_[title]/README.md"
+    doi: "[DOI once published]"  # e.g., "10.5281/zenodo.1234567"
+    
+  core_version: "1.3"
+  
+  depends_on:
+    - "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
+    - "CORE/ontology.yaml#[relevant_principles]"
+  
+  keywords:
+    - "metamonism"
+    - "ontology"
+    - "КМИ"
+    - "[domain-specific keywords]"
+  
+  abstract: |
+    Brief (150-250 word) summary of the article.
+    Machine-parseable version of the H-version abstract.
+
+# ================= CLAIMS =================
+
+claims:
+  - id: "claim_main"
+    statement: |
+      [Main thesis of the article]
+    
+    derived_from: "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
+    
+    evidence_type: "logical"  # logical / empirical / both
+    
+    supporting_arguments:
+      - "argument_1"
+      - "argument_2"
+  
+  - id: "claim_secondary_1"
+    statement: |
+      [Secondary claim]
+    
+    derived_from: "[CORE reference]"
+    evidence_type: "[type]"
+    supporting_arguments: ["argument_3"]
+
+# ================= ARGUMENTS =================
+
+arguments:
+  - id: "argument_1"
+    structure: "deductive"  # deductive / inductive / abductive
+    
+    premises:
+      - premise: "[Premise 1]"
+        source: "CORE/axioms.yaml#[reference]"
+      
+      - premise: "[Premise 2]"
+        source: "[derivation or reference]"
+    
+    inference_rule: "[Type of inference]"
+    # e.g., modus ponens, syllogism, etc.
+    
+    conclusion: "[Conclusion]"
+    
+    supports_claim: "claim_main"
+  
+  - id: "argument_2"
+    structure: "inductive"
+    
+    observations:
+      - "[Observation 1]"
+      - "[Observation 2]"
+    
+    pattern: "[Identified pattern]"
+    
+    generalization: "[General principle]"
+    
+    supports_claim: "claim_main"
+
+# ================= ONTOLOGICAL COMMITMENTS =================
+
+ontological_commitments:
+  - commitment: "Monos is non-symbolic"
+    justification: "CORE/ontology.yaml#categories/monos"
+  
+  - commitment: "Motion is ontologically necessary"
+    justification: "CORE/ontology.yaml#principle_motion_as_necessity"
+  
+  - commitment: "[Domain-specific commitment]"
+    justification: "[Reference or derivation]"
+
+# ================= KEY TERMS =================
+
+key_terms:
+  - term: "Monos"
+    definition: |
+      [Brief definition specific to this article's usage]
+    reference: "CORE/definitions.yaml#Monos"
+    
+  - term: "dissipation"
+    definition: |
+      [Brief definition]
+    reference: "CORE/definitions.yaml#dissipation"
+  
+  - term: "[Article-specific term]"
+    definition: |
+      [Definition]
+    introduced_in_section: "[Section number/name]"
+
+# ================= STRUCTURE =================
+
+structure:
+  sections:
+    - id: "introduction"
+      title: "Introduction"
+      claims_presented: ["claim_main"]
+      
+    - id: "background"
+      title: "[Background/Theory section]"
+      core_references:
+        - "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
+      
+    - id: "argument"
+      title: "[Main argument section]"
+      arguments_presented: ["argument_1", "argument_2"]
+      
+    - id: "implications"
+      title: "[Implications/Applications]"
+      claims_presented: ["claim_secondary_1"]
+      
+    - id: "conclusion"
+      title: "Conclusion"
+      summary_of_claims: ["claim_main", "claim_secondary_1"]
+
+# ================= CONNECTIONS TO ONTODYNAMICS =================
+
+ontodynamics_connections:
+  - model: "ONTODYNAMICS/[DISCIPLINE]/[model].yaml"
+    relationship: "applies"  # applies / derives_from / extends / contradicts
+    explanation: |
+      [How this article relates to that ONTODYNAMICS model]
+
+# ================= FALSIFIABILITY =================
+
+falsifiability:
+  directly_falsifiable: false  # true if article makes empirical predictions
+  
+  extensions_are_falsifiable: true
+  
+  falsifiable_implications:
+    - implication: "[Testable implication 1]"
+      how_to_test: "[Method]"
+      
+    - implication: "[Testable implication 2]"
+      how_to_test: "[Method]"
+
+# ================= REFERENCES =================
+
+references_to_core:
+  - "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
+  - "CORE/ontology.yaml#principle_CMI_structure"
+  - "CORE/operators.yaml#[operators_used]"
+
+references_to_articles:
+  - "ARTICLES/M/[other_article]/specification.yaml"
+
+external_bibliography:
+  - id: "ref_1"
+    citation: "[Author, Year, Title, Journal/Book]"
+    relevance: "[Why cited]"
+  
+  - id: "ref_2"
+    citation: "[Citation]"
+    relevance: "[Relevance]"
+
+# ================= NOTES =================
+
+notes: |
+  Additional notes for machine readers:
+  - Target audience: [researchers / general public / both]
+  - Difficulty level: [introductory / intermediate / advanced]
+  - Prerequisites: [what reader should know]
+
+# ================= CHANGELOG =================
+
+changelog:
+  - version: "1.0"
+    date: "YYYY-MM-DD"
+    changes:
+      - "Initial M-specification created"
