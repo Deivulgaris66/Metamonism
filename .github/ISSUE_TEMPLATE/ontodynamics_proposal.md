@@ -22,14 +22,14 @@ assignees: ''
 **Brief description:**
 <!-- One-sentence summary -->
 
-## 🔗 Derivation from КМИ
+## 🔗 Derivation from CMI
 
-**How does this model derive from the КМИ axiom?**
+**How does this model derive from the CMI axiom?**
 
-**Prohibition (Конфликт):**
+**Prohibition (Conflict):**
 <!-- How does the prohibition manifest in this domain? -->
 
-**Momentum (Момент-Импульс):**
+**Momentum (Momentum-Impulse):**
 <!-- How does conserved momentum appear? -->
 
 **Force/Dissipation:**
@@ -83,7 +83,7 @@ model:
 
 ## ✅ Checklist
 
-- [ ] Model derives explicitly from КМИ
+- [ ] Model derives explicitly from CMI
 - [ ] Uses correct operator terminology (diff/diss/fix)
 - [ ] Distinguishes Monos from Logos
 - [ ] Includes falsifiable predictions
