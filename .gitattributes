@@ -1,2 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*.yaml linguist-language=YAML
+*.yml linguist-language=YAML
+*.md linguist-language=Markdown
+*.jsonld linguist-language=JSON
+*.py linguist-language=Python
