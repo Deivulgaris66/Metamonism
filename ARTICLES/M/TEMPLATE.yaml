@@ -1,0 +1,113 @@
+# ARTICLES/M/TEMPLATE.yaml
+# Template for machine-readable article specifications
+# Version: 2.0 (with semantic_relations)
+# Status: Canonical template
+
+# =============================================================================
+# METADATA (required)
+# =============================================================================
+
+metadata:
+  title: "Article Title"
+  author: "Author Name"
+  date: "YYYY-MM-DD"
+  status: "draft | review | canonical"
+  version: "1.0"
+  
+  # Optional: link to human-readable version
+  human_readable: "ARTICLES/H/article_name.md"
+  
+  # Optional: DOI after publication
+  doi: ""
+
+# =============================================================================
+# SEMANTIC RELATIONS (required)
+# =============================================================================
+# This section declares how this article relates to CORE and other entities.
+# Every relation MUST exist in CORE/relations.yaml
+# This section is parsed by build_knowledge_graph.py
+
+semantic_relations:
+  # Example: This article defines a new concept
+  - subject: "this_article"
+    relation: "defines"
+    object: "CORE/operators.yaml#new_operator"
+    
+  # Example: Article derives from an axiom
+  - subject: "this_article"
+    relation: "derives_from"
+    object: "CORE/axioms.yaml#ban_of_absolute_identity"
+    
+  # Example: Article uses an operator
+  - subject: "model_name"
+    relation: "uses_operator"
+    object: "CORE/operators.yaml#diff"
+    
+  # Example: Article predicts an observable
+  - subject: "model_name"
+    relation: "predicts"
+    object: "observable_phenomenon"
+
+# RULES:
+# 1. relation MUST be from CORE/relations.yaml
+# 2. subject/object MUST be valid entity IDs
+# 3. Do NOT create new relation types here
+# 4. Cross-domain relations MUST use "maps_to" only
+
+# =============================================================================
+# ABSTRACT (required)
+# =============================================================================
+
+abstract: |
+  Brief description of the article's content and contribution.
+  Should be 2-4 sentences.
+
+# =============================================================================
+# KEY CONCEPTS (optional)
+# =============================================================================
+
+key_concepts:
+  - concept_id: "concept_name"
+    definition: "Precise definition"
+    status: "new | refined | canonical"
+
+# =============================================================================
+# MAIN CONTENT (structure depends on article type)
+# =============================================================================
+
+content:
+  # Article-specific content structure
+  # Examples:
+  
+  # For operator definitions:
+  # operator:
+  #   id: "operator_name"
+  #   definition: "..."
+  
+  # For models:
+  # model:
+  #   name: "Model Name"
+  #   axioms: [...]
+  #   predictions: [...]
+  
+  # For derivations:
+  # derivation:
+  #   premises: [...]
+  #   conclusion: "..."
+
+# =============================================================================
+# EMPIRICAL PREDICTIONS (if applicable)
+# =============================================================================
+
+predictions:
+  - observable: "phenomenon_name"
+    prediction: "Specific testable claim"
+    falsification_condition: "What would disprove this"
+    status: "untested | confirmed | falsified"
+
+# =============================================================================
+# NOTES
+# =============================================================================
+
+notes: |
+  Additional context, historical notes, or development status.
