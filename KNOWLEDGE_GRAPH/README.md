@@ -172,3 +172,180 @@ See **[CONTRACT.yaml](CONTRACT.yaml)** for complete formal specification.
 
 **Last updated:** 2026-01-24  
 **Status:** Specification phase complete, awaiting implementation
+# KNOWLEDGE_GRAPH Mermaid Diagram
+# Paste this into GitHub README.md or any Mermaid-compatible viewer
+
+## Full Graph (all 19 relations)
+
+```mermaid
+graph TB
+    %% Axiom level
+    axiom[ban_of_absolute_identity<br/>AXIOM]
+    
+    %% Core concepts
+    monos[monos<br/>concept]
+    logos[logos<br/>concept]
+    autoneg[autonegation<br/>mechanism]
+    diff[diff<br/>CORE operator]
+    fix[fix<br/>CORE operator]
+    
+    %% Article
+    verb[the_verb_article<br/>publication]
+    
+    %% Derived concepts
+    difffix[diff_fix_operations]
+    recgrad[recursion_gradient]
+    
+    %% External theories
+    aristotle[substance_ontology<br/>Aristotle]
+    hegel[absolute_idea<br/>Hegel]
+    ontarg[ontological_argument]
+    
+    %% Phenomena
+    conslaw[conservation_laws<br/>phenomenon]
+    waveparticle[wave_particle_duality<br/>phenomenon]
+    consemer[consciousness_emergence<br/>phenomenon]
+    
+    %% Observables
+    nowavecolapse[absence_of_wavefunction_collapse<br/>observable]
+    consthresh[consciousness_at_threshold<br/>observable]
+    nosing[absence_of_singularity<br/>observable]
+    
+    %% Derives from (blue arrows)
+    axiom -->|derives_from| monos
+    axiom -->|derives_from| autoneg
+    axiom -->|derives_from| diff
+    diff -->|derives_from| fix
+    
+    %% Defines (green arrows)
+    verb -.->|defines| diff
+    verb -.->|defines| fix
+    verb -.->|defines| monos
+    verb -.->|defines| logos
+    verb -.->|defines| autoneg
+    
+    %% Isomorphic (purple bidirectional)
+    monos <-->|isomorphic_to| logos
+    
+    %% Contradicts (red bidirectional)
+    verb <-.->|contradicts| aristotle
+    verb <-.->|contradicts| hegel
+    verb <-.->|contradicts| ontarg
+    
+    %% Predicts (orange arrows)
+    verb ==>|predicts| nowavecolapse
+    verb ==>|predicts| consthresh
+    verb ==>|predicts| nosing
+    
+    %% Explains (yellow arrows)
+    autoneg -->|explains| conslaw
+    difffix -->|explains| waveparticle
+    recgrad -->|explains| consemer
+    
+    %% Styling
+    classDef axiomStyle fill:#ff6b6b,stroke:#c92a2a,stroke-width:3px,color:#fff
+    classDef coreStyle fill:#4dabf7,stroke:#1971c2,stroke-width:2px,color:#fff
+    classDef articleStyle fill:#51cf66,stroke:#2f9e44,stroke-width:2px,color:#fff
+    classDef externalStyle fill:#ffd43b,stroke:#fab005,stroke-width:2px
+    classDef phenomenonStyle fill:#da77f2,stroke:#9c36b5,stroke-width:1px
+    classDef observableStyle fill:#ff8787,stroke:#fa5252,stroke-width:2px
+    
+    class axiom axiomStyle
+    class monos,logos,autoneg,diff,fix coreStyle
+    class verb articleStyle
+    class aristotle,hegel,ontarg externalStyle
+    class conslaw,waveparticle,consemer phenomenonStyle
+    class nowavecolapse,consthresh,nosing observableStyle
+```
+
+## Simplified View (Core Structure Only)
+
+```mermaid
+graph TD
+    axiom[Prohibition of<br/>Absolute Identity]
+    
+    monos[Monos<br/>ontological process]
+    logos[Logos<br/>epistemic representation]
+    autoneg[Autonegation]
+    
+    diff[diff operator]
+    fix[fix operator]
+    
+    verb[THE VERB<br/>foundational article]
+    
+    %% Core derivations
+    axiom --> monos
+    axiom --> autoneg
+    axiom --> diff
+    diff --> fix
+    
+    %% Isomorphism (central claim)
+    monos <--> logos
+    
+    %% Article defines core
+    verb -.-> diff
+    verb -.-> fix
+    verb -.-> monos
+    verb -.-> logos
+    
+    classDef axiom fill:#ff6b6b,color:#fff,stroke-width:3px
+    classDef core fill:#4dabf7,color:#fff,stroke-width:2px
+    classDef article fill:#51cf66,color:#fff,stroke-width:2px
+    
+    class axiom axiom
+    class monos,logos,autoneg,diff,fix core
+    class verb article
+```
+
+## Derivation Chain (Ontological Depth)
+
+```mermaid
+graph LR
+    A[Level 0:<br/>Axiom] --> B[Level 1:<br/>Core Concepts]
+    B --> C[Level 2:<br/>Operators]
+    C --> D[Level 3:<br/>Mechanisms]
+    D --> E[Level 4:<br/>Phenomena]
+    E --> F[Level 5:<br/>Observables]
+    
+    A1[ban_of_absolute_identity] --> B1[monos]
+    A1 --> B2[autonegation]
+    A1 --> B3[diff]
+    B3 --> C1[fix]
+    B2 --> D1[diff_fix_operations]
+    D1 --> E1[wave_particle_duality]
+    E1 --> F1[absence_of_collapse]
+    
+    classDef level0 fill:#ff6b6b,color:#fff
+    classDef level1 fill:#fa5252,color:#fff
+    classDef level2 fill:#ff8787,color:#fff
+    classDef level3 fill:#ffc9c9,color:#000
+    classDef level4 fill:#ffe3e3,color:#000
+    classDef level5 fill:#fff5f5,color:#000
+    
+    class A,A1 level0
+    class B,B1,B2,B3 level1
+    class C,C1 level2
+    class D,D1 level3
+    class E,E1 level4
+    class F,F1 level5
+```
+
+## Relations by Type
+
+```mermaid
+pie title "Distribution of Relation Types (19 total)"
+    "defines" : 5
+    "derives_from" : 4
+    "contradicts" : 3
+    "predicts" : 3
+    "explains" : 3
+    "isomorphic_to" : 1
+```
+
+## Coverage of CORE/relations.yaml
+
+```mermaid
+pie title "CORE Relations Coverage"
+    "Used (6)" : 60
+    "Unused (4)" : 40
+```
