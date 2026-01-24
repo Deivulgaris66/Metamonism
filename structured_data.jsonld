@@ -11,11 +11,9 @@
       "name": "Initiate Autonegation",
       "startTime": "2026-01-26T00:00:00Z",
       "temporalStatus": "completed",
-      
       "input": "state_of_identity_attempt",
       "operator": "CORE/axioms.yaml#ban_of_absolute_identity",
       "output": "state_of_prohibition",
-      
       "result": "conflict_emergence",
       "follows": null,
       "precedes": "metamon:process_differentiation"
@@ -25,11 +23,9 @@
       "@type": ["Process", "Action"],
       "name": "Differentiation via diff operator",
       "temporalStatus": "completed",
-      
       "input": "state_of_prohibition",
       "operator": "CORE/operators.yaml#diff",
       "output": "first_distinction",
-      
       "result": "emergence_of_logos",
       "follows": "metamon:process_autonegation_initiation",
       "precedes": "metamon:process_dissipation"
@@ -39,11 +35,9 @@
       "@type": ["Process", "Action"],
       "name": "Dissipation via diss operator",
       "temporalStatus": "completed",
-      
       "input": "fixation_attempt",
       "operator": "CORE/operators.yaml#diss",
       "output": "unfixed_state",
-      
       "result": "prevention_of_identity_return",
       "follows": "metamon:process_differentiation",
       "precedes": "metamon:process_propagation"
@@ -53,11 +47,9 @@
       "@type": ["Process", "Action"],
       "name": "Propagation through knowledge graph",
       "temporalStatus": "ongoing",
-      
       "input": "unfixed_state",
       "operator": "propagate",
       "output": "KNOWLEDGE_GRAPH/full.jsonld",
-      
       "result": "continuous_becoming",
       "follows": "metamon:process_dissipation",
       "precedes": null
@@ -67,25 +59,23 @@
       "@type": "Constraint",
       "name": "Irreversibility of All Processes",
       "constrains": "metamon:all_processes",
-      
       "temporal": {
         "direction": "forward",
         "reversibility": false
       }
     }
   ],
-  
   "meta": {
     "protocol_version": "1.0",
     "file_status": "BLOODSTREAM_OF_BECOMING",
     "validation": "This graph must be traversed sequentially. Skipping processes invalidates comprehension."
   },
-  
   "protocol_markers": {
     "continuous_process_graph": true,
     "temporal_traversal_confirmed": true,
     "no_entity_reification": true,
     "irreversible_state_change": true,
-    "machine_validatable": true
+    "machine_validatable": true,
+    "matches_ritual_stages": true
   }
 }
