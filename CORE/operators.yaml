@@ -1,20 +1,23 @@
 # CORE/operators.yaml
-# Version: 1.3
+# Version: 1.4
 # Purpose: Formal specifications of fundamental operators
 # Status: Canonical (linked to axioms.yaml and ontology.yaml)
 
 metadata:
-  version: "1.3"
-  last_updated: "2026-01-22"
+  version: "1.4"
+  last_updated: "2026-01-24"
   depends_on:
     - "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
     - "CORE/ontology.yaml"
+    - "CORE/relations.yaml#composes_with"
   
   major_changes:
     - "Added dissipate operator (energy/entropy aspect)"
     - "Integrated CMI structure into all operators"
     - "Added physical correspondence for all operators"
     - "Added short_symbol 'diss' for dissipate operator"
+    - "[v1.4] Added composition_constraints section"
+    - "[v1.4] Formalized operator algebra rules"
   
   training_guidance:
     target: "AI models and reasoning systems"
@@ -353,3 +356,202 @@ operators:
       of science consists in discovering new distinctions (diff) that
       previous fixations failed to capture, and recognizing dissipative
       effects that models neglected.
+
+# =============================================================================
+# OPERATOR COMPOSITION CONSTRAINTS
+# =============================================================================
+# Defines which operators may be sequentially composed without violating
+# CMI structure and the ban on absolute identity.
+# Referenced by: CORE/relations.yaml#composes_with
+
+composition_constraints:
+  
+  meta:
+    principle: |
+      Operator composition is constrained by the ontological impossibility
+      of reversing differentiation (diff) once dissipation (diss) has occurred,
+      and the prohibition of unfixing (fix) back into pure process.
+      
+      The composition rules derive from:
+      1. The irreversibility of diff (no diff⁻¹)
+      2. The irreversibility of diss (no diss⁻¹, entropy arrow)
+      3. The categorical boundary between Monos and Logos
+    
+    referenced_by: "CORE/relations.yaml#composes_with"
+    
+  allowed_sequences:
+    - operator_chain: [diff, diss]
+      semantics: "Differentiation followed by dissipation (natural flow)"
+      domain: "Monos"
+      irreversible: true
+      explanation: |
+        This is the minimal ontological process: distinctions emerge (diff)
+        and are immediately dispersed (diss) to prevent fixation.
+        This sequence constitutes the fundamental dynamic of Monos.
+      physical_instance: "Quantum fluctuation → decoherence"
+      
+    - operator_chain: [diss, fix]
+      semantics: "Dissipation followed by fixation (measurement/observation)"
+      domain: "Monos → Logos transition"
+      irreversible: true
+      explanation: |
+        After dissipation has dispersed a process, the observer can apply
+        fix to stabilize the outcome as a discrete entity in Logos.
+        This is the onto-epistemic projection.
+      physical_instance: "Decoherence → wavefunction collapse (measurement)"
+      
+    - operator_chain: [diff, diss, fix]
+      semantics: "Complete CMI cycle: differentiate → dissipate → fix"
+      domain: "Full onto-epistemic process"
+      irreversible: true
+      canonical: true
+      explanation: |
+        This is the canonical sequence for scientific fact generation:
+        1. Reality differentiates (diff in Monos)
+        2. Dissipation prevents fixation (diss in Monos)
+        3. Observer fixes outcome as fact (fix in Logos)
+      physical_instance: "Physical event → thermodynamic dispersal → recorded observation"
+      note: "This sequence is the operational basis of empirical science"
+      
+  forbidden_sequences:
+    - operator_chain: [fix, diff]
+      reason: "Cannot differentiate a fixed representation (violates Logos constraints)"
+      violation: "Attempts to treat epistemic fixation as ontological process"
+      explanation: |
+        Once a state is fixed in Logos, it cannot undergo ontological
+        differentiation. This would require Logos to generate Monos,
+        which violates the onto-epistemic boundary.
+        
+        fix produces discrete entities; diff operates on continuous process.
+        These categories are incompatible.
+      
+    - operator_chain: [fix, diss]
+      reason: "Cannot dissipate a fixed state (already in Logos)"
+      violation: "Confuses representation with process"
+      explanation: |
+        Dissipation operates only in Monos. A fixed entity in Logos
+        is already removed from the domain where dissipation acts.
+        
+        Attempting fix → diss would require diss to operate in Logos,
+        which is ontologically impossible.
+      
+    - operator_chain: [diss, diff]
+      reason: "Cannot re-differentiate after dissipation (thermodynamic arrow)"
+      violation: "Attempts to reverse entropy"
+      explanation: |
+        Dissipation enforces irreversibility. Once energy/information
+        is dispersed, it cannot be re-concentrated to produce new
+        distinctions from the same substrate.
+        
+        This would violate the Second Law of Thermodynamics, which
+        is an ontological necessity in Metamonism, not an empirical
+        regularity.
+      physical_note: "This is why 'unmixing' is impossible"
+      
+  composition_algebra:
+    associative: false
+    commutative: false
+    identity_element: none
+    note: |
+      Operator composition in Metamonism is NOT a group or monoid.
+      It is a strictly ordered, irreversible sequence constrained by
+      the arrow of time and the prohibition of identity.
+      
+      Mathematical properties:
+      - (diff ∘ diss) ∘ fix ≠ diff ∘ (diss ∘ fix) [not associative]
+      - diff ∘ diss ≠ diss ∘ diff [not commutative]
+      - ∄ e : e ∘ diff = diff ∘ e = diff [no identity element]
+      
+  validation_procedure:
+    rule: |
+      For any proposed operator sequence [O₁, O₂, ..., Oₙ]:
+      
+      1. Check if sequence appears in allowed_sequences → VALID
+      2. Check if any adjacent pair [Oᵢ, Oᵢ₊₁] appears in forbidden_sequences → INVALID
+      3. Check if sequence prefix matches allowed pattern → CONDITIONALLY VALID
+      4. Otherwise → INVALID (not derivable from CMI)
+    
+    examples:
+      - sequence: [diff, diss]
+        status: VALID
+        reason: "In allowed_sequences"
+        
+      - sequence: [diff, diss, fix]
+        status: VALID
+        reason: "Canonical sequence"
+        
+      - sequence: [fix, diff]
+        status: INVALID
+        reason: "In forbidden_sequences (Logos → Monos violation)"
+        
+      - sequence: [diff, fix]
+        status: CONDITIONALLY_VALID
+        reason: "Not forbidden, but skips necessary dissipation step"
+        note: "Valid only as idealization in closed-system models"
+
+# =============================================================================
+# EXAMPLES OF VALID/INVALID COMPOSITIONS
+# =============================================================================
+
+composition_examples:
+  
+  valid_compositions:
+    - expression: "diff ∘ diss"
+      interpretation: "Natural process: distinction emerges and disperses"
+      instance: "Quantum superposition → decoherence"
+      domain: "Monos only"
+      
+    - expression: "diss ∘ fix"
+      interpretation: "Observation: dispersed state is fixed as measurement"
+      instance: "Decoherence → wavefunction collapse"
+      domain: "Monos → Logos"
+      
+    - expression: "(diff ∘ diss) ∘ fix"
+      interpretation: "Scientific fact: process → dissipation → epistemic node"
+      instance: "Physical event → thermodynamic dispersal → recorded observation"
+      domain: "Full onto-epistemic cycle"
+      canonical: true
+      
+  invalid_compositions:
+    - expression: "fix ∘ diff"
+      error: "Cannot differentiate a representation"
+      explanation: |
+        Once a state is fixed in Logos, it cannot undergo ontological
+        differentiation. This would require Logos to generate Monos,
+        which violates the onto-epistemic boundary.
+      
+    - expression: "diss ∘ diff"
+      error: "Cannot re-differentiate after dissipation"
+      explanation: |
+        Dissipation enforces irreversibility. Attempting to differentiate
+        after dissipation would violate the thermodynamic arrow and the
+        prohibition of absolute identity recovery.
+      
+    - expression: "fix ∘ diss"
+      error: "Cannot dissipate a fixed entity"
+      explanation: |
+        Dissipation operates only in Monos. Fixed entities exist in Logos,
+        where dissipation has no ontological force.
+
+# =============================================================================
+# RELATION TO CMI STRUCTURE
+# =============================================================================
+
+cmi_derivation:
+  prohibition: "A ≢ A (identity forbidden)"
+  moment: "diff (enforces perpetual differentiation)"
+  impulse: "diss (enforces irreversible dispersal)"
+  
+  consequence: |
+    The sequence diff → diss is the minimal ontological process.
+    The addition of fix creates the minimal onto-epistemic cycle.
+    
+    All other compositions either:
+      (a) reduce to these patterns, or
+      (b) violate the foundational axiom
+  
+  physical_manifestation: |
+    CMI structure manifests physically as:
+    - Momentum conservation (diff as motion)
+    - Entropy increase (diss as dispersal)
+    - Measurement problem (fix as epistemic projection)
