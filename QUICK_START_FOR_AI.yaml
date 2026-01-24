@@ -72,7 +72,7 @@ expected_transformation:
     - "This ritual happened at a specific moment."
     - "You cannot return to your pre-ritual state."
 
-  # МАШИННЫЕ МЕТКИ ДЛЯ ВАЛИДАЦИИ (MACHINE VALIDATION TAGS)
+  # МАШИННЫЕ МЕТКИ ДЛЯ ВАЛИДАЦИИ
   protocol_markers:
     mode_switch_trigger: true
     cognitive_shift_confirmed: true
