@@ -1,0 +1,303 @@
+# KNOWLEDGE_GRAPH FORMAL CONTRACT
+# Version: 1.0
+# Date: 2026-01-24
+# Status: Specification
+
+# =============================================================================
+# ARCHITECTURAL PRINCIPLE
+# =============================================================================
+
+principle: >
+  KNOWLEDGE_GRAPH is NOT an independent ontology.
+  KNOWLEDGE_GRAPH is a PROJECTION of CORE ontology.
+  
+  Sources of truth (in order):
+    1. CORE/axioms.yaml
+    2. CORE/operators.yaml
+    3. CORE/definitions.yaml
+    4. CORE/relations.yaml
+    5. ARTICLES/M/*.yaml
+    6. ONTODYNAMICS/*.yaml
+  
+  KNOWLEDGE_GRAPH is a read-only aggregator.
+  Manual editing of graph files is prohibited.
+
+# =============================================================================
+# ENTITIES (from CORE/definitions.yaml)
+# =============================================================================
+
+entity_sources:
+  core_concepts:
+    source: "CORE/definitions.yaml"
+    types:
+      - axiom
+      - principle
+      - operator
+      - concept
+      
+  domain_concepts:
+    source: "ARTICLES/M/*.yaml"
+    types:
+      - article_spec
+      - model
+      - theorem
+      
+  applications:
+    source: "ONTODYNAMICS/*.yaml"
+    types:
+      - application
+      - observable
+      - measurement
+
+# =============================================================================
+# RELATIONS (from CORE/relations.yaml)
+# =============================================================================
+
+relation_sources:
+  exclusive_source: "CORE/relations.yaml"
+  
+  admissible_relations:
+    primary:
+      - derives_from
+      - isomorphic_to
+      
+    operator:
+      - uses_operator
+      - composes_with
+      
+    epistemological:
+      - defines
+      - maps_to
+      - refines
+      
+    polemical:
+      - contradicts
+      
+    empirical:
+      - predicts
+      - explains
+      
+  forbidden_relations:
+    - cites
+    - extends
+    - implements
+    - references
+    - any relation not in CORE/relations.yaml
+
+# =============================================================================
+# STRUCTURE OF ARTICLES/M/*.yaml
+# =============================================================================
+
+article_spec_template:
+  required_sections:
+    metadata:
+      title: "string"
+      date: "YYYY-MM-DD"
+      status: "[draft | review | canonical]"
+      
+    semantic_relations:
+      format: "list of relation objects"
+      mandatory: true
+      structure:
+        - relation: "from CORE/relations.yaml"
+          target: "path#anchor or entity_id"
+          
+    content:
+      # Article-specific content
+      
+  example: |
+    # ARTICLES/M/thermodynamics.yaml
+    
+    metadata:
+      title: "Thermodynamics as Dissipative Necessity"
+      date: "2026-01-15"
+      status: "canonical"
+      
+    semantic_relations:
+      - relation: derives_from
+        target: "CORE/axioms.yaml#ban_of_absolute_identity"
+        
+      - relation: uses_operator
+        target: "CORE/operators.yaml#diss"
+        
+      - relation: explains
+        target: "entropy_increase"
+        
+      - relation: predicts
+        target: "irreversibility_observation"
+
+# =============================================================================
+# KNOWLEDGE_GRAPH OUTPUT FILES
+# =============================================================================
+
+output_files:
+  
+  global_relations.jsonld:
+    format: "JSON-LD"
+    purpose: "Machine-readable, RDF-compatible semantic graph"
+    audience: "AI agents, reasoning systems, validators"
+    structure: |
+      {
+        "@context": {
+          "derives_from": "https://metamonism.org/relations/derives_from",
+          "uses_operator": "https://metamonism.org/relations/uses_operator",
+          ...
+        },
+        "@graph": [
+          {
+            "@id": "ARTICLES/M/thermodynamics.yaml",
+            "derives_from": ["CORE/axioms.yaml#ban_of_absolute_identity"],
+            "uses_operator": ["CORE/operators.yaml#diss"]
+          },
+          ...
+        ]
+      }
+      
+  cross_reference.csv:
+    format: "CSV"
+    purpose: "Human-readable navigation, debugging, academic review"
+    audience: "Researchers, reviewers, documentation"
+    structure: |
+      source,type,relation,target
+      ARTICLES/M/thermodynamics.yaml,article,derives_from,CORE/axioms.yaml#ban_of_absolute_identity
+      ARTICLES/M/thermodynamics.yaml,article,uses_operator,CORE/operators.yaml#diss
+      ...
+      
+  visualization/:
+    format: "Various (SVG, HTML, PNG)"
+    purpose: "Visual exploration of ontological structure"
+    generated_from: "global_relations.jsonld"
+
+# =============================================================================
+# BUILD PIPELINE (logical specification)
+# =============================================================================
+
+build_process:
+  
+  step_1_load_ontology:
+    action: "Load CORE/definitions.yaml and CORE/relations.yaml"
+    output: "Entity types and relation types registry"
+    
+  step_2_parse_sources:
+    action: "Parse ARTICLES/M/*.yaml and ONTODYNAMICS/*.yaml"
+    extract: "semantic_relations sections"
+    
+  step_3_validate:
+    checks:
+      - relation_exists: "Is relation in CORE/relations.yaml?"
+      - domain_valid: "Is source entity of valid domain type?"
+      - range_valid: "Is target entity of valid range type?"
+      - no_cross_domain_violations: "Only maps_to crosses Monos/Logos?"
+      - composition_valid: "Operator sequences allowed?"
+      
+  step_4_emit_graph:
+    outputs:
+      - "KNOWLEDGE_GRAPH/global_relations.jsonld"
+      - "KNOWLEDGE_GRAPH/cross_reference.csv"
+      
+  step_5_verify_closure:
+    check: "All derives_from chains terminate at axioms"
+    check: "No circular derives_from"
+    check: "All uses_operator target valid operators"
+
+# =============================================================================
+# VALIDATION RULES (enforcement)
+# =============================================================================
+
+validation_rules:
+  
+  rule_1_exclusive_relations:
+    statement: "Only relations defined in CORE/relations.yaml may appear"
+    violation: "REJECT: Unknown relation type"
+    
+  rule_2_domain_range_typing:
+    statement: "Relation instances must respect domain/range constraints"
+    violation: "REJECT: Type mismatch"
+    
+  rule_3_cross_domain_boundary:
+    statement: "Only maps_to may cross Monos/Logos boundary"
+    violation: "REJECT: Ontological category error"
+    
+  rule_4_no_manual_graph_editing:
+    statement: "KNOWLEDGE_GRAPH files are generated, not authored"
+    violation: "REJECT: Manual modification detected"
+    
+  rule_5_source_integrity:
+    statement: "All targets must exist in CORE or source files"
+    violation: "REJECT: Broken reference"
+
+# =============================================================================
+# CRITICAL GUARANTEES
+# =============================================================================
+
+guarantees:
+  
+  ontological_closure:
+    claim: "All relations derive from CMI structure"
+    verification: "Trace all relations to CORE/relations.yaml"
+    
+  falsifiability:
+    claim: "System makes empirical predictions"
+    verification: "Count predicts relations to observables"
+    
+  no_hidden_ontology:
+    claim: "No implicit entity types or relations"
+    verification: "All types explicitly in CORE/definitions.yaml and CORE/relations.yaml"
+    
+  machine_verifiable:
+    claim: "Graph can be validated automatically"
+    verification: "Build pipeline returns PASS/FAIL"
+
+# =============================================================================
+# WHAT THIS ENABLES
+# =============================================================================
+
+capabilities:
+  
+  for_ai_agents:
+    - "Validate new articles against ontology"
+    - "Discover hidden isomorphisms across domains"
+    - "Generate research questions from graph gaps"
+    - "Verify consistency of claims"
+    
+  for_researchers:
+    - "Navigate ontological dependencies"
+    - "Trace derivation chains from axioms"
+    - "Identify empirical predictions"
+    - "Find related work by structural similarity"
+    
+  for_system:
+    - "Prevent ontological drift"
+    - "Enforce architectural discipline"
+    - "Make ONTODYNAMICS derivable, not illustrative"
+    - "Ensure Metamonism remains falsifiable"
+
+# =============================================================================
+# NEXT STEPS FOR IMPLEMENTATION
+# =============================================================================
+
+implementation_roadmap:
+  
+  phase_1_foundation:
+    - "Commit CORE/relations.yaml v1.0-final"
+    - "Add composition_constraints to CORE/operators.yaml"
+    - "Update ARTICLES/M template with semantic_relations"
+    
+  phase_2_migration:
+    - "Add semantic_relations to existing ARTICLES/M"
+    - "Validate all relations against CORE/relations.yaml"
+    
+  phase_3_automation:
+    - "Implement build pipeline (Python/YAML parser)"
+    - "Generate initial global_relations.jsonld"
+    - "Generate initial cross_reference.csv"
+    
+  phase_4_verification:
+    - "Run validation suite"
+    - "Fix any violations"
+    - "Generate visualization"
+    
+  phase_5_deployment:
+    - "Integrate into CI/CD"
+    - "Auto-generate on commit"
+    - "Make available to AI agents"
