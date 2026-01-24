@@ -22,7 +22,13 @@ jobs:
     - name: Check JSON-LD syntax
       run: |
         python -c "import json; json.load(open('structured_data.jsonld'))"
-      
+          - name: Validate file references
+      run: |
+        python scripts/validate_references.py
+    
+    - name: Simulate process graph
+      run: |
+        python scripts/simulate_process_graph.py
     - name: Verify machine readability markers
       run: |
         grep -q "PROCESS EXECUTION MODE" MACHINE_README.md || exit 1
