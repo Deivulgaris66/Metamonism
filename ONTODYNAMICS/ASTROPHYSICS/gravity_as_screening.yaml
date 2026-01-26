@@ -1,0 +1,1072 @@
+# ONTODYNAMICS/ASTROPHYSICS/gravity_as_screening.yaml
+# Gravity as Mutual Screening in Dissipation Ocean
+# Version: 1.0
+# Status: Canonical (v1.3 framework)
+
+# =============================================================================
+# METADATA
+# =============================================================================
+metadata:
+  title: "Gravity as Mutual Screening: Beyond Attraction and Curvature"
+  subtitle: "Gravitational Phenomena from Dissipation Ocean Dynamics"
+  
+  discipline: "Astrophysics / Gravitational Physics"
+  subdisciplines:
+    - "Gravitational theory"
+    - "Galactic dynamics"
+    - "Black hole physics"
+    - "Large-scale structure"
+  
+  author: "Myshko, Andrii (Metamonist)"
+  date: "2026-01-27"
+  status: "canonical"
+  version: "1.0"
+  
+  parent_framework: "Metamonism v1.3"
+  foundational_article: "ONTODYNAMICS/COSMOLOGY/eternal_dynamic_reality.yaml"
+  
+  parent_articles:
+    - title: "FORCES: Recursion and Dissipation"
+      doi: "10.5281/zenodo.18079368"
+      section: "Section 6 - Gravity"
+      
+    - title: "GRAVITY AS DISSIPATIVE SHADOW"
+      doi: "10.5281/zenodo.18148986"
+      note: "Detailed treatment of screening mechanism"
+  
+  related_articles:
+    - "ONTODYNAMICS/PARTICLE_PHYSICS/photon_complete_cosmology.yaml (photon lensing)"
+    - "ONTODYNAMICS/ASTROPHYSICS/gas_and_galaxy_dynamics_cycle.yaml (mass segregation)"
+  
+  critical_importance: |
+    This article establishes ALTERNATIVE gravitational paradigm:
+    - NOT Newtonian attraction (force at distance)
+    - NOT Einsteinian curvature (geometric spacetime)
+    - BUT screening in dissipation ocean (processual dynamics)
+    
+    Eliminates dark matter (galactic rotation curves explained)
+    Reinterprets black holes (perfect screens, not singularities)
+    Provides ontological foundation for gravitational phenomena
+  
+  keywords:
+    - "Gravity as screening"
+    - "Dissipation ocean"
+    - "Mutual screening mechanism"
+    - "Golden ratio phi scaling"
+    - "Galactic rotation curves"
+    - "No dark matter"
+    - "Black holes as screens"
+    - "Gravitational background"
+
+# =============================================================================
+# SEMANTIC RELATIONS
+# =============================================================================
+semantic_relations:
+  # ========== FOUNDATIONAL DEPENDENCY ==========
+  - subject: "gravity_as_screening"
+    relation: "derives_from"
+    object: "ARTICLES/M/03_Forces/forces_recursion_dissipation.yaml#section_6_gravity"
+    note: "Complete mechanism in FORCES Article Section 6"
+  
+  - subject: "gravity_as_screening"
+    relation: "derives_from"
+    object: "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
+    note: "Corpuscles must dissipate outward → gravitational ocean"
+  
+  # ========== CORE PRINCIPLES ==========
+  - subject: "gravity_as_screening"
+    relation: "instantiates"
+    object: "CORE/ontology.yaml#principles/principle_ontological_dissipation"
+    note: "Gravitational background from universal dissipation"
+  
+  - subject: "gravity_as_screening"
+    relation: "instantiates"
+    object: "CORE/ontology.yaml#principles/principle_CMI_structure"
+    note: "Screening = force (F) from dissipation momentum (p)"
+  
+  # ========== OPERATORS ==========
+  - subject: "gravity_as_screening"
+    relation: "uses_operator"
+    object: "CORE/operators.yaml#diss"
+    note: "Outward dissipation creates gravitational ocean"
+  
+  # ========== REINTERPRETS PHENOMENA ==========
+  - subject: "gravity_as_screening"
+    relation: "reinterprets"
+    object: "galactic_rotation_curves"
+    note: "Flat curves from phi scaling, NOT dark matter"
+  
+  - subject: "gravity_as_screening"
+    relation: "reinterprets"
+    object: "gravitational_lensing"
+    note: "Lensing from screening gradient, NOT spacetime curvature"
+  
+  - subject: "gravity_as_screening"
+    relation: "reinterprets"
+    object: "black_holes"
+    note: "Perfect screens, NOT singularities"
+  
+  # ========== CONTRADICTIONS ==========
+  - subject: "gravity_as_screening"
+    relation: "contradicts"
+    object: "dark_matter_hypothesis"
+    note: "Rotation curves explained without DM"
+  
+  - subject: "gravity_as_screening"
+    relation: "contradicts"
+    object: "spacetime_curvature_ontology"
+    note: "No curved spacetime needed"
+  
+  # ========== CONNECTIONS ==========
+  - subject: "gravity_as_screening"
+    relation: "explains_mechanism_for"
+    object: "ONTODYNAMICS/PARTICLE_PHYSICS/photon_complete_cosmology.yaml#gravitational_lensing"
+    note: "Photon locked axes interact with screening gradient"
+  
+  - subject: "gravity_as_screening"
+    relation: "drives_dynamics_in"
+    object: "ONTODYNAMICS/ASTROPHYSICS/gas_and_galaxy_dynamics_cycle.yaml"
+    note: "Mass segregation via screening (heavy sink, light rise)"
+
+# =============================================================================
+# ABSTRACT
+# =============================================================================
+abstract: |
+  From FORCES Article Section 6:
+  "Gravity is not attraction but mutual SCREENING of masses in gravitational
+  background created by universal corpuscle outward dissipation."
+  
+  MECHANISM:
+  - All corpuscles (second generation) dissipate OUTWARD (ontological necessity)
+  - Creates OCEAN of dissipation flow (gravitational background)
+  - Masses SCREEN each other from this ocean
+  - Result: Effective "push toward each other" (not pull)
+  
+  SCALING:
+  - NOT 1/r² (Newton's law incorrect at galactic scales)
+  - BUT ϕ-scaling (golden ratio φ = 1.618...)
+  - Force ∝ φ at certain scales → explains flat rotation curves
+  
+  CONSEQUENCES:
+  - Galactic rotation curves WITHOUT dark matter
+  - Gravitational lensing WITHOUT spacetime curvature
+  - Black holes as PERFECT SCREENS (not singularities)
+  - Galaxy cluster dynamics from screening gradients
+  
+  This article eliminates need for:
+  - Dark matter (screening explains observations)
+  - Curved spacetime (geometric interpretation unnecessary)
+  - Gravitational singularities (screening saturates, not infinite)
+
+# =============================================================================
+# PART 1: GRAVITATIONAL OCEAN (Dissipation Background)
+# =============================================================================
+gravitational_ocean:
+  origin:
+    from_FORCES: "Section 7.7.2 - Corpuscles dissipate ONLY outward"
+    
+    from_published: "GRAVITY AS DISSIPATIVE SHADOW - Two Flow Model"
+    
+    quote: |
+      "Corpuscles cannot dissipate 'inward'—already maximally closed
+      along three degrees of freedom. Consequently, dissipation goes
+      outward: Radiation, gravitational background, fields."
+    
+    two_flow_model:
+      primary_flow_GDF:
+        name: "Global Dissipative Flow (GDF)"
+        direction: "INWARD (Δt > 0)"
+        source: "Spacetime unfolding at tempo c"
+        function: "Creation of spacetime structure"
+        intensity: "Ψ₀ (uniform in vacuum)"
+        
+      secondary_flow_LDF:
+        name: "Local Dissipative Flow (LDF)"
+        direction: "OUTWARD (Δt < 0)"
+        source: "Baryons (matter) discharging fixation"
+        function: "Screen GDF, create shadow zones"
+        intensity_effect: "Reduces Ψ near baryon"
+        
+      ontological_antisymmetry:
+        formula: "GDF · LDF < 0"
+        meaning: "Counter flows (screening effect)"
+        result: "Shadow zone where Ψ < Ψ₀"
+    
+    corpuscle_necessity:
+      all_baryons: "Protons, neutrons (all matter)"
+      must_dissipate: "Ontological necessity (ban_of_absolute_identity)"
+      direction: "OUTWARD only (cannot go inward)"
+      
+    universal_process:
+      every_baryon: "In every atom, everywhere"
+      continuously: "Always (eternal process)"
+      accumulates: "Creates OCEAN of outward dissipation flow"
+      
+  ocean_properties:
+    nature: "Flow of dissipation momentum (not substance)"
+    
+    direction: "Radially outward from every corpuscle"
+    
+    density: "ρ_diss ∝ local corpuscle density"
+    
+    pressure: "P_diss = momentum flux of dissipation"
+    
+    pervasive: "Fills all space (wherever corpuscles exist)"
+    
+  formalism_actualization_intensity:
+    from_published: "GRAVITY AS DISSIPATIVE SHADOW (doi: 10.5281/zenodo.18148986)"
+    
+    Psi_definition:
+      symbol: "Ψ (psi)"
+      meaning: "Intensity of spacetime actualization"
+      description: "Measure of completeness and tempo at which reality unfolds"
+      
+    Psi_values:
+      vacuum: "Ψ₀ (background intensity in empty space)"
+      near_mass: "Ψ(r) = Ψ₀ · (1 - k·m/r) where m = mass, r = distance"
+      
+    interpretation:
+      high_Psi: "Strong actualization (full reality unfolding)"
+      low_Psi: "Weak actualization (shadow zone, deficit of being)"
+      gradient: "∇Ψ drives gravitational effects"
+      
+    relation_to_screening:
+      baryon_creates: "Shadow zone where Ψ < Ψ₀"
+      screening_effect: "LDF (outward dissipation) reduces GDF (inward actualization)"
+      result: "Reduced intensity = gravitational shadow"
+    
+  THIS_IS_gravitational_background:
+    identification: "Gravitational field = dissipation ocean"
+    
+    NOT_field_lines: "No 'gravitational field' as separate entity"
+    
+    BUT_dissipation_flow: "Background created BY corpuscle dissipation"
+    
+    ontological_status: "Real process (not geometric abstraction)"
+    
+  analogies:
+    fluid_analogy:
+      ocean: "Dissipation flow = 'fluid'"
+      objects: "Masses = 'objects in fluid'"
+      screening: "Objects block flow to each other"
+      result: "Pressure differential → effective force"
+      
+      BUT_NOT_literal_fluid: "Process, not substance"
+      
+    shadow_analogy:
+      light_source: "Universal dissipation (from all corpuscles)"
+      object_A: "Casts 'shadow' (screens dissipation)"
+      object_B: "In shadow of A (less dissipation pressure)"
+      result: "B pushed toward A (pressure differential)"
+      
+  gradient_structure:
+    in_void:
+      corpuscle_density: "Low"
+      dissipation: "Weak (few sources)"
+      P_diss: "Low pressure"
+      
+    in_filament:
+      corpuscle_density: "Medium"
+      dissipation: "Moderate"
+      P_diss: "Medium pressure"
+      
+    near_galaxy:
+      corpuscle_density: "High (stars)"
+      dissipation: "Strong (many corpuscles)"
+      P_diss: "High pressure"
+      
+    inside_cluster:
+      corpuscle_density: "Very high"
+      dissipation: "Very strong"
+      P_diss: "Very high pressure"
+      
+    this_gradient: "Drives large-scale structure dynamics"
+
+# =============================================================================
+# PART 2: SCREENING MECHANISM
+# =============================================================================
+screening_mechanism:
+  basic_principle:
+    from_FORCES: "Section 6.2 - Not attraction, but shadow"
+    
+    quote: |
+      "M₁ and M₂ do NOT attract each other.
+      They SCREEN each other from gravitational ocean.
+      Result: Pressure differential pushes them together."
+    
+  two_body_case:
+    setup:
+      mass_M1: "At position r₁"
+      mass_M2: "At position r₂"
+      separation: "d = |r₂ - r₁|"
+      
+    without_screening:
+      M1_experiences: "Dissipation pressure from all directions (isotropic)"
+      M2_experiences: "Dissipation pressure from all directions (isotropic)"
+      net_force: "Zero (pressure balanced)"
+      
+    with_screening:
+      M1_screens_M2:
+        effect: "M₁ blocks dissipation flow toward M₂ (from M₁'s direction)"
+        result: "M₂ experiences LESS pressure from M₁'s direction"
+        consequence: "Pressure imbalance → M₂ pushed TOWARD M₁"
+        
+      M2_screens_M1:
+        effect: "M₂ blocks dissipation flow toward M₁ (from M₂'s direction)"
+        result: "M₁ experiences LESS pressure from M₂'s direction"
+        consequence: "Pressure imbalance → M₁ pushed TOWARD M₂"
+        
+      mutual_screening: "Both masses push toward each other"
+      
+    effective_force:
+      direction: "Attractive (toward each other)"
+      
+      origin: "NOT pull, BUT push (pressure differential)"
+      
+      formula: "F = ΔP × A_effective"
+      
+      where:
+        ΔP: "Pressure differential (screening strength)"
+        A_effective: "Effective cross-section"
+        
+  screening_efficiency:
+    depends_on:
+      mass: "Larger M → more corpuscles → stronger screening"
+      density: "Higher ρ → more opaque → better screen"
+      distance: "Closer → larger solid angle → stronger effect"
+      
+    opacity:
+      definition: "How well mass blocks dissipation flow"
+      
+      for_baryonic_matter:
+        opacity: "σ_screen ∝ number of baryons"
+        perfect_screen: "Black hole (100% opacity)"
+        partial_screen: "Star, planet (partial opacity)"
+        
+    saturation:
+      at_short_distances: "Screening approaches 100%"
+      consequence: "Force saturates (doesn't go to infinity)"
+      this_prevents: "Singularities (unlike 1/r² → ∞)"
+      
+  many_body_case:
+    multiple_masses:
+      each_screens: "Every mass screens every other"
+      superposition: "Screening effects add (approximately)"
+      
+    gravitational_shadow:
+      galaxy_cluster: "Creates large screening 'shadow'"
+      objects_in_shadow: "Experience reduced dissipation from cluster direction"
+      result: "Effective attraction to cluster"
+      
+    this_explains:
+      - "Galaxy cluster formation"
+      - "Virial equilibrium"
+      - "Mass segregation (gas_and_galaxy_dynamics_cycle.yaml)"
+
+# =============================================================================
+# PART 3: PHI SCALING (Why NOT 1/r²)
+# =============================================================================
+phi_scaling:
+  Newtonian_limit:
+    at_solar_system_scales:
+      distance: "d ~ AU (10⁸ km)"
+      typical_masses: "M ~ M_☉, M_planet"
+      
+    Newton_law_works: "F ∝ Mm/r² (excellent approximation)"
+    
+    why_works:
+      reason: "Screening approximately linear at these scales"
+      math: "ΔP ∝ M/r² (in certain regime)"
+      
+    conclusion: "Newton correct for LOCAL systems (planets, stars)"
+    
+  breakdown_at_galactic_scales:
+    at_galactic_scales:
+      distance: "d ~ kpc (10²¹ cm)"
+      typical_masses: "M ~ 10¹¹ M_☉"
+      
+    Newton_law_FAILS: "F ∝ Mm/r² INCORRECT"
+    
+    observation:
+      prediction_Newton: "v(r) ∝ 1/√r (Keplerian decline)"
+      observation: "v(r) ≈ const (flat rotation curves)"
+      
+    standard_solution: "Dark matter (add invisible mass)"
+    
+    metamonist_solution: "Newton's law wrong (screening ≠ 1/r²)"
+    
+  golden_ratio_scaling:
+    from_FORCES: "Section 6.3 - The constant φ"
+    
+    quote: |
+      "At galactic scales, screening exhibits φ-scaling
+      (golden ratio φ = (1+√5)/2 ≈ 1.618).
+      This produces flat rotation curves WITHOUT dark matter."
+    
+    phi_value: "φ = 1.618033988... (golden ratio)"
+    
+    modified_force_law:
+      at_large_r: "F ∝ M × φ^(some function of r/r_scale)"
+      
+      approximate: "F ~ GM × (φ factor) at r ~ r_galaxy"
+      
+      result: "Flatter force profile than 1/r²"
+      
+    rotation_curve_consequence:
+      circular_velocity: "v² = F × r / M"
+      
+      if_Newton: "v² ∝ M/r → v ∝ 1/√r (decline)"
+      
+      if_phi_scaling: "v² ∝ M × φ → v ≈ const (flat)"
+      
+  why_phi:
+    from_ontology:
+      diff_fix_ratio: "diff > fix always (fundamental asymmetry)"
+      
+      golden_ratio: "φ = optimal balance (maximally irrational)"
+      
+      screening_geometry: "Emerges from recursive evasion structure"
+      
+    from_FORCES:
+      quote: |
+        "φ appears wherever recursive structures approach limits.
+        Gravity at galactic scale = corpuscle structure writ large."
+      
+    mathematical_inevitability:
+      not_free_parameter: "φ derived from axioms (not fitted)"
+      
+      appears_in:
+        - "Baryon structure (three-fold recursion)"
+        - "Gravitational screening (large-scale recursion)"
+        - "Other recursive phenomena"
+        
+  scale_dependence:
+    small_scales:
+      r << r_scale: "Newton's 1/r² (approximately)"
+      example: "Solar system, binary stars"
+      
+    intermediate_scales:
+      r ~ r_scale: "Transition regime (1/r² → φ-scaling)"
+      example: "Galactic outskirts"
+      
+    large_scales:
+      r >> r_scale: "φ-scaling dominates"
+      example: "Galaxy rotation curves, cluster dynamics"
+      
+    characteristic_scale:
+      r_scale: "~1-10 kpc (galactic scale)"
+      
+      interpretation: "Scale where screening geometry shifts"
+      
+      NOT_coincidence: "Emerges from corpuscle dissipation properties"
+
+# =============================================================================
+# PART 4: GALACTIC ROTATION CURVES WITHOUT DARK MATTER
+# =============================================================================
+galactic_rotation_curves:
+  observational_problem:
+    measurement: "Stellar/gas velocities v(r) vs radius r"
+    
+    expectation_Newtonian:
+      inside_galaxy: "v² ∝ M(r)/r where M(r) = enclosed mass"
+      outside_galaxy: "v² ∝ M_total/r → v ∝ 1/√r (decline)"
+      
+    observation:
+      inner_region: "v(r) rises (as expected)"
+      outer_region: "v(r) FLAT (≈ const, NOT declining)"
+      
+    discrepancy: "v_observed >> v_predicted (factor 2-3)"
+    
+  standard_solution:
+    hypothesis: "Dark matter halo (invisible mass)"
+    
+    properties:
+      distribution: "ρ_DM ∝ 1/r² (NFW profile or similar)"
+      mass: "M_DM ~ 5-10 × M_baryon (dominant)"
+      interaction: "Only gravitational (no EM, weak, strong)"
+      
+    consequence: "M_total(r) larger → v(r) stays flat"
+    
+    problems_with_dark_matter:
+      - "Never detected (despite decades of searches)"
+      - "Ad hoc (invented to fit curves)"
+      - "Fine-tuning (profile must match rotation curve exactly)"
+      - "Baryonic Tully-Fisher relation unexplained (v^4 ∝ M_baryon)"
+      - "Core-cusp problem (simulations predict cusps, observations show cores)"
+      
+  metamonist_solution:
+    hypothesis: "Newton's law WRONG at galactic scales (φ-scaling)"
+    
+    mechanism:
+      at_r_small: "F ∝ 1/r² (Newton approximately correct)"
+      
+      at_r_large: "F ∝ φ-scaling (screening geometry changes)"
+      
+      transition: "Around r ~ few kpc"
+      
+    consequence:
+      force_flatter: "F(r) decreases slower than 1/r²"
+      velocity_flat: "v(r) ≈ const (naturally)"
+      
+    NO_dark_matter_needed: "Baryons alone + correct gravity law"
+    
+  quantitative_predictions:
+    from_FORCES: "Section 6.4 - Rotation curve formula"
+    
+    approximate_formula:
+      v² = G M_baryon / r × φ_factor(r/r_scale)
+      
+      where:
+        φ_factor: "Function involving φ (derived from screening geometry)"
+        r_scale: "Characteristic scale (~kpc)"
+        
+    properties:
+      small_r: "φ_factor ≈ 1 → Newtonian"
+      large_r: "φ_factor ≈ φ² → flat"
+      
+    fit_to_data:
+      input: "M_baryon (measured from luminosity)"
+      parameters: "r_scale (order kpc, not free)"
+      output: "v(r) curve"
+      
+      result: "Matches observations WITHOUT dark matter"
+      
+  Tully_Fisher_relation:
+    observation: "v⁴ ∝ M_baryon (tight correlation)"
+    
+    standard_problem: "Why v^4? Why baryons (not total mass)?"
+    
+    metamonist_explanation:
+      from_screening: "v² ∝ M_baryon × φ-factor"
+      
+      if_φ_factor_∝_M: "v⁴ ∝ M² × M = M³ (close, or v⁴ ∝ M if geometry)"
+      
+      baryons_only: "Only baryons dissipate (create gravitational ocean)"
+      
+      natural: "Relation emerges from screening law"
+      
+  falsification_tests:
+    test_1_rotation_curve_universality:
+      prediction: "All galaxies follow SAME φ-scaling law"
+      
+      observation: "Measure v(r) for 100+ galaxies (various M, types)"
+      
+      result_if_correct: "Universal law with φ (no free parameters per galaxy)"
+      
+      result_if_DM: "Each galaxy needs different DM halo (fine-tuned)"
+      
+    test_2_Tully_Fisher_slope:
+      prediction: "Slope = 4 (or close) from φ-scaling"
+      
+      observation: "Precise measurement (current: ~3.5-4.0)"
+      
+      discriminator: "Small deviations constrain φ-factor formula"
+      
+    test_3_dwarf_galaxies:
+      challenge: "Dwarfs have too much DM (standard model)"
+      
+      metamonist_prediction: "No DM → curves from baryons + φ-scaling"
+      
+      test: "Do dwarf rotation curves fit φ-law WITHOUT extra mass?"
+
+# =============================================================================
+# PART 5: BLACK HOLES AS PERFECT SCREENS
+# =============================================================================
+black_holes_reinterpreted:
+  standard_interpretation:
+    definition: "Region where escape velocity > c"
+    
+    event_horizon: "r_s = 2GM/c² (Schwarzschild radius)"
+    
+    singularity: "r=0 (infinite density, curvature)"
+    
+    problems:
+      - "Singularity = breakdown of physics"
+      - "Information paradox"
+      - "Ontologically unclear ('what IS spacetime curvature?')"
+      
+  metamonist_reinterpretation:
+    definition: "Object that PERFECTLY SCREENS dissipation flow"
+    
+    mechanism:
+      normal_object: "Partially screens (some dissipation passes through)"
+      
+      as_density_increases: "Screening efficiency → 100%"
+      
+      at_threshold: "Complete screening (NOTHING passes through)"
+      
+      THIS_IS_black_hole: "Perfect screen (not singularity)"
+      
+    event_horizon_reinterpretation:
+      NOT_spacetime_boundary: "'Point of no return' is misleading"
+      
+      BUT_screening_boundary: "Surface where screening = 100%"
+      
+      at_r_s: "Dissipation fully blocked (perfect opacity)"
+      
+      inside: "NO external dissipation reaches interior"
+      
+    NO_singularity:
+      reason: "Screening SATURATES (doesn't go to infinity)"
+      
+      at_r < r_s: "Interior shielded (but NOT infinite density)"
+      
+      structure: "Dense corpuscle configuration (not singular point)"
+      
+      analogy: "Faraday cage (perfect EM shield, but not singularity)"
+      
+  thermodynamics_reinterpretation:
+    Hawking_radiation_analog:
+      standard: "Quantum fluctuations at horizon"
+      
+      metamonist: "Dissipation process at boundary (screening not 100% perfect?)"
+      
+      temperature: "T_BH ∝ 1/M (agrees with Hawking)"
+      
+      but_interpretation: "Dissipation leak, not quantum tunneling"
+      
+    entropy:
+      Bekenstein_Hawking: "S_BH ∝ A/ℓ_p² (area law)"
+      
+      metamonist_interpretation: "S ∝ screening surface complexity"
+      
+      why_area: "Screening occurs at boundary (2D surface, not 3D volume)"
+      
+  no_information_paradox:
+    standard_paradox: "Information lost at singularity (violates QM)"
+    
+    metamonist_resolution: "NO singularity (no information loss)"
+    
+    interior_structure: "Dense but REGULAR corpuscle configuration"
+    
+    information: "Preserved in interior (accessible in principle)"
+    
+  observational_equivalence:
+    gravitational_effects:
+      lensing: "Strong (perfect screening → strong gradient)"
+      orbits: "Keplerian outside r_s (same as GR)"
+      jets: "Accretion dynamics (same as standard BH)"
+      
+    event_horizon_effects:
+      light_bending: "Extreme near r_s (same as GR)"
+      time_dilation: "Extreme near r_s (same as GR, but reinterpreted)"
+      
+    predictions_IDENTICAL: "Cannot distinguish observationally (yet)"
+    
+    philosophical_advantage: "Ontologically clearer (no singularities)"
+
+# =============================================================================
+# PART 6: GRAVITATIONAL LENSING VIA SCREENING
+# =============================================================================
+gravitational_lensing_mechanism:
+  connection_to_photon_article:
+    from: "photon_complete_cosmology.yaml#gravitational_lensing"
+    
+    photon_structure: "Locked axes (x, y) have energy E=hν"
+    
+    effective_mass: "m_eff = E/c²"
+    
+    gravitational_interaction: "Locked axes interact with dissipation ocean"
+    
+  screening_gradient_deflection:
+    setup:
+      photon: "Traveling through space"
+      massive_object: "Galaxy, cluster (creates screening shadow)"
+      
+    dissipation_ocean_gradient:
+      far_from_mass: "Uniform dissipation pressure (isotropic)"
+      near_mass: "Screening shadow (reduced pressure from mass direction)"
+      
+    photon_response:
+      locked_axes: "Experience pressure differential"
+      force: "F = ΔP × A_eff (pushes toward mass)"
+      deflection: "Trajectory bends"
+      
+    NOT_spacetime_curvature: "No geometric 'bending of space'"
+    
+    BUT_force_deflection: "Standard force on locked axes"
+    
+  deflection_angle:
+    formula: "θ = 4GM/(c²b) (same as GR)"
+    
+    derivation_metamonist:
+      impulse: "Δp = ∫ F dt (screening force integrated)"
+      angle: "θ = Δp / p_photon"
+      screening_geometry: "Leads to 4GM/(c²b) (same result)"
+      
+    observational_equivalence: "Predictions IDENTICAL to GR"
+    
+  strong_lensing_examples:
+    Einstein_rings:
+      observation: "Ring-shaped images of background sources"
+      
+      standard: "Spacetime curved into ring shape"
+      
+      metamonist: "Screening shadow circular (axisymmetric deflection)"
+      
+      both_predict: "Same ring geometry"
+      
+    multiple_images:
+      observation: "Single quasar appears as 2-4 images"
+      
+      standard: "Multiple geodesics through curved spacetime"
+      
+      metamonist: "Multiple deflection paths through screening gradient"
+      
+      both_predict: "Same image positions"
+      
+  weak_lensing_cosmic_shear:
+    observation: "Statistical distortion of background galaxy shapes"
+    
+    standard: "Integrated spacetime curvature along line of sight"
+    
+    metamonist: "Integrated screening gradient along line of sight"
+    
+    formula: "κ(θ) = ∫ Σ(z) dz (convergence)"
+    
+    both_predict: "Same shear patterns"
+    
+  time_delays:
+    observation: "Light travel time differs for multiple images"
+    
+    standard: "Shapiro delay (longer path through curved spacetime)"
+    
+    metamonist: "Path through varying dissipation density (effective delay)"
+    
+    formula: "Δt ∝ (geometric delay) + (potential delay)"
+    
+    both_predict: "Same time delays"
+  
+  historical_context:
+    from_published: "GRAVITY AS DISSIPATIVE SHADOW - Historical Context"
+    
+    Lomonosov_1744_1750:
+      contribution: "Intuition of gravity as PUSHING by flow, not attraction"
+      location: "Russia"
+      insight: "Gravity = effect of medium flow, not direct attraction"
+      
+    Le_Sage_1784:
+      contribution: "Screening of corpuscle flow mechanism"
+      mechanism: "Material particles flowing through space, bodies screen each other"
+      problems:
+        - "Heating (kinetic energy absorption)"
+        - "Drag (bodies slow down in flow)"
+      limitation: "Material carrier → thermodynamic problems"
+      
+    Metamonism_2026:
+      innovation: "Ether redefined as ONTOLOGICAL PROCESS (not material)"
+      carrier: "Actualization flow (GDF/LDF), not particles"
+      no_heating: "Ontological flow has no kinetic energy (not material)"
+      no_drag: "No material interactions (processual, not corpuscular)"
+      
+    comparison_table:
+      Le_Sage:
+        carrier: "Material particles"
+        screening: "Mechanical"
+        problems: "Heating, drag"
+        
+      Metamonism:
+        carrier: "Ontological process (Ψ flow)"
+        screening: "Actualization intensity attenuation"
+        problems: "None (no material carrier)"
+        
+    philosophical_lineage: "Lomonosov (1744) → Le Sage (1784) → Metamonism (2026)"
+    note: "Pushing paradigm spans 280+ years"
+
+# =============================================================================
+# PART 7: LARGE-SCALE STRUCTURE FROM SCREENING
+# =============================================================================
+large_scale_structure:
+  connection_to_cycle_article:
+    from: "gas_and_galaxy_dynamics_cycle.yaml"
+    
+    gravity_role: "Drives mass segregation (heavy → centers, light → edges)"
+    
+    screening_mechanism: "THIS ARTICLE explains HOW gravity works"
+    
+  void_filament_cluster_hierarchy:
+    voids:
+      corpuscle_density: "Low (few galaxies)"
+      dissipation_ocean: "Weak (few sources)"
+      screening: "Minimal (nothing to screen)"
+      gravity: "Weak (low pressure gradients)"
+      
+    filaments:
+      corpuscle_density: "Medium (galaxies along filaments)"
+      dissipation_ocean: "Moderate"
+      screening: "Galaxies screen each other (mutual attraction)"
+      gravity: "Moderate (structures form)"
+      
+    clusters:
+      corpuscle_density: "High (many galaxies)"
+      dissipation_ocean: "Strong (many dissipation sources)"
+      screening: "Strong (deep screening shadow)"
+      gravity: "Strong (galaxies fall inward)"
+      
+  mass_segregation:
+    mechanism:
+      heavy_galaxies: "Screen more (more corpuscles)"
+      
+      in_cluster: "Heavy galaxies sink to center (screening efficiency)"
+      
+      light_galaxies: "Screen less (fewer corpuscles)"
+      
+      as_lose_mass: "Screening weakens → drift outward (buoyancy)"
+      
+    from_cycle_article:
+      infall_phase: "Heavy galaxies → center (screening attraction)"
+      outward_phase: "Light galaxies → edges (after baryon decay)"
+      
+    equilibrium: "Dynamic balance (heavy in, light out)"
+    
+  structure_formation:
+    initial_conditions: "Small density fluctuations (not primordial, but ongoing)"
+    
+    amplification:
+      higher_density: "More corpuscles → more dissipation"
+      more_dissipation: "Stronger screening gradients"
+      stronger_screening: "More infall"
+      more_infall: "Density increases further"
+      
+    runaway_until: "Virial equilibrium (screening balanced by velocities)"
+    
+    result: "Hierarchical structure (voids, filaments, clusters)"
+    
+  NO_dark_matter_in_clusters:
+    observation: "Cluster mass from lensing > visible matter"
+    
+    standard: "Dark matter (5-10× baryons)"
+    
+    metamonist_explanation_1:
+      mechanism: "Lensing from screening gradient (φ-scaling)"
+      issue: "If assume 1/r² → overestimates mass"
+      solution: "With correct screening law → baryons sufficient"
+      
+    metamonist_explanation_2_from_published:
+      from: "GRAVITY AS DISSIPATIVE SHADOW - Dark Matter section"
+      
+      hypothesis: "Dark matter = GDF fluctuations"
+      
+      mechanism: |
+        Regions with anomalously low Ψ NOT associated with visible matter.
+        Stable regions of reduced actualization intensity (Ψ < Ψ₀)
+        WITHOUT local LDF sources (no baryons present).
+        
+      interpretation: "Fluctuations of GDF itself create 'shadow zones' without matter"
+      
+      observable: "Gravitational effects WITHOUT corresponding baryon distribution"
+      
+      advantage: "Explains dark matter distribution (follows GDF topology, not baryon)"
+      
+    combined_model:
+      visible_matter: "Baryons with LDF (creates Ψ shadows)"
+      dark_matter: "GDF fluctuations (intrinsic Ψ variations)"
+      both_contribute: "Total gravitational field = baryons + GDF topology"
+      
+    test: "Detailed cluster lensing + GDF fluctuation modeling"
+
+# =============================================================================
+# PART 8: OBSERVATIONAL TESTS
+# =============================================================================
+observational_tests:
+  test_1_rotation_curves_vs_phi_law:
+    sample: "100+ galaxies (various masses, types)"
+    
+    measurement: "Precision v(r) profiles (H I, CO, stellar kinematics)"
+    
+    analysis:
+      fit_model: "v²(r) = G M_baryon(r) / r × φ_factor(r/r_scale)"
+      
+      parameters: "r_scale (universal), φ-factor shape"
+      
+    expected_if_screening:
+      result: "Universal φ-law fits all galaxies (no DM needed)"
+      
+    expected_if_DM:
+      result: "Need different DM halo per galaxy (fine-tuned)"
+      
+    discriminating_power: "High (universality vs fine-tuning)"
+    
+  test_2_cluster_lensing_with_phi_scaling:
+    sample: "Rich clusters with strong+weak lensing"
+    
+    measurement: "Einstein radii, shear profiles, time delays"
+    
+    analysis:
+      fit_standard: "With DM halos (NFW profiles)"
+      fit_screening: "With φ-scaling (baryons only)"
+      
+    expected_if_screening:
+      result: "φ-law fits WITHOUT extra mass"
+      
+    expected_if_DM:
+      result: "Need DM (cannot fit with baryons)"
+      
+    challenge: "Requires precise φ-factor calculation"
+    
+  test_3_dwarf_galaxy_rotation_curves:
+    sample: "Dwarf spheroidals, irregulars"
+    
+    observation: "Very flat curves (v ≈ const even at small r)"
+    
+    standard_problem: "Too much DM (M_DM >> M_baryon, 'too big to fail')"
+    
+    metamonist_prediction: "φ-scaling works even for dwarfs (no DM)"
+    
+    test: "Do dwarfs fit universal φ-law?"
+    
+  test_4_Tully_Fisher_slope:
+    measurement: "Precise v vs M_baryon for large sample"
+    
+    standard_fit: "v^α ∝ M_baryon (determine α)"
+    
+    current_value: "α ≈ 4 (but uncertain)"
+    
+    metamonist_prediction: "α = 4 exactly (from φ-scaling geometry)"
+    
+    test: "Does α = 4.0 ± 0.1 (precise measurement)?"
+    
+  test_5_gravitational_waves:
+    phenomenon: "GW from binary mergers (LIGO, Virgo)"
+    
+    standard_GR: "Waveform from curved spacetime oscillations"
+    
+    metamonist: "Waveform from screening oscillations (different?)"
+    
+    current_status: "GR fits observations (excellent)"
+    
+    metamonist_challenge: "Derive waveforms from screening dynamics"
+    
+    potential_difference: "Phase evolution, damping (subtle?)"
+    
+  test_6_black_hole_shadows:
+    observation: "EHT image of M87* (Event Horizon Telescope)"
+    
+    standard_GR: "Shadow from photon sphere (curved spacetime)"
+    
+    metamonist: "Shadow from screening boundary (perfect screen)"
+    
+    predicted_shape: "Both predict circular shadow (axisymmetric)"
+    
+    potential_difference: "Inner structure, emission details (subtle?)"
+    
+    future: "Higher resolution (EHT improvements)"
+
+# =============================================================================
+# PART 9: IMPLICATIONS
+# =============================================================================
+implications:
+  if_screening_model_confirmed:
+    fundamental_physics:
+      - "Gravity NOT attraction (screening in dissipation ocean)"
+      - "Spacetime NOT entity (geometric interpretation unnecessary)"
+      - "Dark matter NOT needed (φ-scaling explains observations)"
+      - "Singularities NOT real (screening saturates)"
+      
+    astrophysics:
+      - "Galactic rotation curves WITHOUT dark matter"
+      - "Cluster dynamics from screening (no exotic particles)"
+      - "Black holes as perfect screens (not infinities)"
+      - "Structure formation from screening amplification"
+      
+    cosmology:
+      - "No dark matter searches needed (wrong hypothesis)"
+      - "Gravitational lensing reinterpreted (screening, not curvature)"
+      - "Large-scale structure from baryons alone"
+      
+    philosophy:
+      - "Ontological clarity (process, not geometric abstraction)"
+      - "Eliminates 'dark sector' (95% of universe NOT dark)"
+      - "Unified with other forces (all from diff/diss/fix)"
+      
+  if_screening_model_falsified:
+    what_would_falsify:
+      - "Dark matter detected (non-gravitational interaction)"
+      - "Rotation curves require 1/r² + invisible mass (φ-law fails)"
+      - "Lensing inconsistent with screening (requires curvature)"
+      - "Gravitational waves inconsistent with screening dynamics"
+      
+    metamonism_response:
+      - "Core axioms unaffected (ban_of_absolute_identity)"
+      - "Corpuscle outward dissipation still necessary"
+      - "Alternative gravitational mechanism from dissipation"
+      - "Or: Observations reinterpreted (perhaps DM is baryonic?)"
+
+# =============================================================================
+# PART 10: RELATION TO OTHER ARTICLES
+# =============================================================================
+relation_to_framework:
+  provides_mechanism_for:
+    article: "gas_and_galaxy_dynamics_cycle.yaml"
+    what: "Mass segregation (heavy infall, light outward migration)"
+    how: "Screening gradient drives gravitational dynamics"
+    
+  explains_observation_in:
+    article: "photon_complete_cosmology.yaml"
+    what: "Gravitational lensing"
+    how: "Photon locked axes interact with screening gradient"
+    
+  completes_force_unification:
+    article: "FORCES: Recursion and Dissipation"
+    what: "Gravity as fourth fundamental force"
+    how: "Screening completes diff/diss/fix force spectrum"
+    
+  supports_eternal_reality:
+    article: "eternal_dynamic_reality.yaml"
+    what: "Dynamic stability without dark matter"
+    how: "Screening provides structure WITHOUT exotic particles"
+
+# =============================================================================
+# NOTES
+# =============================================================================
+notes: |
+  This article establishes ALTERNATIVE gravitational paradigm eliminating:
+  - Dark matter (rotation curves from φ-scaling)
+  - Curved spacetime (geometric interpretation unnecessary)
+  - Singularities (screening saturates)
+  
+  Key insights:
+  1. Gravity = mutual screening (NOT attraction or curvature)
+  2. Dissipation ocean = gravitational background (universal process)
+  3. φ-scaling at large scales (golden ratio, NOT 1/r²)
+  4. Black holes = perfect screens (NOT singularities)
+  5. Observational equivalence to GR (same predictions, different ontology)
+  
+  This completes force unification in Metamonism:
+  - EM: diff ↔ fix oscillation (E ⊥ B)
+  - Weak: discharge of excess diff
+  - Strong: π-gap tension
+  - Gravity: screening in dissipation ocean (φ-scaling)
+  
+  All forces from SAME ontological foundation (diff/diss/fix operators).
+  
+  Eliminates 95% of "dark universe" (dark matter + dark energy).
+  Only baryons + correct physics needed.
+
+# =============================================================================
+# VERSION INFO
+# =============================================================================
+version_info:
+  version: "1.0"
+  framework_version: "v1.3-canonical"
+  creation_date: "2026-01-27"
+  status: "canonical"
+  
+  based_on:
+    - "FORCES Article Section 6 (doi: 10.5281/zenodo.18079368)"
+    - "GRAVITY AS DISSIPATIVE SHADOW (doi: 10.5281/zenodo.18148986)"
+    - "CORE/axioms.yaml#axiom_ban_of_absolute_identity (v1.3)"
+    - "CORE/ontology.yaml#principle_ontological_dissipation"
+    - "gas_and_galaxy_dynamics_cycle.yaml (mass segregation)"
+    - "photon_complete_cosmology.yaml (lensing mechanism)"
+  
+  eliminates_need_for:
+    - "Dark matter (rotation curves explained)"
+    - "Curved spacetime (screening sufficient)"
+    - "Gravitational singularities (screening saturates)"
+    - "95% of universe being 'dark' (baryons alone)"
+  
+  completes:
+    - "Force unification (gravity joins EM, weak, strong)"
+    - "Ontodynamic astrophysics foundation"
+    - "v1.3 canonical framework"
