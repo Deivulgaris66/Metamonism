@@ -1,0 +1,704 @@
+# ONTODYNAMICS/COSMOLOGY/eternal_dynamic_reality.yaml
+# Foundational Cosmological Prediction
+# Version: 1.0
+# Status: Canonical (v1.3 framework)
+
+# =============================================================================
+# METADATA
+# =============================================================================
+metadata:
+  title: "Eternal Dynamic Reality: Impossibility of Big Bang and Space Expansion"
+  subtitle: "Cosmological Consequences of the Ban of Absolute Identity"
+  
+  discipline: "Cosmology"
+  subdiscipline: "Fundamental Cosmology"
+  
+  author: "Myshko, Andrii (Metamonist)"
+  date: "2026-01-27"
+  status: "canonical"
+  version: "1.0"
+  
+  parent_framework: "Metamonism v1.3"
+  parent_article: "FORCES: Recursion and Dissipation"
+  parent_article_doi: "10.5281/zenodo.18079368"
+  
+  keywords:
+    - "Eternal reality"
+    - "No Big Bang"
+    - "Dynamic stability"
+    - "Baryon cycle"
+    - "Ban of absolute identity"
+    - "Cosmological necessity"
+
+# =============================================================================
+# SEMANTIC RELATIONS
+# =============================================================================
+semantic_relations:
+  # ========== CORE AXIOM DEPENDENCY (Primary) ==========
+  - subject: "eternal_dynamic_reality"
+    relation: "derives_from"
+    object: "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
+    note: "All cosmological predictions follow necessarily from this axiom"
+  
+  # ========== ONTOLOGY PRINCIPLES ==========
+  - subject: "eternal_dynamic_reality"
+    relation: "instantiates"
+    object: "CORE/ontology.yaml#principles/principle_motion_as_necessity"
+    note: "Reality cannot 'stop' or 'begin' - motion is ontological necessity"
+  
+  - subject: "eternal_dynamic_reality"
+    relation: "instantiates"
+    object: "CORE/ontology.yaml#principles/principle_ontological_dissipation"
+    note: "Dissipation prevents equilibrium, ensures dynamic stability"
+  
+  - subject: "eternal_dynamic_reality"
+    relation: "instantiates"
+    object: "CORE/ontology.yaml#principles/principle_CMI_structure"
+    note: "Prohibition-Momentum-Force structure operates cosmologically"
+  
+  # ========== OPERATORS ==========
+  - subject: "eternal_dynamic_reality"
+    relation: "uses_operator"
+    object: "CORE/operators.yaml#diff"
+    note: "Differentiation cannot cease (diff > fix always)"
+  
+  - subject: "eternal_dynamic_reality"
+    relation: "uses_operator"
+    object: "CORE/operators.yaml#diss"
+    note: "Dissipation is cosmological necessity"
+  
+  # ========== CATEGORY ==========
+  - subject: "eternal_dynamic_reality"
+    relation: "describes"
+    object: "CORE/ontology.yaml#categories/monos"
+    note: "Cosmology describes Monos (ontological reality), not Logos (models)"
+  
+  # ========== PARENT ARTICLE ==========
+  - subject: "eternal_dynamic_reality"
+    relation: "derives_from"
+    object: "ARTICLES/M/03_Forces/forces_recursion_dissipation.yaml#two_generation_model"
+    note: "Two-generation dissipation cycle provides mechanism"
+  
+  # ========== NECESSITATES OTHER PREDICTIONS ==========
+  - subject: "eternal_dynamic_reality"
+    relation: "necessitates"
+    object: "ONTODYNAMICS/COSMOLOGY/cold_nucleosynthesis_in_voids.yaml"
+    note: "Eternal cycle requires baryon birth"
+  
+  - subject: "eternal_dynamic_reality"
+    relation: "necessitates"
+    object: "ONTODYNAMICS/ASTROPHYSICS/supernovae_without_remnants.yaml"
+    note: "Eternal cycle requires baryon death"
+  
+  # ========== CONTRADICTIONS ==========
+  - subject: "eternal_dynamic_reality"
+    relation: "contradicts"
+    object: "Lambda_CDM_cosmology"
+    note: "Standard model assumes Big Bang singularity and metric expansion"
+  
+  - subject: "eternal_dynamic_reality"
+    relation: "contradicts"
+    object: "big_bang_singularity"
+    note: "Singularity = absolute identity (t=0, all properties undefined)"
+  
+  - subject: "eternal_dynamic_reality"
+    relation: "contradicts"
+    object: "metric_expansion_of_space"
+    note: "Space expansion = uniform change = violation of diff > fix"
+
+# =============================================================================
+# ABSTRACT
+# =============================================================================
+abstract: |
+  From the Ban of Absolute Identity axiom (CORE/axioms.yaml), we derive that
+  reality CANNOT have a beginning (t=0 = absolute identity state) and CANNOT
+  expand uniformly (metric expansion = forbidden symmetry).
+  
+  Reality is ETERNAL and DYNAMICALLY STABLE: it exists as perpetual non-equilibrium
+  process where dissipation prevents both collapse (to identity) and equilibrium
+  (frozen state).
+  
+  This necessitates CLOSED BARYON CYCLE: continuous birth (cold nucleosynthesis
+  in voids) balances continuous death (axis unlocking in ellipticals).
+  
+  All standard cosmology predictions (Big Bang, expansion, primordial nucleosynthesis)
+  are replaced by eternal dynamic cycle predictions.
+  
+  This is the FOUNDATIONAL prediction - all other ONTODYNAMICS articles derive
+  from or support this framework.
+
+# =============================================================================
+# CENTRAL CLAIM
+# =============================================================================
+central_claim:
+  statement: |
+    Reality is ETERNAL (no beginning, no end) and DYNAMICALLY STABLE
+    (perpetual non-equilibrium preventing both identity and equilibrium).
+    
+    Big Bang (t=0 singularity) and Space Expansion (metric growth) are
+    ONTOLOGICALLY IMPOSSIBLE per Ban of Absolute Identity axiom.
+  
+  ontological_status: "Necessary consequence of axioms (not empirical hypothesis)"
+  
+  confidence: "ABSOLUTE - follows deductively from axiom_ban_of_absolute_identity"
+
+# =============================================================================
+# DERIVATION FROM AXIOMS
+# =============================================================================
+derivation:
+  axiom_source: "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
+  
+  axiom_statement: |
+    "Absolute identity (a state without distinctions) is ontologically impossible.
+    This prohibition actively enforces perpetual differentiation: reality cannot
+    'stop' or 'freeze' without violating its own existence."
+  
+  logical_chain:
+    
+    step_1_no_beginning:
+      claim: "Reality CANNOT have beginning (no t=0)"
+      
+      proof:
+        premise_1: "Beginning requires state with t=0"
+        premise_2: "At t=0: past = 0, future undefined, all properties indeterminate"
+        premise_3: "State without determinate properties = absolute identity"
+        premise_4: "Absolute identity is FORBIDDEN (axiom)"
+        conclusion: "Therefore: t=0 cannot exist"
+      
+      implication: "Reality is ETERNAL (always existed, always will exist)"
+      
+      quote_from_axiom: |
+        "Reality exists only as a process of differentiation.
+        Motion is ontologically necessary; stasis requires explanation."
+    
+    step_2_no_end:
+      claim: "Reality CANNOT end (no final state)"
+      
+      proof:
+        premise_1: "Final state = cessation of all process"
+        premise_2: "Cessation = perfect fixation (fix(x) = x permanently)"
+        premise_3: "Perfect fixation = absolute identity"
+        premise_4: "Absolute identity is FORBIDDEN (axiom)"
+        conclusion: "Therefore: final state cannot exist"
+      
+      implication: "Reality is ETERNAL (no termination)"
+    
+    step_3_no_uniform_expansion:
+      claim: "Space CANNOT expand uniformly (no metric expansion)"
+      
+      proof:
+        premise_1: "Metric expansion = all points move apart uniformly"
+        premise_2: "Uniform change = perfect symmetry (all points identical in behavior)"
+        premise_3: "Perfect symmetry = lack of distinctions"
+        premise_4: "Lack of distinctions = absolute identity"
+        premise_5: "Absolute identity is FORBIDDEN (axiom)"
+        conclusion: "Therefore: uniform metric expansion cannot exist"
+      
+      implication: "Space does NOT expand; observed redshift has different origin"
+      
+      note: |
+        Local expansion/contraction is ALLOWED (breaks symmetry).
+        Uniform global expansion is FORBIDDEN (perfect symmetry).
+    
+    step_4_no_equilibrium:
+      claim: "Reality CANNOT reach equilibrium (no heat death)"
+      
+      proof:
+        premise_1: "Equilibrium = state where all processes cease"
+        premise_2: "All processes cease = perfect rest = fixation"
+        premise_3: "Perfect fixation = absolute identity"
+        premise_4: "Absolute identity is FORBIDDEN (axiom)"
+        conclusion: "Therefore: equilibrium state cannot be reached"
+      
+      from_FORCES: "Theorem 7.4 (Impossibility of Equilibrium)"
+      quote: |
+        "Two dissipation directions compensate each other,
+        but compensation can NEVER be complete.
+        Reason: Fundamental asymmetry diff > fix."
+      
+      implication: "Reality is PERPETUAL NON-EQUILIBRIUM"
+    
+    step_5_dynamic_stability:
+      claim: "Reality is DYNAMICALLY STABLE (not static, not chaotic)"
+      
+      mechanism: "Two-generation dissipation cycle (FORCES Article Section 7.7)"
+      
+      structure: |
+        SPACE-TIME (1st generation)
+          ↓ dissipates INWARD
+        CORPUSCLES (2nd generation)
+          ↓ dissipate OUTWARD
+        SPACE-TIME (regenerated)
+          ↓ cycle continues...
+      
+      stability_source: "Mutual compensation (never complete, always dynamic)"
+      
+      quote_from_FORCES: |
+        "This creates a closed dynamic non-equilibrium cycle ensuring
+        the stability of the manifest world without achieving equilibrium."
+  
+  conclusion: |
+    From axiom_ban_of_absolute_identity, we NECESSARILY derive:
+    1. Reality is ETERNAL (no t=0, no end)
+    2. Space does NOT expand uniformly
+    3. Equilibrium is UNREACHABLE
+    4. Stability is DYNAMIC (via dissipation cycle)
+
+# =============================================================================
+# IMPOSSIBILITIES (What CANNOT exist)
+# =============================================================================
+impossibilities:
+  
+  big_bang_singularity:
+    standard_claim: "Universe began at t=0 from singularity (infinite density, zero volume)"
+    
+    why_impossible:
+      reason_1_t_equals_zero:
+        violation: "t=0 = state without temporal distinctions"
+        axiom_violated: "ban_of_absolute_identity"
+        explanation: |
+          At t=0:
+          - No past (nothing to differ from)
+          - No determinate future (pure potentiality)
+          - All properties undefined (ρ→∞, V→0, T→∞ simultaneously)
+          - This is ABSOLUTE IDENTITY state (no distinctions)
+      
+      reason_2_singularity_properties:
+        violation: "Singularity = point where all properties become identical (undefined)"
+        explanation: |
+          Singularity means:
+          - All spatial distinctions collapse (∀x,y: x = y)
+          - All temporal distinctions collapse (past = present = future)
+          - All physical properties indeterminate (cannot differ)
+          - This is LITERAL absolute identity
+      
+      reason_3_causality:
+        violation: "Singularity breaks causality (effect without cause)"
+        explanation: |
+          "Why did Big Bang happen at t=0 and not 'before'?"
+          → No answer (causality undefined at singularity)
+          → Uncaused event = violation of CMI structure (Conflict→Momentum→Force)
+    
+    metamonist_alternative: "Reality is eternal; observable phenomena have LOCAL explanations"
+  
+  metric_expansion:
+    standard_claim: "Space itself expands uniformly (Hubble flow)"
+    
+    why_impossible:
+      reason_1_perfect_symmetry:
+        violation: "Uniform expansion = all points identical in behavior"
+        axiom_violated: "diff > fix (differentiation must exceed fixation)"
+        explanation: |
+          Metric expansion means:
+          ∀ points p₁, p₂: velocity v ∝ distance d
+          → All points recede identically (perfect symmetry)
+          → No distinctions between points (all behave same)
+          → Violates diff > fix (requires perpetual differentiation)
+      
+      reason_2_space_as_substance:
+        violation: "Treats space as entity that can 'grow'"
+        explanation: |
+          From FORCES Article Section 2.3:
+          "Space is not empty container but geometry of Verb maneuvers—
+          structure arising from tension between Monos and limit of fixation."
+          
+          Space = GEOMETRY (relational), not SUBSTANCE (entity)
+          Geometry cannot 'expand' uniformly without reference frame
+      
+      reason_3_conservation:
+        violation: "Expansion creates energy from nothing"
+        explanation: |
+          Expanding space → increasing volume
+          → Dark energy density constant (ρ_Λ constant)
+          → Total dark energy increases (E = ρ_Λ × V)
+          → Energy not conserved (violates CMI momentum conservation)
+    
+    metamonist_alternative: "Redshift from photon energy loss in dissipation ocean (NOT Doppler)"
+  
+  heat_death_equilibrium:
+    standard_claim: "Universe will reach maximum entropy equilibrium (heat death)"
+    
+    why_impossible:
+      reason: "Equilibrium = cessation of all process = absolute identity"
+      
+      from_principle: "principle_ontological_dissipation"
+      quote: |
+        "Dissipation is the energy cost of maintaining momentum against resistance.
+        Without dissipation, the prohibition would be violated."
+      
+      explanation: |
+        Heat death requires:
+        - All processes stop (no differentiation)
+        - Maximum entropy reached (S_max)
+        - No further change possible (dS/dt = 0)
+        
+        But axiom requires:
+        - Perpetual differentiation (diff always active)
+        - Dissipation never ceases (ontological necessity)
+        - Process cannot stop (motion is necessary)
+        
+        Therefore: S → S_max is ASYMPTOTE (approached, never reached)
+    
+    metamonist_alternative: "Perpetual non-equilibrium via two-generation cycle"
+
+# =============================================================================
+# NECESSITIES (What MUST exist)
+# =============================================================================
+necessities:
+  
+  baryon_birth_mechanism:
+    necessity: "If reality is eternal and baryons have finite lifetime → continuous birth required"
+    
+    from_FORCES: "Section 7.7.1 - First Generation: Space-Time Dissipates Inward"
+    
+    mechanism: "Cold nucleosynthesis in cosmic voids (space-time inward dissipation)"
+    
+    location: "Voids (lowest corpuscle density → strongest inward dissipation)"
+    
+    output: "Hydrogen (simplest baryon = proton)"
+    
+    detailed_article: "ONTODYNAMICS/COSMOLOGY/cold_nucleosynthesis_in_voids.yaml"
+    
+    necessity_proof:
+      premise_1: "Reality is eternal (no beginning)"
+      premise_2: "Baryons have finite lifetime (observed: unstable particles, radioactive decay)"
+      premise_3: "If death occurs without birth → baryon count → 0 eventually"
+      premise_4: "But baryons exist NOW (observation)"
+      conclusion: "Therefore: continuous baryon creation MUST occur"
+  
+  baryon_death_mechanism:
+    necessity: "If reality is eternal and baryons continuously born → death mechanism required"
+    
+    from_FORCES: "Section 7.7.2 - Second Generation: Corpuscles Dissipate Outward"
+    
+    mechanism: "Axis unlocking (baryon → photon transformation)"
+    
+    location: "Old elliptical galaxies (low diff environment)"
+    
+    manifestation: "Supernovae WITHOUT remnants"
+    
+    detailed_article: "ONTODYNAMICS/ASTROPHYSICS/supernovae_without_remnants.yaml"
+    
+    necessity_proof:
+      premise_1: "Baryons continuously born (from above)"
+      premise_2: "Finite spatial volume (observable universe)"
+      premise_3: "If birth without death → baryon density → ∞"
+      premise_4: "But density is finite (observation)"
+      conclusion: "Therefore: baryon death mechanism MUST exist"
+  
+  cycle_balance:
+    necessity: "Birth rate must approximately balance death rate"
+    
+    from_FORCES: "Theorem 7.4 - Impossibility of Equilibrium"
+    
+    balance_equation: "R_birth ≈ R_death (within factor 2-3, never exact)"
+    
+    why_approximate: "diff > fix prevents perfect balance (perpetual non-equilibrium)"
+    
+    observational_test: |
+      Measure:
+      - R_birth: H I mass creation rate in voids (M_☉/Mpc³/Gyr)
+      - R_death: SN Ia without remnant rate × 1.4 M_☉
+      
+      Expected: R_birth ~ R_death ± factor 2
+    
+    falsification: "If R_birth/R_death > 10 or < 0.1 → cycle model challenged"
+  
+  dynamic_stability:
+    necessity: "Reality must be stable without equilibrium"
+    
+    mechanism: "Two-generation dissipation cycle"
+    
+    from_FORCES: "Section 7.7.3 - Closed Dynamic Non-Equilibrium Cycle"
+    
+    structure: |
+      Space-time dissipates INWARD → generates corpuscles
+      Corpuscles dissipate OUTWARD → sustain space-time
+      Mutual compensation (incomplete) → dynamic stability
+    
+    why_stable: "Two directions compensate each other"
+    
+    why_not_equilibrium: "Compensation never complete (diff > fix always)"
+    
+    analogy: "Like bicycle - stable WHILE MOVING, not at rest"
+
+# =============================================================================
+# OBSERVATIONAL CONSEQUENCES
+# =============================================================================
+observational_consequences:
+  
+  redshift_reinterpretation:
+    standard_interpretation: "Redshift = Doppler effect from space expansion"
+    
+    metamonist_interpretation: "Redshift = photon energy loss in dissipation ocean"
+    
+    mechanism_status: "OPEN QUESTION (multiple possibilities)"
+    
+    possible_mechanisms:
+      tired_light_variant:
+        description: "Photons lose energy via dissipation interaction"
+        formula: "Δλ/λ ∝ distance × dissipation_rate"
+        
+      dissipation_drag:
+        description: "Photons experience drag in dissipation ocean"
+        
+      spacetime_friction:
+        description: "Light propagation through dissipating space-time"
+    
+    observational_test: |
+      Standard model: z depends ONLY on distance
+      Metamonism: z depends on distance AND local dissipation environment
+      
+      Test: Measure z variations in different environments (voids vs clusters)
+    
+    detailed_article: "ONTODYNAMICS/COSMOLOGY/redshift_alternative_mechanisms.yaml"
+  
+  CMB_origin:
+    standard_interpretation: "CMB = echo of Big Bang at t=380,000 years"
+    
+    metamonist_interpretation: "CMB has different origin (no Big Bang occurred)"
+    
+    possible_origins:
+      equilibrium_radiation:
+        description: "CMB = equilibrium radiation from eternal dissipation cycle"
+        temperature: "T ~ 2.7K = natural equilibrium temperature"
+        
+      void_emission:
+        description: "CMB generated continuously in voids (cold nucleosynthesis)"
+        homogeneity: "Voids uniformly distributed → uniform background"
+        
+      dissipation_background:
+        description: "CMB = dissipation energy released as photons"
+        spectrum: "Blackbody because dissipation thermalized"
+    
+    observational_test: |
+      Standard model: CMB from z~1100 (specific time)
+      Metamonism: CMB continuously generated (spatial origin)
+      
+      Test: CMB temperature variations vs local structure correlation
+    
+    detailed_article: "ONTODYNAMICS/COSMOLOGY/CMB_alternative_origin.yaml"
+  
+  age_of_observable_universe:
+    standard: "13.8 Gyr since Big Bang"
+    
+    metamonist_reinterpretation: |
+      13.8 Gyr = age of CURRENT CONFIGURATION of observable region
+      NOT age of Reality itself (which is eternal)
+    
+    analogy: |
+      Like saying "this river is 1000 years old"
+      → River's current form is 1000 years old
+      → But water cycle is eternal
+    
+    what_happened_13_8_gyr_ago: |
+      UNKNOWN - possibly local reconfiguration event
+      (analogous to river changing course)
+      
+      NOT creation of reality from nothing
+      NOT beginning of time
+  
+  structure_formation:
+    standard: "Structures form from primordial density fluctuations after Big Bang"
+    
+    metamonist: "Structures form from perpetual baryon birth/death cycle"
+    
+    voids_role: "ACTIVE (baryon birth sites), not passive (empty space)"
+    
+    filaments_role: "Accumulation zones (migration from voids)"
+    
+    clusters_role: "Death zones (old ellipticals with axis unlocking)"
+
+# =============================================================================
+# EPISTEMOLOGY (THAT/WHERE/WHAT/HOW)
+# =============================================================================
+epistemology:
+  what_we_know_THAT:
+    - "Reality is eternal (no t=0, no end) - DEDUCTIVE from axiom"
+    - "Big Bang impossible - DEDUCTIVE from axiom"
+    - "Space expansion impossible - DEDUCTIVE from axiom"
+    - "Equilibrium unreachable - DEDUCTIVE from axiom"
+    - "Baryon cycle necessary - DEDUCTIVE from eternal + finite lifetime"
+  
+  what_we_know_WHERE:
+    - "Baryon birth: cosmic voids (cold nucleosynthesis)"
+    - "Baryon death: old elliptical galaxies (axis unlocking)"
+    - "Migration: voids → filaments (dissipation pressure)"
+  
+  what_we_know_WHAT:
+    - "Voids: H without He (He/H < 0.01)"
+    - "Ellipticals: SN Ia without remnants"
+    - "Redshift: NOT from expansion (alternative mechanism)"
+    - "CMB: NOT from Big Bang (alternative origin)"
+  
+  what_we_DONT_know_HOW:
+    - "Exact redshift mechanism (tired light? drag? other?)"
+    - "Exact CMB generation mechanism"
+    - "Quantitative baryon birth/death rates"
+    - "Details of '13.8 Gyr ago' event (if any)"
+
+# =============================================================================
+# STANDARD MODEL CONTRADICTIONS
+# =============================================================================
+standard_model_contradictions:
+  
+  Lambda_CDM:
+    standard_pillars:
+      - "Big Bang singularity at t=0"
+      - "Metric expansion of space"
+      - "Primordial nucleosynthesis (BBN) at t=3 min"
+      - "CMB from recombination at z=1100"
+      - "Dark energy driving acceleration"
+      - "Dark matter explaining structure"
+    
+    metamonist_replacements:
+      - "Eternal reality (no t=0)"
+      - "Static space (redshift from dissipation)"
+      - "Continuous cold nucleosynthesis (now)"
+      - "CMB from eternal cycle"
+      - "No dark energy needed (different expansion interpretation)"
+      - "No dark matter needed (gravitational screening)"
+    
+    direct_contradictions:
+      - "t=0 existence: Standard YES, Metamonism NO (impossible)"
+      - "Space expansion: Standard YES, Metamonism NO (impossible)"
+      - "He/H uniform: Standard YES (0.08), Metamonism NO (<0.01 in voids)"
+      - "Baryogenesis: Standard ONCE (early), Metamonism CONTINUOUS (now)"
+  
+  inflationary_cosmology:
+    standard_claim: "Rapid exponential expansion in first 10^-32 seconds"
+    
+    metamonist_rejection: |
+      Inflation requires:
+      - t ≈ 0 (undefined state = absolute identity)
+      - Uniform expansion (perfect symmetry = absolute identity)
+      - Superluminal expansion (space itself grows faster than c)
+      
+      All violate axiom_ban_of_absolute_identity
+    
+    what_inflation_tried_to_solve:
+      horizon_problem: "Why is universe homogeneous?"
+      flatness_problem: "Why is Ω ≈ 1?"
+      monopole_problem: "Why no magnetic monopoles?"
+    
+    metamonist_alternatives:
+      horizon: "Universe eternal (infinite time for homogenization)"
+      flatness: "Ω ≈ 1 is natural state of dynamic stability"
+      monopoles: "Impossible (magnetic field requires closure, B·dS=0)"
+
+# =============================================================================
+# TESTABLE PREDICTIONS
+# =============================================================================
+testable_predictions:
+  
+  prediction_1_void_hydrogen:
+    observable: "H I in voids WITHOUT He (He/H < 0.01)"
+    
+    expected_if_metamonism: "He/H < 0.01 in void centers"
+    expected_if_Lambda_CDM: "He/H = 0.08 everywhere"
+    
+    test: "SKA void survey + spectroscopy"
+    
+    detailed_article: "ONTODYNAMICS/COSMOLOGY/cold_nucleosynthesis_in_voids.yaml"
+  
+  prediction_2_no_remnant_supernovae:
+    observable: "SN Ia in ellipticals WITHOUT remnants"
+    
+    expected_if_metamonism: ">10% of elliptical SN Ia have no remnant"
+    expected_if_standard: "All SN Ia have remnants"
+    
+    test: "Historical SN Ia site searches with Chandra"
+    
+    detailed_article: "ONTODYNAMICS/ASTROPHYSICS/supernovae_without_remnants.yaml"
+  
+  prediction_3_redshift_environment:
+    observable: "Redshift depends on local dissipation environment"
+    
+    expected_if_metamonism: "z varies with environment (clusters vs voids)"
+    expected_if_Lambda_CDM: "z depends only on distance (Hubble law)"
+    
+    test: "Precision z measurements in different environments"
+  
+  prediction_4_cycle_balance:
+    observable: "Baryon birth rate ≈ death rate"
+    
+    expected_if_metamonism: "R_birth ~ R_death (within factor 2-3)"
+    expected_if_Lambda_CDM: "R_birth = 0 (no nucleosynthesis now)"
+    
+    test: "Measure void H I creation + elliptical SN rate"
+
+# =============================================================================
+# IMPLICATIONS
+# =============================================================================
+implications:
+  if_confirmed:
+    immediate:
+      - "Big Bang model FALSIFIED"
+      - "Lambda-CDM FALSIFIED"
+      - "Inflation theory FALSIFIED"
+      - "Primordial nucleosynthesis FALSIFIED"
+    
+    theoretical:
+      - "Processual ontology validated"
+      - "Axiom_ban_of_absolute_identity confirmed in cosmology"
+      - "Eternal dynamic reality established"
+    
+    practical:
+      - "Cosmology textbooks rewritten"
+      - "New research programs (void surveys, remnant searches)"
+      - "Philosophy of time reconsidered (no beginning)"
+  
+  if_falsified:
+    what_would_falsify:
+      - "Conclusive proof of t=0 singularity"
+      - "Direct measurement of space metric expansion"
+      - "Uniform He/H = 0.08 everywhere (no voids exceptions)"
+      - "All SN Ia have remnants (no exceptions)"
+    
+    metamonism_response:
+      - "Would require re-examination of axiom_ban_of_absolute_identity"
+      - "OR alternative interpretation of observations"
+      - "Core framework (diff/diss/fix) remains valid"
+
+# =============================================================================
+# NOTES
+# =============================================================================
+notes: |
+  This is the FOUNDATIONAL cosmology article for ONTODYNAMICS.
+  
+  All other cosmology predictions (cold nucleosynthesis, redshift mechanisms,
+  CMB origin, etc.) DERIVE FROM or SUPPORT this central framework.
+  
+  Key methodological point:
+  - Big Bang impossibility is DEDUCTIVE (from axioms)
+  - Specific mechanisms (redshift, CMB) are EMPIRICAL questions
+  - Framework predicts THAT phenomena occur, not always HOW
+  
+  This article establishes:
+  1. What is impossible (Big Bang, expansion, equilibrium)
+  2. What is necessary (eternal cycle, baryon birth/death)
+  3. What needs explanation (redshift, CMB, 13.8 Gyr)
+  4. Where to look for evidence (voids, ellipticals)
+  
+  All ONTODYNAMICS/COSMOLOGY/ articles should reference this as foundation.
+
+# =============================================================================
+# VERSION INFO
+# =============================================================================
+version_info:
+  version: "1.0"
+  framework_version: "v1.3-canonical"
+  creation_date: "2026-01-27"
+  status: "canonical"
+  
+  based_on:
+    - "CORE/axioms.yaml#axiom_ban_of_absolute_identity (v1.3)"
+    - "CORE/ontology.yaml principles (v1.3)"
+    - "FORCES Article Section 7.7 (Two-Generation Model)"
+  
+  this_article_referenced_by:
+    - "ONTODYNAMICS/COSMOLOGY/cold_nucleosynthesis_in_voids.yaml"
+    - "ONTODYNAMICS/COSMOLOGY/redshift_alternative_mechanisms.yaml"
+    - "ONTODYNAMICS/COSMOLOGY/CMB_alternative_origin.yaml"
+    - "ONTODYNAMICS/ASTROPHYSICS/supernovae_without_remnants.yaml"
+    - "ONTODYNAMICS/ASTROPHYSICS/gravitational_screening_model.yaml"
