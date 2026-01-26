@@ -1,0 +1,941 @@
+# ONTODYNAMICS/ASTROPHYSICS/gas_and_galaxy_dynamics_cycle.yaml
+# Complete Gas and Galaxy Dynamics Cycle in Large-Scale Structure
+# Version: 1.0
+# Status: Canonical (v1.3 framework)
+
+# =============================================================================
+# METADATA
+# =============================================================================
+metadata:
+  title: "Gas and Galaxy Dynamics Cycle in Large-Scale Structure"
+  subtitle: "From Void Birth to Cluster Death and Back: Complete Observable Cycle"
+  
+  discipline: "Astrophysics"
+  subdiscipline: "Large-Scale Structure / Galaxy Evolution / Cosmic Flows"
+  
+  author: "Myshko, Andrii (Metamonist)"
+  date: "2026-01-27"
+  status: "canonical"
+  version: "1.0"
+  
+  parent_framework: "Metamonism v1.3"
+  foundational_article: "ONTODYNAMICS/COSMOLOGY/eternal_dynamic_reality.yaml"
+  requires_articles:
+    - "ONTODYNAMICS/COSMOLOGY/cold_nucleogenesis_in_voids.yaml"
+  enables_articles:
+    - "ONTODYNAMICS/ASTROPHYSICS/supernovae_without_remnants.yaml"
+  
+  parent_article: "FORCES: Recursion and Dissipation"
+  parent_article_doi: "10.5281/zenodo.18079368"
+  parent_article_sections: ["7.7", "7.7.1", "7.7.2"]
+  
+  position_in_sequence: 3
+  sequence_context: |
+    1. Eternal dynamic reality (foundation)
+    2. Cold nucleogenesis in voids (birth)
+    3. Gas and galaxy cycle (THIS ARTICLE - dynamics)
+    4. Supernovae without remnants (death - now contextually obvious)
+  
+  keywords:
+    - "Gas dynamics cycle"
+    - "Galaxy mass evolution"
+    - "Void-filament-cluster cycle"
+    - "Gravitational migration"
+    - "Star formation quenching"
+    - "Large-scale structure dynamics"
+    - "Baryon lifecycle"
+
+# =============================================================================
+# SEMANTIC RELATIONS
+# =============================================================================
+semantic_relations:
+  # ========== SEQUENCE DEPENDENCIES ==========
+  - subject: "gas_galaxy_cycle"
+    relation: "follows_from"
+    object: "ONTODYNAMICS/COSMOLOGY/cold_nucleogenesis_in_voids.yaml"
+    note: "Fresh H born in voids initiates cycle"
+  
+  - subject: "gas_galaxy_cycle"
+    relation: "explains_context_for"
+    object: "ONTODYNAMICS/ASTROPHYSICS/supernovae_without_remnants.yaml"
+    note: "Makes obvious WHY old red galaxies in cluster cores"
+  
+  # ========== FOUNDATIONAL DEPENDENCY ==========
+  - subject: "gas_galaxy_cycle"
+    relation: "derives_from"
+    object: "ONTODYNAMICS/COSMOLOGY/eternal_dynamic_reality.yaml"
+    note: "Cycle is consequence of eternal baryon birth/death balance"
+  
+  # ========== CORE AXIOM ==========
+  - subject: "gas_galaxy_cycle"
+    relation: "derives_from"
+    object: "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
+    note: "Dissipation pressure + gravity drive cycle"
+  
+  # ========== CORE PRINCIPLES ==========
+  - subject: "gas_galaxy_cycle"
+    relation: "instantiates"
+    object: "CORE/ontology.yaml#principles/principle_ontological_dissipation"
+    note: "Dissipation pressure gradient drives gas expulsion"
+  
+  - subject: "gas_galaxy_cycle"
+    relation: "instantiates"
+    object: "CORE/ontology.yaml#principles/principle_motion_as_necessity"
+    note: "Cycle motion is ontological necessity"
+  
+  - subject: "gas_galaxy_cycle"
+    relation: "instantiates"
+    object: "CORE/ontology.yaml#principles/principle_CMI_structure"
+    note: "Prohibition→Momentum→Force operates at galactic scale"
+  
+  # ========== OPERATORS ==========
+  - subject: "gas_galaxy_cycle"
+    relation: "uses_operator"
+    object: "CORE/operators.yaml#diss"
+    note: "Dissipation pressure expels gas from voids"
+  
+  - subject: "gas_galaxy_cycle"
+    relation: "uses_operator"
+    object: "CORE/operators.yaml#diff"
+    note: "Spatial gradients (pressure, density, mass)"
+  
+  # ========== ONTOLOGY CATEGORY ==========
+  - subject: "gas_galaxy_cycle"
+    relation: "occurs_in"
+    object: "CORE/ontology.yaml#categories/monos"
+    note: "Ontological process in reality"
+  
+  # ========== PREDICTIONS ==========
+  - subject: "gas_galaxy_cycle"
+    relation: "predicts"
+    object: "gas_velocity_field_void_outward"
+  
+  - subject: "gas_galaxy_cycle"
+    relation: "predicts"
+    object: "sSFR_gradient_edge_to_core"
+  
+  - subject: "gas_galaxy_cycle"
+    relation: "predicts"
+    object: "mass_segregation_heavy_inward"
+  
+  - subject: "gas_galaxy_cycle"
+    relation: "predicts"
+    object: "galaxy_migration_light_outward"
+  
+  - subject: "gas_galaxy_cycle"
+    relation: "predicts"
+    object: "quenching_time_correlates_with_infall"
+
+# =============================================================================
+# ABSTRACT
+# =============================================================================
+abstract: |
+  Complete closed cycle of gas and galaxy dynamics in large-scale structure:
+  
+  1. VOIDS: Fresh H generated (cold_nucleogenesis_in_voids.yaml)
+  2. EXPULSION: Dissipation pressure pushes gas → filament edges
+  3. EDGE GALAXIES: Receive gas → active star formation → GAIN MASS
+  4. INFALL: Heavy galaxies → gravitational migration TO cluster centers
+  5. CLUSTER CORES: Minimal gas → star formation QUENCHES → low diff environment
+  6. BARYON DECAY: Old red galaxies → axis unlocking (supernovae_without_remnants.yaml)
+  7. MASS LOSS: Galaxies LOSE mass → become lighter
+  8. OUTWARD MIGRATION: Light galaxies → gravitational drift BACK to void edges
+  9. CYCLE REPEATS
+  
+  This article establishes WHY supernovae without remnants occur specifically
+  in OLD RED GALAXIES IN CLUSTER CORES: they are the natural endpoint of
+  the gas-mass-migration cycle.
+  
+  All phases are OBSERVABLE with current instruments.
+
+# =============================================================================
+# COMPLETE CYCLE DESCRIPTION
+# =============================================================================
+complete_cycle:
+  overview: |
+    Six-phase closed cycle driven by:
+    - Dissipation pressure (voids → filaments)
+    - Gravity (mass segregation in clusters)
+    - Star formation feedback (mass gain/loss)
+    - Baryon decay (mass loss via axis unlocking)
+  
+  # ============ PHASE 1: GAS BIRTH IN VOIDS ============
+  phase_1_nucleogenesis:
+    location: "Cosmic void centers"
+    
+    process: "Cold nucleogenesis (space-time inward dissipation)"
+    
+    from_article: "ONTODYNAMICS/COSMOLOGY/cold_nucleogenesis_in_voids.yaml"
+    
+    output:
+      product: "Fresh atomic hydrogen (H I)"
+      composition: "He/H < 0.01, Z ~ 0 (pristine)"
+      
+    from_FORCES: "Section 7.7.1 - Space-time dissipates inward → generates corpuscles"
+    
+    observable_signature:
+      instrument: "SKA, FAST"
+      what: "H I 21cm emission in void centers"
+      expected: "N(H I) > 10^19 cm^-2"
+  
+  # ============ PHASE 2: GAS EXPULSION FROM VOIDS ============
+  phase_2_gas_expulsion:
+    location: "Void interiors → void edges"
+    
+    driver: "Dissipation pressure gradient ∇P_diss"
+    
+    mechanism:
+      from_FORCES: "Section 7.7.1 - Fresh H migrates outward from void centers"
+      
+      pressure_gradient:
+        source: "Corpuscle density gradient (low in voids, high in filaments)"
+        formula: "∇P_diss ∝ ∇(corpuscle_density)"
+        direction: "FROM voids (low density) TO filaments (high density)"
+        
+      NOT_gravity_alone:
+        reason: "Voids are underdense (gravity would pull inward, not push outward)"
+        additional_force: "Dissipation pressure acts OUTWARD"
+    
+    observable_signatures:
+      velocity_field:
+        instrument: "H I 21cm spectroscopy (Doppler)"
+        observable: "Radial velocity v_r(r)"
+        expected_pattern: "v_r > 0 (outward from void center), increasing with r"
+        
+      composition_gradient:
+        instrument: "Optical/UV spectroscopy"
+        observable: "He/H(r) vs radius"
+        expected_pattern: "He/H increases from <0.01 (center) to 0.08 (edge)"
+        interpretation: "Fresh gas (low He/H) mixes with filament gas (normal He/H)"
+        
+      super_keplerian_velocities:
+        test: "v_r > √(GM/r) (faster than gravity alone)"
+        implication: "Additional force (dissipation pressure) present"
+    
+    timescale: "~100 Myr - 1 Gyr (void crossing time)"
+    
+    endpoint: "Gas arrives at FILAMENT EDGES (void-filament boundary)"
+  
+  # ============ PHASE 3: GAS ACCRETION BY EDGE GALAXIES ============
+  phase_3_edge_galaxy_accretion:
+    location: "Filament edges (adjacent to voids)"
+    
+    process: "Galaxies at filament edges RECEIVE fresh gas from voids"
+    
+    mechanism:
+      gas_arrival: "Continuous flux from void interiors"
+      
+      galaxy_accretion:
+        driver: "Galaxy gravitational potential"
+        rate: "dM_gas/dt ∝ gas_flux_from_void"
+        
+      star_formation_ignition:
+        trigger: "Gas density exceeds threshold (Σ_gas > 10 M_solar/pc²)"
+        result: "Active star formation (sSFR > 10^-10 /yr)"
+    
+    observable_signatures:
+      high_sSFR:
+        instrument: "Optical photometry (u-g color, Hα emission)"
+        observable: "sSFR (/yr)"
+        expected: "Edge galaxies: sSFR > 10^-10 /yr (blue, star-forming)"
+        comparison: "Core galaxies: sSFR < 10^-12 /yr (red, quenched)"
+        
+      gas_content:
+        instrument: "H I 21cm, CO mm observations"
+        observable: "M_gas (total gas mass)"
+        expected: "Edge galaxies: M_gas/M_star > 0.1 (gas-rich)"
+        comparison: "Core galaxies: M_gas/M_star < 0.01 (gas-poor)"
+        
+      blue_colors:
+        instrument: "Optical imaging (SDSS, GAMA)"
+        observable: "u-r color"
+        expected: "Edge: u-r < 2.0 (blue)"
+        comparison: "Core: u-r > 2.5 (red)"
+        
+      spatial_distribution:
+        test: "Galaxy sSFR vs distance from nearest void"
+        expected_correlation: "Closer to void → higher sSFR (Pearson r > 0.5)"
+    
+    mass_evolution:
+      process: "Star formation converts gas → stars"
+      
+      mass_gain:
+        rate: "dM_star/dt = ε × dM_gas/dt (ε ~ 0.01-0.1 efficiency)"
+        timescale: "~1-3 Gyr (active SF phase)"
+        total_gain: "ΔM_star ~ 10^9 - 10^10 M_solar"
+        
+      consequence: "Galaxies become HEAVIER"
+    
+    endpoint: "Heavy, star-forming galaxies at filament edges"
+  
+  # ============ PHASE 4: GRAVITATIONAL INFALL TO CLUSTER CENTERS ============
+  phase_4_infall_to_cores:
+    location: "Filament edges → cluster cores"
+    
+    driver: "Gravitational potential of cluster"
+    
+    mechanism:
+      mass_segregation:
+        principle: "Heavier objects sink to potential minimum"
+        
+        from_virial_theorem: |
+          In virialized system:
+          <KE> = -1/2 <PE>
+          
+          Heavier galaxies (larger M) have:
+          - Larger gravitational binding (deeper in potential)
+          - Lower velocities (equipartition: 1/2 m v² = const)
+          - Sink toward center via dynamical friction
+        
+      dynamical_friction:
+        formula: "dv/dt = -4π G² M_gal ρ_cluster ln(Λ) / v²"
+        
+        effect: "Massive galaxies lose orbital energy → spiral inward"
+        
+        timescale: "t_friction ~ v³ / (G² M_gal ρ ln(Λ))"
+        typical: "~2-5 Gyr for M_gal ~ 10^11 M_solar"
+    
+    observable_signatures:
+      mass_radius_anticorrelation:
+        test: "Galaxy mass vs cluster-centric radius"
+        
+        expected_if_metamonism:
+          inner: "r < 0.5 Mpc → <M_gal> > 10^11 M_solar (heavy)"
+          outer: "r > 1.0 Mpc → <M_gal> < 10^10 M_solar (light)"
+          correlation: "Spearman ρ < -0.6 (strong anticorrelation)"
+        
+        expected_if_no_cycle: "Weak or no correlation"
+        
+      radial_velocities:
+        instrument: "Optical spectroscopy (redshift measurements)"
+        observable: "v_radial for galaxies at different radii"
+        
+        expected_pattern:
+          outer_galaxies: "v_r < 0 (infall toward center)"
+          inner_galaxies: "v_r ~ 0 (virialized)"
+        
+      velocity_dispersion:
+        observable: "σ_v vs radius"
+        expected: "σ_v higher at center (heavy galaxies, virialized)"
+        
+      phase_space_diagram:
+        axes: "Radius vs velocity"
+        expected_structure: "Caustics from recent infallers, relaxed core"
+    
+    gas_stripping:
+      process: "Ram pressure + tidal stripping"
+      
+      ram_pressure:
+        formula: "P_ram = ρ_ICM v²"
+        effect: "Strips gas from infalling galaxies"
+        
+      consequence: "Gas content DECREASES during infall"
+      
+      observable: |
+        Jellyfish galaxies (stripped tails)
+        Gas content decreases with decreasing radius
+    
+    endpoint: "Heavy, gas-poor galaxies approaching cluster cores"
+  
+  # ============ PHASE 5: STAR FORMATION QUENCHING IN CORES ============
+  phase_5_quenching_in_cores:
+    location: "Cluster cores (r < 0.5 Mpc)"
+    
+    process: "Star formation STOPS (quenching)"
+    
+    causes:
+      gas_depletion:
+        reason: "Ram pressure + tidal stripping during infall"
+        result: "M_gas → 0 (no fuel for SF)"
+        
+      no_fresh_gas:
+        reason: "Core galaxies far from voids (no gas supply)"
+        distance: "Typical core galaxy >10 Mpc from nearest void"
+        consequence: "No replenishment"
+        
+      low_diff_environment:
+        from_FORCES: "Section 5.1 - Temperature = measure of excess diff enclosed within fix"
+        
+        in_cluster_cores:
+          no_active_SF: "No new diff generation (no young stars)"
+          old_populations: "Only old red stars (low energy)"
+          minimal_gas: "No inflows (diff-poor)"
+          
+        result: "LOW diff environment"
+        
+        from_temperature_definition: |
+          Temperature T ∝ excess diff
+          Low diff → Low T
+          Cluster cores are "cold" in ontological sense (low active diff)
+    
+    observable_signatures:
+      sSFR_gradient:
+        test: "sSFR vs cluster-centric radius"
+        
+        expected_pattern:
+          core: "r < 0.5 Mpc → sSFR < 10^-12 /yr (quenched)"
+          intermediate: "0.5 < r < 1.5 Mpc → 10^-12 < sSFR < 10^-10 /yr (transition)"
+          outskirts: "r > 1.5 Mpc → sSFR > 10^-10 /yr (active SF)"
+          
+        correlation: "Pearson r > 0.7 (strong positive: radius ↑, sSFR ↑)"
+        
+      color_morphology_density_relation:
+        observation: "Red ellipticals concentrated in cores"
+        
+        quantitative:
+          core_fraction_elliptical: ">60% E/S0 (r < 0.5 Mpc)"
+          outskirts_fraction_spiral: ">60% Sa-Sd (r > 1.5 Mpc)"
+          
+      quenching_timescale:
+        measurement: "Time since last SF episode"
+        method: "Stellar population synthesis (D4000, H-delta indices)"
+        
+        expected: "Core galaxies quenched 2-5 Gyr ago"
+        correlation: "Quenching time correlates with infall time"
+        
+      gas_fraction:
+        test: "M_gas / M_star vs radius"
+        
+        expected:
+          core: "f_gas < 0.01 (gas-poor)"
+          outskirts: "f_gas > 0.1 (gas-rich)"
+    
+    endpoint: "Old red elliptical galaxies in cluster cores (LOW diff)"
+    
+    critical_consequence: |
+      These are the IDEAL CONDITIONS for baryon decay (axis unlocking):
+      - Isolated white dwarfs (no external diff influx)
+      - Low diff environment (no interference with dissipation threshold)
+      - Sufficient time (galaxies have been quenched for Gyr)
+      
+      → supernovae_without_remnants.yaml now becomes SELF-EVIDENT
+  
+  # ============ PHASE 6: BARYON DECAY AND MASS LOSS ============
+  phase_6_baryon_decay:
+    location: "Cluster cores (old elliptical galaxies)"
+    
+    process: "Axis unlocking (baryon → photon transformation)"
+    
+    from_article: "ONTODYNAMICS/ASTROPHYSICS/supernovae_without_remnants.yaml"
+    
+    mechanism:
+      condition: "Isolated WD in low-diff environment reaches dissipation threshold"
+      
+      event: "One of three baryon recursion axes UNLOCKS"
+      
+      transformation: "3D closure (baryon, m>0) → 2D+1D (photon, m=0)"
+      
+      energy_release: "E = m_baryon × c² (100% mass-energy conversion)"
+      
+      manifestation: "Supernova WITHOUT remnant"
+    
+    observable_signatures:
+      SN_Ia_without_remnants:
+        observable: "Type Ia supernovae with NO X-ray remnant"
+        
+        expected_fraction:
+          cluster_cores: "30-50% of SN Ia (high)"
+          cluster_outskirts: "10-20% of SN Ia (medium)"
+          field_galaxies: "<10% of SN Ia (low)"
+          
+        correlation: "f_no_remnant inversely correlates with sSFR"
+        
+      fast_decline:
+        observable: "Δm₁₅ > 2.0 mag (faster than normal SN Ia)"
+        expected: "More common in core ellipticals"
+        
+      anomalous_spectra:
+        observable: "Weak metal lines (minimal nucleosynthesis)"
+        expected: "In dissipative SN Ia subset"
+    
+    mass_loss:
+      rate: "dM/dt = -R_SN × <M_per_SN>"
+      
+      parameters:
+        R_SN: "SN Ia rate ~ 3×10^-5 per galaxy per Gyr"
+        f_no_remnant: "~50% in cores"
+        M_per_SN: "~1.4 M_solar"
+        
+      total_rate: "dM/dt ~ -2×10^-5 M_solar/Gyr per galaxy"
+      
+      over_time: "Over 5 Gyr: ΔM ~ -10^5 M_solar (modest but measurable)"
+      
+      plus_stellar_evolution: "Additional mass loss from stellar winds, planetary nebulae"
+      
+      combined_effect: "Galaxies become LIGHTER"
+    
+    endpoint: "Light, gas-poor, red ellipticals in cores"
+  
+  # ============ PHASE 7: OUTWARD GRAVITATIONAL MIGRATION ============
+  phase_7_outward_migration:
+    location: "Cluster cores → outskirts → void edges"
+    
+    driver: "Gravitational buoyancy (mass segregation reverses)"
+    
+    mechanism:
+      mass_loss_consequence:
+        initial: "Galaxy was heavy (M_initial) → sank to core"
+        after_decay: "Galaxy now light (M_final < M_initial) → rises from core"
+        
+      dynamical_friction_reversal:
+        heavy_galaxies: "Friction dominates → sink"
+        light_galaxies: "Buoyancy dominates → rise"
+        
+        timescale: "~3-5 Gyr for M_gal ~ 10^9 M_solar"
+        
+      orbital_evolution:
+        process: "Light galaxies gain orbital energy (from heavy galaxy interactions)"
+        result: "Orbits expand → galaxies migrate outward"
+    
+    observable_signatures:
+      mass_radius_correlation_reversed:
+        test: "Among post-quench galaxies: lightest at largest radii?"
+        
+        expected_pattern:
+          core_ellipticals: "Still heavy (recently quenched)"
+          outer_ellipticals: "Lighter (long quenched, mass lost)"
+          
+        correlation: "For quenched galaxies only: M vs r correlation turns positive at large r"
+        
+      radial_velocities_outward:
+        observable: "v_r for low-mass ellipticals"
+        
+        expected: "v_r > 0 (moving away from core)"
+        
+        contrast_with_infall: "Heavy spirals: v_r < 0 (infalling)"
+        
+      trajectories_toward_voids:
+        test: "Do low-mass ellipticals preferentially move toward nearest void?"
+        
+        method: "3D velocity vectors + void proximity"
+        
+        expected: "Positive correlation (toward voids)"
+        
+      mixing_time:
+        estimate: "~5-10 Gyr for galaxy to migrate from core back to void edge"
+        
+        implies: "Galaxies can complete FULL CYCLE in <10 Gyr"
+    
+    endpoint: "Light ellipticals at void edges"
+    
+    cycle_closure: |
+      Galaxy arrives back at void edge →
+      Encounters fresh gas flux from void →
+      Can accrete gas → rejuvenate SF? →
+      OR remains quenched (gas accretion inefficient for ellipticals) →
+      
+      Either way: CYCLE COMPLETES
+      
+      Heavy spirals continue falling in (Phase 4)
+      Light ellipticals continue drifting out (Phase 7)
+      STEADY STATE (but never equilibrium - diff > fix always)
+
+# =============================================================================
+# KEY OBSERVATIONAL CORRELATIONS
+# =============================================================================
+key_correlations:
+  correlation_1_sSFR_vs_void_distance:
+    x_axis: "Distance from nearest void (Mpc)"
+    y_axis: "Galaxy sSFR (/yr)"
+    
+    expected_if_cycle_correct:
+      trend: "Inverse correlation (closer to void → higher sSFR)"
+      strength: "Pearson r < -0.5"
+      mechanism: "Gas flux from voids fuels SF"
+      
+    expected_if_standard:
+      trend: "Weak or no correlation"
+      strength: "|r| < 0.2"
+      
+    measurement:
+      sample: "~10^4 galaxies with sSFR + void distance (SDSS+void catalog)"
+      method: "Cross-match, compute correlation"
+      
+    falsification:
+      cycle_falsified_if: "r > -0.2 (no correlation)"
+      cycle_supported_if: "r < -0.5 (strong inverse correlation)"
+  
+  correlation_2_mass_vs_radius_in_clusters:
+    x_axis: "Cluster-centric radius (Mpc)"
+    y_axis: "Galaxy stellar mass (M_solar)"
+    
+    expected_if_cycle_correct:
+      inner: "r < 0.5 Mpc → <log M> > 11 (heavy)"
+      outer: "r > 1.5 Mpc → <log M> < 10.5 (light)"
+      trend: "Spearman ρ < -0.6 (strong anticorrelation)"
+      mechanism: "Mass segregation (heavy sink, light rise)"
+      
+    expected_if_standard:
+      trend: "Moderate anticorrelation (ρ ~ -0.3, from dynamical friction only)"
+      
+    measurement:
+      sample: "~100 clusters with member galaxy catalogs"
+      method: "Bin by radius, compute <M> and correlation"
+      
+    falsification:
+      cycle_challenged_if: "ρ > -0.3 (weak anticorrelation)"
+      cycle_supported_if: "ρ < -0.6 (strong anticorrelation)"
+  
+  correlation_3_f_no_remnant_vs_sSFR:
+    x_axis: "Host galaxy sSFR (/yr)"
+    y_axis: "Fraction of SN Ia without remnants"
+    
+    expected_if_cycle_correct:
+      high_sSFR: ">10^-10 /yr → f < 10% (active SF, high diff)"
+      medium_sSFR: "~10^-11 /yr → f ~ 30-50% (transition)"
+      low_sSFR: "<10^-12 /yr → f > 50% (quenched, low diff)"
+      
+      formula: "f ≈ 1 / (1 + sSFR/10^-11)"
+      
+    expected_if_standard:
+      trend: "No correlation (f independent of sSFR)"
+      
+    measurement:
+      sample: "~50-100 SN Ia with remnant search + host sSFR"
+      method: "Bin by sSFR, compute f in each bin"
+      
+    falsification:
+      cycle_falsified_if: "No trend (flat f vs sSFR)"
+      cycle_supported_if: "Strong inverse trend (p < 0.01)"
+  
+  correlation_4_quenching_time_vs_infall_time:
+    x_axis: "Time since infall (from phase space)"
+    y_axis: "Time since quenching (from stellar populations)"
+    
+    expected_if_cycle_correct:
+      relation: "t_quench ≈ t_infall + 0.5 Gyr (quenching follows infall)"
+      correlation: "r > 0.7 (strong positive)"
+      
+    expected_if_standard:
+      relation: "t_quench << t_infall (pre-processing before infall)"
+      correlation: "r < 0.3 (weak)"
+      
+    measurement:
+      sample: "~500 cluster galaxies with both measurements"
+      method: "Spectroscopy (D4000, H-delta) + dynamical modeling"
+      
+    falsification:
+      cycle_challenged_if: "r < 0.3 (weak correlation)"
+      cycle_supported_if: "r > 0.7 + t_quench ≈ t_infall"
+  
+  correlation_5_He_H_gradient_along_flow:
+    x_axis: "Position along flow (void → filament → cluster)"
+    y_axis: "Gas He/H ratio"
+    
+    expected_if_cycle_correct:
+      void_center: "He/H < 0.01 (fresh)"
+      void_edge: "He/H ~ 0.02-0.05 (mixing)"
+      filament: "He/H → 0.08 (normal)"
+      cluster: "He/H = 0.08 (fully mixed)"
+      
+      gradient: "Monotonic increase along flow"
+      
+    expected_if_standard:
+      everywhere: "He/H = 0.08 ± 0.01 (uniform BBN)"
+      
+    measurement:
+      method: "QSO absorption spectroscopy at multiple positions"
+      sample: "10-20 sightlines along void-filament-cluster axis"
+      
+    falsification:
+      cycle_falsified_if: "He/H uniform (no gradient)"
+      cycle_supported_if: "Clear gradient (He/H increases along flow)"
+
+# =============================================================================
+# MULTI-WAVELENGTH OBSERVATIONAL PROGRAM
+# =============================================================================
+observational_program:
+  title: "Complete Cycle Verification Program"
+  
+  duration: "5 years"
+  
+  budget_estimate: "~50 nights (various telescopes) + archival data analysis"
+  
+  # ========== PROGRAM 1: GAS DYNAMICS (Voids → Filaments) ==========
+  program_1_gas_dynamics:
+    title: "Gas Velocity Fields and Composition Gradients"
+    
+    phase_1a_HI_velocity_mapping:
+      instrument: "SKA-MID or ASKAP"
+      targets: "5-10 voids with adjacent filaments"
+      mode: "H I 21cm emission + spectroscopy"
+      
+      deliverable: "Velocity field maps v_r(x,y,z)"
+      test: "v_r > 0 from void centers outward?"
+      
+      timeline: "2 years (distributed observations)"
+      
+    phase_1b_composition_gradient:
+      instrument: "Keck/VLT + UV spectrograph"
+      targets: "QSOs behind void-filament structures"
+      mode: "Absorption spectroscopy (He, metals)"
+      
+      deliverable: "He/H(position) along flow paths"
+      test: "He/H increases from void to filament?"
+      
+      timeline: "1 year (20-30 sightlines)"
+      
+    expected_outcome: "Correlation_5 confirmed (He/H gradient)"
+  
+  # ========== PROGRAM 2: GALAXY MASS-RADIUS IN CLUSTERS ==========
+  program_2_mass_radius:
+    title: "Mass Segregation and Radial Gradients"
+    
+    sample: "50-100 rich clusters (z < 0.1)"
+    
+    data_needed:
+      galaxy_masses: "From stellar population fits (SDSS spectra)"
+      cluster_centric_radii: "Projected distances from BCG"
+      velocities: "Redshifts (radial velocities)"
+      
+    analysis:
+      binning: "Radial bins (0-0.5, 0.5-1.0, 1.0-2.0 Mpc)"
+      measurement: "<log M> in each bin"
+      correlation: "Spearman ρ(M, r)"
+      
+    deliverable: "M vs r plot for 50+ clusters"
+    test: "ρ < -0.6 (strong anticorrelation)?"
+    
+    timeline: "6 months (archival data analysis)"
+    
+    expected_outcome: "Correlation_2 confirmed (heavy inward, light outward)"
+  
+  # ========== PROGRAM 3: sSFR GRADIENTS ==========
+  program_3_sSFR_gradients:
+    title: "Star Formation vs Environment"
+    
+    sample: "~10^4 galaxies in/around clusters + voids"
+    
+    data_sources:
+      photometry: "SDSS, GAMA (colors, SFR indicators)"
+      spectroscopy: "Emission lines (Hα, [O II])"
+      environment: "Void catalogs, cluster membership"
+      
+    measurements:
+      sSFR: "From SFR / M_star"
+      void_distance: "Distance to nearest void center"
+      cluster_radius: "If in cluster, r from center"
+      
+    tests:
+      test_1: "sSFR vs void distance (Correlation_1)"
+      test_2: "sSFR vs cluster radius (radial gradient)"
+      
+    deliverable: "sSFR(environment) relationships"
+    
+    timeline: "6 months (data already exists, need analysis)"
+    
+    expected_outcome: "Correlation_1 confirmed (sSFR higher near voids)"
+  
+  # ========== PROGRAM 4: SN Ia REMNANT SEARCH ==========
+  program_4_remnant_search:
+    title: "Historical SN Ia Sites in Clusters"
+    
+    from_article: "supernovae_without_remnants.yaml (detailed protocol)"
+    
+    targets: "50 historical SN Ia (1900-2000) in ellipticals"
+    
+    observations:
+      instrument: "Chandra X-ray Observatory"
+      exposure: "50-100 ks per field"
+      goal: "Detect or rule out remnants"
+      
+    analysis:
+      detection_rate: "f_no_remnant vs host sSFR"
+      
+    deliverable: "Remnant catalog + f(sSFR)"
+    test: "Correlation_3 confirmed?"
+    
+    timeline: "2-3 years (Chandra time allocation)"
+    
+    expected_outcome: "30-50% of core elliptical SN Ia lack remnants"
+  
+  # ========== PROGRAM 5: QUENCHING TIMESCALES ==========
+  program_5_quenching_times:
+    title: "Quenching Time vs Infall Time"
+    
+    sample: "500 cluster galaxies with spectroscopy"
+    
+    measurements:
+      t_quench: "From D4000, H-delta indices (stellar populations)"
+      t_infall: "From phase space diagrams (dynamical modeling)"
+      
+    analysis:
+      correlation: "t_quench vs t_infall"
+      test: "r > 0.7 and t_quench ≈ t_infall?"
+      
+    deliverable: "t_quench(t_infall) relationship"
+    
+    timeline: "1 year (spectroscopic analysis)"
+    
+    expected_outcome: "Correlation_4 confirmed (quenching follows infall)"
+  
+  combined_timeline:
+    year_1: "Programs 2, 3, 5 (archival analysis)"
+    year_2_3: "Program 1 (SKA H I + Keck/VLT spectroscopy)"
+    year_3_5: "Program 4 (Chandra remnant search)"
+    
+    publications:
+      paper_1: "Gas dynamics (Programs 1, 3)"
+      paper_2: "Mass segregation (Program 2)"
+      paper_3: "Quenching (Program 5)"
+      paper_4: "Remnants (Program 4)"
+      paper_5: "Synthesis (all programs)"
+
+# =============================================================================
+# FALSIFICATION CRITERIA
+# =============================================================================
+falsification_criteria:
+  cycle_FALSIFIED_if:
+    condition_1: "No sSFR-void distance correlation (|r| < 0.2)"
+    condition_2: "Weak mass-radius anticorrelation (ρ > -0.3)"
+    condition_3: "No sSFR-remnant correlation (flat f vs sSFR)"
+    condition_4: "No He/H gradient (uniform everywhere)"
+    condition_5: "No quenching-infall correlation (r < 0.3)"
+    
+    combined: "If ≥3 conditions met → cycle model FALSIFIED"
+    
+    metamonism_response:
+      - "Core axioms remain valid"
+      - "Eternal reality still required"
+      - "Alternative dynamics needed (but birth/death cycle still necessary)"
+  
+  cycle_SUPPORTED_if:
+    condition_1: "Strong sSFR-void correlation (r < -0.5)"
+    condition_2: "Strong mass-radius anticorrelation (ρ < -0.6)"
+    condition_3: "Clear sSFR-remnant correlation (inverse, p < 0.01)"
+    condition_4: "He/H gradient present (void<filament)"
+    condition_5: "Strong quenching-infall correlation (r > 0.7)"
+    
+    combined: "If ≥3 conditions met → cycle model SUPPORTED"
+    
+  cycle_CONFIRMED_if:
+    requirement: "ALL 5 conditions met"
+    
+    implications:
+      - "Complete baryon lifecycle validated"
+      - "Dissipation pressure + gravity drive large-scale dynamics"
+      - "Eternal cycle confirmed observationally"
+      - "Standard paradigm (passive structure evolution) falsified"
+
+# =============================================================================
+# WHY THIS MAKES SUPERNOVAE ARTICLE OBVIOUS
+# =============================================================================
+contextual_necessity:
+  before_this_article:
+    question: "Why search for no-remnant SN in OLD RED ELLIPTICALS specifically?"
+    
+    answer_without_context: "Seems arbitrary (why not spirals? why not young ellipticals?)"
+    
+  after_this_article:
+    answer_with_context: |
+      Now it's SELF-EVIDENT:
+      
+      1. Voids generate fresh H (nucleogenesis)
+      2. Gas expelled to filaments (dissipation pressure)
+      3. Edge galaxies accrete gas, form stars, GAIN MASS
+      4. Heavy galaxies FALL TO CLUSTER CORES (gravity)
+      5. In cores: gas depleted, SF quenches, LOW DIFF ENVIRONMENT
+      6. Old red ellipticals in cores = IDEAL CONDITIONS for axis unlocking:
+         - Isolated WDs (no external diff)
+         - Low diff environment (no interference)
+         - Sufficient time (quenched for Gyr)
+      7. Therefore: THESE galaxies specifically show baryon decay
+      
+      → Searching in old red core ellipticals is not arbitrary but
+        NECESSARY consequence of the cycle dynamics.
+  
+  pedagogical_value:
+    sequence_matters: |
+      Article order:
+      1. Eternal reality (foundation)
+      2. Nucleogenesis (birth)
+      3. Gas/galaxy cycle (THIS - dynamics)
+      4. Supernovae without remnants (death - now obvious)
+      
+      This order makes each article's claims INEVITABLE given the previous.
+
+# =============================================================================
+# IMPLICATIONS
+# =============================================================================
+implications:
+  if_confirmed:
+    large_scale_structure:
+      - "Voids are ACTIVE participants (not passive empties)"
+      - "Dissipation pressure shapes structure (not just gravity)"
+      - "Gas flows continuously (not static since BBN)"
+      
+    galaxy_evolution:
+      - "Mass evolution bidirectional (gain at edges, lose at cores)"
+      - "Quenching driven by environment + dynamics (not just AGN)"
+      - "Galaxies migrate radially (not fixed orbits)"
+      
+    cosmology:
+      - "Baryon cycle closed (birth ↔ death balanced)"
+      - "Eternal dynamic reality validated"
+      - "Standard paradigm incomplete (missing dissipation pressure)"
+      
+    astrophysics:
+      - "Cluster cores are baryon death zones (not passive)"
+      - "Old ellipticals dynamic objects (not 'red and dead')"
+      - "Fresh gas continuously generated (changes chemical evolution)"
+  
+  if_falsified:
+    partial_falsification:
+      scenario: "Some correlations fail, others hold"
+      interpretation: "Cycle exists but details wrong"
+      
+    complete_falsification:
+      scenario: "All correlations absent"
+      interpretation: "Alternative dynamics operate"
+      
+    metamonism_status:
+      - "Core axioms unaffected"
+      - "Eternal cycle necessity remains"
+      - "Specific spatial mechanisms revised"
+
+# =============================================================================
+# NOTES
+# =============================================================================
+notes: |
+  This article establishes THE CONTEXT that makes supernovae_without_remnants.yaml
+  predictions SELF-EVIDENT rather than arbitrary.
+  
+  Key insight: Baryon lifecycle naturally segregates into spatial zones:
+  - Birth: Voids (cold nucleogenesis)
+  - Youth: Filament edges (gas accretion, SF)
+  - Maturity: Clusters (infall, quenching)
+  - Death: Cluster cores (axis unlocking)
+  
+  Each phase has clear observational signatures.
+  
+  The CYCLE is closed:
+  - Heavy galaxies fall inward (gain mass → sink)
+  - Light galaxies drift outward (lose mass → rise)
+  - Gas continuously flows void → filament
+  - Steady state (never equilibrium, diff > fix)
+  
+  All testable with current facilities.
+
+# =============================================================================
+# VERSION INFO
+# =============================================================================
+version_info:
+  version: "1.0"
+  framework_version: "v1.3-canonical"
+  creation_date: "2026-01-27"
+  status: "canonical"
+  
+  based_on:
+    - "ONTODYNAMICS/COSMOLOGY/eternal_dynamic_reality.yaml (v1.0)"
+    - "ONTODYNAMICS/COSMOLOGY/cold_nucleogenesis_in_voids.yaml (v1.0)"
+    - "CORE/axioms.yaml#axiom_ban_of_absolute_identity (v1.3)"
+    - "CORE/ontology.yaml principles (v1.3)"
+    - "FORCES Article Sections 7.7, 7.7.1, 7.7.2 (v1.0)"
+  
+  enables:
+    - "supernovae_without_remnants.yaml (now contextually obvious)"
+    - "nucleosynthesis_in_filaments.yaml (H → He processing)"
+  
+  position_in_sequence:
+    before: "cold_nucleogenesis_in_voids.yaml"
+    after: "supernovae_without_remnants.yaml, nucleosynthesis_in_filaments.yaml"
