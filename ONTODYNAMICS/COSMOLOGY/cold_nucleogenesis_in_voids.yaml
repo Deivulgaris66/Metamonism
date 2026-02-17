@@ -9,22 +9,31 @@
 metadata:
   title: "Cold Nucleogenesis in Cosmic Voids"
   subtitle: "Continuous Baryon Birth via Space-Time Inward Dissipation"
-  
+
   discipline: "Cosmology"
   subdiscipline: "Observational Cosmology / Void Science"
-  
+
   author: "Myshko, Andrii (Metamonist)"
   date: "2026-01-27"
   status: "canonical"
   version: "1.0"
-  
+
   parent_framework: "Metamonism v1.3"
   foundational_article: "ONTODYNAMICS/COSMOLOGY/eternal_dynamic_reality.yaml"
   parent_article: "FORCES: Recursion and Dissipation"
   parent_article_doi: "10.5281/zenodo.18079368"
   parent_article_sections: ["7.7", "7.7.1", "7.7.3", "7.7.4"]
-  
+
+  published_paper:
+    title: "Preliminaries of Cold Nucleogenesis: A Wayward Metamonism Processual Model of Continuous Matter Birth"
+    author: "Myshko, Andrey"
+    year: "2026"
+    venue: "Zenodo"
+    doi: "10.5281/zenodo.18667327"
+    url: "https://doi.org/10.5281/zenodo.18667327"
+
   keywords:
+    - "Wayward Metamonism"
     - "Cold nucleogenesis"
     - "Cosmic voids"
     - "Hydrogen without helium"
@@ -32,6 +41,8 @@ metadata:
     - "Inward dissipation"
     - "Space-time corpuscle generation"
     - "First generation dissipation"
+    - "diff/diss transition"
+    - "Metric-to-quantitative dissipation"
 
 # =============================================================================
 # SEMANTIC RELATIONS
@@ -42,90 +53,102 @@ semantic_relations:
     relation: "derives_from"
     object: "ONTODYNAMICS/COSMOLOGY/eternal_dynamic_reality.yaml#baryon_birth_mechanism"
     note: "Required by eternal baryon cycle"
-  
+
   # ========== CORE AXIOM ==========
   - subject: "cold_nucleogenesis"
     relation: "derives_from"
     object: "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
     note: "Space-time must dissipate inward to avoid auto-identity"
-  
+
   # ========== CORE PRINCIPLES ==========
   - subject: "cold_nucleogenesis"
     relation: "instantiates"
     object: "CORE/ontology.yaml#principles/principle_ontological_dissipation"
     note: "Inward dissipation is ontological necessity"
-  
+
   - subject: "cold_nucleogenesis"
     relation: "instantiates"
     object: "CORE/ontology.yaml#principles/principle_CMI_structure"
     note: "Prohibition→Momentum→Force chain generates protons"
-  
+
   - subject: "cold_nucleogenesis"
     relation: "instantiates"
     object: "CORE/ontology.yaml#principles/principle_motion_as_necessity"
     note: "Nucleogenesis is motion (baryon creation), not stasis"
-  
+
   # ========== OPERATORS ==========
   - subject: "cold_nucleogenesis"
     relation: "instantiates"
     object: "CORE/operators.yaml#diss"
-    note: "Inward dissipation IS nucleogenesis process"
-  
+    note: "Inward dissipation (diss) is the nucleogenesis process"
+
   - subject: "cold_nucleogenesis"
     relation: "uses_operator"
     object: "CORE/operators.yaml#diff"
-    note: "Differentiation generates distinctions (particles)"
-  
+    note: "Differentiation (diff) generates distinctions (particles/corpuscles)"
+
+  # ========== DIFF/DISS REGIME TRANSITION ==========
+  - subject: "cold_nucleogenesis"
+    relation: "uses_framework_transition"
+    object: "diff/diss_metric_to_quantitative"
+    note: "Nucleogenesis treated as quantitative flow discharge rather than purely metric-local event"
+
   # ========== ONTOLOGY CATEGORY ==========
   - subject: "cold_nucleogenesis"
     relation: "occurs_in"
     object: "CORE/ontology.yaml#categories/monos"
     note: "Ontological process in reality, not epistemic model"
-  
+
   # ========== PARENT ARTICLE MODEL ==========
   - subject: "cold_nucleogenesis"
     relation: "component_of"
     object: "ARTICLES/M/03_Forces/forces_recursion_dissipation.yaml#two_generation_model"
     note: "First generation (space-time) dissipation direction"
-  
+
   - subject: "cold_nucleogenesis"
     relation: "is_birth_phase_of"
     object: "eternal_baryon_cycle"
     note: "Birth counterpart to baryon death (axis unlocking)"
-  
+
+  # ========== PUBLICATION LINK ==========
+  - subject: "ONTODYNAMICS/COSMOLOGY/cold_nucleogenesis_in_voids.yaml"
+    relation: "formalized_in"
+    object: "10.5281/zenodo.18667327"
+    note: "Peer-archived paper extending this ontodynamic specification"
+
   # ========== PREDICTIONS ==========
   - subject: "cold_nucleogenesis"
     relation: "predicts"
     object: "atomic_hydrogen_without_helium_in_voids"
     note: "He/H < 0.01 (vs BBN 0.08)"
-  
+
   - subject: "cold_nucleogenesis"
     relation: "predicts"
     object: "zero_metallicity_gas"
     note: "Z < 10^-3 Z_solar (pristine)"
-  
+
   - subject: "cold_nucleogenesis"
     relation: "predicts"
     object: "radial_composition_gradient"
     note: "He/H increases from void center outward"
-  
+
   - subject: "cold_nucleogenesis"
     relation: "predicts"
     object: "outward_gas_flow"
     note: "v_r > 0 from void centers to filaments"
-  
+
   # ========== CONTRADICTIONS ==========
   - subject: "cold_nucleogenesis"
     relation: "contradicts"
     object: "big_bang_nucleosynthesis_BBN"
     note: "BBN: He/H=0.08 everywhere; Metamonism: <0.01 in voids"
-  
+
   # ========== CYCLE BALANCE ==========
   - subject: "cold_nucleogenesis"
     relation: "balances"
     object: "ONTODYNAMICS/ASTROPHYSICS/supernovae_without_remnants.yaml"
     note: "Birth rate balances death rate"
-  
+
   # ========== RELATED PREDICTIONS ==========
   - subject: "cold_nucleogenesis"
     relation: "supports"
@@ -138,21 +161,24 @@ semantic_relations:
 abstract: |
   Cold nucleogenesis is ONGOING baryon generation in cosmic voids via
   space-time inward dissipation (first generation structure).
-  
+
+  The mechanism is expressed in the CORE operators:
+  diss (inward discharge) and diff (particle differentiation).
+
   From FORCES Article Axiom 7.3: "Space-time dissipates ONLY INWARD,
   generates corpuscles through quantization."
-  
+
   Section 7.7.1: "Space-time cannot dissipate 'outward'—outward would
   destroy geometry of evasion. Consequently, dissipation goes inward:
   Formation of corpuscles, Mass appearance."
-  
+
   This is NOT primordial "Big Bang Nucleosynthesis" (which never occurred—
   reality is ETERNAL per eternal_dynamic_reality.yaml) but CONTINUOUS
   mechanism operating NOW.
-  
+
   Observable signature: Atomic hydrogen (H I) in void centers WITHOUT
   helium (He/H < 0.01, vs BBN 0.08) and ZERO metallicity (Z ~ 0).
-  
+
   DECISIVE TEST: Either voids have fresh H (Metamonism correct), or
   uniform BBN composition everywhere (Standard Model correct).
 
@@ -162,16 +188,16 @@ abstract: |
 central_prediction:
   id: "VOID-H-NO-HE"
   short_name: "Atomic Hydrogen WITHOUT Helium in Voids"
-  
+
   claim: |
     Cosmic voids contain atomic hydrogen (H I) WITHOUT accompanying helium
     (He/H << 0.08 BBN value), with zero metallicity (Z ~ 0), indicating
     cold nucleogenesis occurring NOW, not 13.8 billion years ago.
-  
+
   confidence: "HIGH - decisive falsification test"
-  
+
   ontological_status: "Necessary consequence of eternal dynamic reality"
-  
+
   epistemological_framework:
     THAT: "Nucleogenesis MUST occur (ontological necessity from axioms)"
     WHERE: "Void centers (lowest corpuscle density)"
@@ -184,37 +210,37 @@ central_prediction:
 derivation_from_foundation:
   foundational_requirement:
     from_article: "ONTODYNAMICS/COSMOLOGY/eternal_dynamic_reality.yaml#baryon_birth_mechanism"
-    
+
     necessity_proof:
       premise_1: "Reality is eternal (no beginning) - proven in foundational article"
       premise_2: "Baryons have finite lifetime (observed)"
       premise_3: "If death without birth → baryon count → 0"
       premise_4: "But baryons exist NOW (observation)"
       conclusion: "Therefore: continuous baryon generation MUST occur"
-    
+
     requirement: "Mechanism for continuous baryon birth needed"
-  
+
   mechanism_identification:
     from_FORCES: "Section 7.7 - Two Directions of Dissipation"
-    
+
     first_generation_structure:
       definition: "Space-time = first closed structure (1D→2D→3D geometry)"
-      
+
       dissipation_constraint:
         quote: |
           "Space-time cannot dissipate 'outward'—outward would mean return
           to Monos, which would destroy very geometry of evasion."
-        
+
         logic: |
           IF space-time must dissipate (ontological necessity)
           AND cannot dissipate outward (destroys structure)
           THEN must dissipate ONLY INWARD
-      
+
       output:
         quote: "Dissipation goes inward: Formation of corpuscles"
-        
+
         simplest_corpuscle: "Proton (hydrogen nucleus)"
-    
+
     conclusion: "Cold nucleogenesis in voids is THE required mechanism"
 
 # =============================================================================
@@ -225,67 +251,62 @@ ontological_foundation:
     step_1_prohibition:
       from: "CORE/axioms.yaml#axiom_ban_of_absolute_identity"
       statement: "Absolute identity is ontologically impossible"
-      
       implication_for_spacetime: "Space-time cannot remain static/empty"
-    
+
     step_2_dissipation_necessity:
       from: "CORE/ontology.yaml#principles/principle_ontological_dissipation"
       statement: "Dissipation necessary to avoid auto-identity"
-      
       implication_for_spacetime: "Space-time MUST dissipate continuously"
-    
+
     step_3_direction_constraint:
       from: "FORCES Article Section 7.7.1"
       statement: "Space-time cannot dissipate outward (destroys geometry)"
-      
       implication: "ONLY INWARD dissipation possible"
-    
+
     step_4_corpuscle_generation:
       from: "FORCES Article Definition 2.3"
       statement: "Mass arises at point of conflict closure"
-      
       implication: "Inward dissipation → corpuscle generation"
-    
+
     step_5_simplest_form:
       logic: "First corpuscles = simplest structures = protons"
-      
       implication: "Hydrogen nuclei (protons) generated first"
-    
+
     conclusion: "Cold nucleogenesis is ONTOLOGICAL NECESSITY"
-  
+
   CMI_structure_mapping:
     from_principle: "CORE/ontology.yaml#principles/principle_CMI_structure"
-    
+
     prohibition_conflict:
       ontological: "Space-time cannot be empty/static (auto-identity)"
       cosmological: "Voids cannot remain empty"
       enforcement: "Inward dissipation MUST generate baryons"
-    
+
     momentum:
       ontological: "Dissipation flux conserved (p = mv conservation)"
       cosmological: "Nucleogenesis rate quasi-stable"
       physical: "Continuous proton generation"
-    
+
     force:
       ontological: "F = dp/dt (active enforcement)"
       cosmological: "Dissipation pressure acts inward"
       physical: "Proton formation events"
-  
+
   two_generation_model:
     from_FORCES: "Axiom 7.3 - Two Generations of Structures"
-    
+
     first_generation:
       structure: "Space-time (external geometric closure)"
       dissipation: "INWARD only"
       output: "Corpuscles (second generation)"
       role: "'Maternal' structure (birth phase of cycle)"
-    
+
     second_generation:
       structure: "Corpuscles (internal recursion/mass)"
       dissipation: "OUTWARD only"
       output: "Radiation, fields (sustains space-time)"
       role: "'Daughter' structures (death phase of cycle)"
-    
+
     eternal_cycle:
       structure: |
         SPACE-TIME
@@ -294,7 +315,7 @@ ontological_foundation:
           ↓ (outward dissipation)
         SPACE-TIME
           ↓ (cycle eternal...)
-      
+
       quote_from_FORCES: |
         "Closed dynamic non-equilibrium cycle ensuring stability
         of manifest world without achieving equilibrium."
@@ -304,67 +325,65 @@ ontological_foundation:
 # =============================================================================
 spatial_localization:
   primary_location: "Cosmic voids"
-  
+
   void_definition:
     standard: "Regions with galaxy density < 0.1 × cosmic mean"
     metamonist: "Regions with lowest corpuscle density"
-  
+
   why_voids:
     dissipation_gradient_logic:
       formula: "Inward dissipation rate ∝ 1 / (local corpuscle density)"
-      
+
       reasoning: |
         WHERE corpuscle density is LOWEST (voids)
         → Inward dissipation gradient is STRONGEST
         → Maximum nucleogenesis rate
-      
+
       conclusion: "Void CENTERS have maximum H generation"
-    
+
     from_FORCES: |
       Section 7.7.1: "Space-time dissipates inward... generates corpuscles"
-      
       Voids = lowest corpuscle density → strongest inward dissipation
-  
+
   spatial_distribution_hypothesis:
     prediction: "H I concentration peaks at void center, decreases radially"
-    
     expected_pattern: "N(H I) vs radius: maximum at center, monotonic decrease"
-    
+
     empirical_unknown: |
       Exact distribution (point-like vs diffuse vs clustered) is
       UNKNOWN—revealed by observations:
-      
+
       IF clustered → localized generation sites
       IF diffuse → volumetric process
       IF other → constrains mechanism empirically
-  
+
   target_voids:
     selection_criteria:
       size: "Diameter > 50 Mpc (large-scale structures)"
       isolation: "Distance from filament > 20 Mpc (deep voids)"
       purity: "Galaxy density < 0.1 × cosmic mean"
-    
+
     priority_list:
       - name: "Boötes Void"
         diameter_Mpc: 330
         coordinates: "RA 14h50m, Dec +46°, z ≈ 0.04"
         priority: "HIGHEST (largest nearby void)"
-        
+
       - name: "Eridanus Supervoid"
         diameter_Mpc: 200
         coordinates: "RA 3h30m, Dec -20°, z ≈ 0.03"
         priority: "HIGH (associated with CMB cold spot)"
-        
+
       - name: "Sculptor Void"
         diameter_Mpc: 150
         coordinates: "RA 0h, Dec -30°, z ≈ 0.02"
         priority: "HIGH (nearby, well-studied)"
-        
+
       - name: "Local Void"
         diameter_Mpc: 45
         coordinates: "RA 23h, Dec -15°, z ≈ 0.005"
         priority: "MEDIUM (very nearby but small)"
-    
+
     observational_strategy: "Radial scans from center outward (1-5 Mpc resolution)"
 
 # =============================================================================
@@ -373,121 +392,116 @@ spatial_localization:
 observable_signatures:
   signature_1_pure_hydrogen:
     phenomenon: "Atomic hydrogen (H I) emission WITHOUT helium"
-    
+
     primary_observable: "H I 21cm emission"
     instrument: "SKA, FAST, ASKAP (radio interferometry)"
     frequency: "1420 MHz (21cm line)"
-    
+
     expected_column_density:
       metamonism: "N(H I) > 10^19 cm^-2 in void centers"
       standard_BBN: "N(H I) < 10^17 cm^-2 (negligible)"
       distinguishability: "Factor 100+ difference (easily detectable)"
-    
+
     helium_absence:
       ratio_prediction: "He/H < 0.01 (orders of magnitude below BBN 0.08)"
-      
+
       why_no_helium:
         from_article: "Simplest corpuscle = proton (first-order generation)"
-        
+
         energy_argument: |
           Helium formation requires:
           - Multiple proton collisions (p + p → D + e⁺ + ν)
-          - Deuterium fusion (D + p → ³He + γ)  
+          - Deuterium fusion (D + p → ³He + γ)
           - Final fusion (³He + ³He → ⁴He + 2p)
-          
+
           At T ~ 10-100 K (cold voids): Insufficient kinetic energy
           for Coulomb barrier penetration.
-          
+
           Therefore: Protons accumulate WITHOUT fusing to He.
-        
+
         from_temperature_definition:
           source: "FORCES Article Section 5.1"
           quote: "Temperature = measure of excess diff enclosed within fix"
-          
           in_voids: "Minimal diff (no star formation) → LOW temperature"
-      
+
       measurement:
         instrument: "Keck, VLT, Gemini + UV spectrograph"
         method: "Absorption spectroscopy (background QSO through void)"
         lines: "He I 5876Å (optical), He II 1640Å (UV)"
-        
         critical_threshold: "He/H < 0.05 detection (3σ) falsifies BBN"
-  
+
   signature_2_zero_metallicity:
     phenomenon: "Pristine gas never processed by stars"
-    
+
     observable: "Metal abundance ratios [Fe/H], [O/H], [C/H], [Mg/H]"
-    
+
     expected_metallicity:
       fresh_generation: "Z < 10^-3 Z_solar ([Fe/H] < -3)"
       enriched_gas: "Z ~ 0.1-1.0 Z_solar (typical)"
-      
       diagnostic: "Z ~ 0 confirms FRESH creation (not recycled stellar ejecta)"
-    
+
     from_FORCES: |
       Section 7.7.1: "Space-time generates corpuscles"
-      
       Freshly generated → never passed through stars → zero metals
-    
+
     measurement:
       method: "High-resolution optical spectroscopy"
       lines: "Metal absorption features in QSO spectra"
       targets: "Background QSOs behind void H I regions"
-  
+
   signature_3_spatial_gradient:
     phenomenon: "Composition varies with distance from void center"
-    
+
     expected_pattern:
       center: "He/H < 0.01, Z ~ 0 (pure fresh H)"
       intermediate: "He/H ~ 0.02-0.05, Z ~ 10^-3 Z_solar (mixing)"
       edge: "He/H → 0.08, Z ~ 0.1 Z_solar (filament contamination)"
-    
+
     interpretation: |
       Gradient reveals:
       1. Birth at void center (He/H minimum)
       2. Migration outward (progressive mixing)
       3. Accumulation at edges (transition to normal composition)
-    
+
     from_FORCES: |
       "Fresh H migrates outward from void centers,
       accumulates in filaments (higher density)"
-    
+
     measurement:
       method: "Multi-pointing spectroscopy at various radii"
       spacing: "Every 1-5 Mpc from center outward"
       coverage: "Full radial profile 0 → void radius"
-  
+
   signature_4_kinematics:
     phenomenon: "Gas velocity field"
-    
+
     expected_pattern: "Outward radial flow from void centers (v_r > 0)"
-    
+
     from_article_section_7_7: |
       "Fresh H migrates toward filaments"
       (dissipation pressure gradient, not just gravity)
-    
+
     driver: "Dissipation pressure gradient ∇P_diss"
-    
+
     measurement:
       method: "H I 21cm spectroscopy (Doppler shift)"
       observable: "Radial velocity v_r(r)"
       expected: "v_r increases with radius (acceleration outward)"
-    
+
     distinguisher: |
       Gravity alone: v_r ~ √(M/r) (Keplerian)
       With dissipation pressure: v_r > √(M/r) (super-Keplerian)
-  
+
   signature_5_temporal_evolution:
     phenomenon: "Void H I mass increases over time"
-    
+
     prediction: "ΔM(H I)/Δt > 0 (continuous generation)"
-    
+
     measurement:
       method: "Multi-epoch observations (5-10 year baseline)"
       instrument: "SKA (sufficient sensitivity)"
-      
       expected_rate: "~10^3-10^5 M_solar/Mpc³/Gyr (order of magnitude)"
-    
+
     falsification: "If ΔM/Δt = 0 → no active generation"
 
 # =============================================================================
@@ -499,131 +513,128 @@ observational_protocol:
     1. Discovery: Detect H I in void centers (6 months)
     2. Composition: Measure He/H and Z (1 year)
     3. Characterization: Full 3D structure (2-3 years)
-    
+
     Total timeline: ~4 years + 5-year follow-up
-  
+
   phase_1_discovery:
     title: "H I Detection in Void Centers"
     duration: "6 months (distributed over 2 years for scheduling)"
-    
+
     instrument: "SKA-MID (or FAST, ASKAP fallback)"
     mode: "21cm emission imaging"
-    
+
     targets:
       number: 10
       selection: "Largest nearby voids (z < 0.05)"
       list: ["Boötes", "Eridanus", "Sculptor", "Local", "+6 more"]
-    
+
     observing_strategy:
       pattern: "Radial scans from void center outward"
       resolution: "1 Mpc spatial, 1 km/s spectral"
       integration: "50 hours per void per pointing"
       coverage: "0 → R_void (full radial extent)"
-    
+
     sensitivity:
       target: "N(H I) detection limit ~ 10^17 cm^-2"
       S/N: "≥5σ for N(H I) = 10^19 cm^-2"
-    
+
     deliverable: "H I column density maps of void interiors"
-    
+
     success_criterion: "H I detected in ≥3 void centers (N > 10^19 cm^-2)"
-    
+
     expected_outcome:
       if_metamonism: "Detection in majority of voids"
       if_standard: "Non-detection (N < 10^17 everywhere)"
-  
+
   phase_2_composition:
     title: "He/H and Metallicity Measurements"
     duration: "1 year"
-    
+
     trigger: "Phase 1 success (H I detected)"
-    
+
     instrument: "Keck/VLT/Gemini + UV spectrograph"
     mode: "Absorption spectroscopy"
-    
+
     targets:
       selection: "Background QSOs behind detected H I regions"
       number: "5-10 sightlines per void (3 voids minimum)"
-      
+
       QSO_requirements:
         magnitude: "V < 19 (bright enough for high S/N)"
         redshift: "z_QSO > z_void + 0.01 (background)"
         alignment: "Within 1° of void center"
-    
+
     observing_strategy:
       helium_measurement:
         lines: ["He I 5876Å", "He II 1640Å (if UV access)"]
         integration: "10-20 hours per sightline"
         S/N_target: "≥50 for He/H measurement"
-        
+
       metallicity_measurement:
         lines: ["Mg II 2796,2803Å", "C IV 1548,1550Å", "O VI 1032,1038Å", "Fe II multiplet"]
         goal: "Measure Z to 0.1 dex precision"
-    
+
     deliverable: |
       For each void:
       - He/H(r) radial profile
-      - Z(r) radial profile  
+      - Z(r) radial profile
       - Comparison with BBN expectations
-    
+
     success_criterion: "He/H < 0.05 in ≥1 void center (3σ significance)"
-    
+
     expected_outcome:
       if_metamonism: "He/H < 0.01 center, → 0.08 edge (gradient)"
       if_standard: "He/H = 0.08 ± 0.01 everywhere (uniform)"
-  
+
   phase_3_characterization:
     title: "Full 3D Spatial + Kinematic Structure"
     duration: "2-3 years"
-    
+
     trigger: "Phase 2 success (He/H anomaly confirmed)"
-    
+
     goals:
       - "Map full 3D distribution N(H I)(x,y,z)"
       - "Measure velocity field v(x,y,z)"
       - "Characterize topology (point/diffuse/clustered)"
       - "Establish temporal evolution"
-    
+
     measurements:
       radial_profiles:
         observables: ["N(H I)(r)", "He/H(r)", "Z(r)", "T_kin(r)"]
         resolution: "1 Mpc bins"
         extent: "0 → 2×R_void (beyond void boundary)"
-        
+
       velocity_field:
         observable: "v_r(r) (radial velocity component)"
         method: "21cm Doppler"
         expected: "v_r > 0, increasing with r"
-        
+
       topology:
         method: "High-resolution H I imaging"
         goal: "Identify spatial structure (clusters, filaments, diffuse)"
         constrains: "Formation mechanism"
-        
+
       temporal:
         method: "Re-observe after 5 years"
         test: "Is ΔM(H I)/Δt > 0?"
         expected: "Slow mass increase (detectable with SKA)"
-    
+
     deliverable: |
       Complete void characterization:
       - 3D structure maps
       - Kinematic model
       - Formation rate estimate
       - Topology classification
-    
+
     publication_target: "Nature or Science (major discovery)"
-  
+
   phase_4_longterm_monitoring:
     title: "Decadal Monitoring Program"
     duration: "10 years (epochs at 0, 5, 10 years)"
-    
+
     goal: "Confirm continuous generation (not static population)"
-    
     method: "Repeat Phase 1 observations"
-    
     test: "ΔM(H I) / Δt > 0?"
-    
     expected: "~1% mass increase per 5 years (within SKA sensitivity)"
 
 # =============================================================================
@@ -635,66 +646,66 @@ falsification_criteria:
       observable: "NO H I detected in void centers"
       threshold: "All surveys: N(H I) < 10^17 cm^-2 (10+ voids surveyed)"
       implication: "Inward dissipation does NOT generate baryons at detectable rate"
-      
+
     condition_2:
       observable: "ALL void gas has He/H = 0.08"
       threshold: "He/H = 0.08 ± 0.01 everywhere (no spatial variation)"
       implication: "BBN composition is universal (no fresh H generation)"
-      
+
     condition_3:
       observable: "Significant metallicity everywhere"
       threshold: "Z > 0.01 Z_solar in all void regions"
       implication: "All gas has been processed by stars (no pristine gas)"
-      
+
     condition_4:
       observable: "NO spatial gradient"
       threshold: "He/H(r) and Z(r) flat (no radial dependence)"
       implication: "No birth site at void center (uniform composition)"
-      
+
     combined: |
       If ALL four conditions met → cold nucleogenesis FALSIFIED
-      
+
       Metamonism response:
       - Core axioms (ban_of_absolute_identity) remain valid
       - Two-generation model structure intact
       - Requires alternative baryon birth mechanism
       - OR: dissipation rate too slow for current detection
-  
+
   metamonism_SUPPORTED_if:
     condition_1:
       observable: "H I detected in ≥3 void centers"
       threshold: "N(H I) > 10^19 cm^-2"
-      
+
     condition_2:
       observable: "He/H anomalously low"
       threshold: "He/H < 0.05 in void centers (≥3σ below BBN)"
-      
+
     condition_3:
       observable: "Zero metallicity"
       threshold: "Z < 10^-3 Z_solar ([Fe/H] < -3)"
-      
+
     condition_4:
       observable: "Radial gradient exists"
       threshold: "He/H(r) increases by ≥factor 2 from center to edge"
-      
+
     combined: |
       If ANY TWO conditions met → cold nucleogenesis SUPPORTED
       If ALL FOUR conditions met → cold nucleogenesis CONFIRMED
-      
+
       Implications:
       - BBN FALSIFIED (He/H not universal)
       - Big Bang model CHALLENGED (nucleogenesis ongoing)
       - Eternal reality model VALIDATED
-  
+
   standard_BBN_FALSIFIED_if:
     condition: "He/H significantly below 0.08 in ANY region"
     threshold: "He/H < 0.05 (≥3σ significance)"
-    
+
     implication: |
       BBN claims:
       - All baryons created at t=3 min (T ~ 10^9 K)
       - He/H = 0.08 everywhere (primordial, uniform)
-      
+
       If He/H < 0.05 anywhere:
       - BBN prediction WRONG
       - Alternative nucleogenesis exists
@@ -710,53 +721,51 @@ standard_model_contradiction:
       temperature: "T ~ 10^9 K (hot nuclear reactions)"
       composition: "He/H = 0.08 everywhere (primordial ratio, uniform)"
       status: "No nucleogenesis since z ~ 10 (quasar epoch)"
-      
+
       quote_from_standard: |
         "The primordial abundances of light elements (D, ³He, ⁴He, ⁷Li)
         were set during the first few minutes of the universe's history
         and have remained essentially constant since recombination."
-    
+
     metamonist_rejection:
       big_bang: "NEVER occurred (eternal_dynamic_reality.yaml)"
       temperature: "T ~ 10-100 K (cold, not hot)"
       composition: "He/H NOT uniform (< 0.01 in voids, → 0.08 in filaments)"
       status: "Nucleogenesis CONTINUOUS (happening NOW)"
-      
+
       from_foundation: |
         eternal_dynamic_reality.yaml proves:
         - No t=0 (Big Bang impossible)
         - Eternal baryon cycle required
         - Birth mechanism needed (this prediction)
-    
+
     direct_observational_conflict:
       BBN_predicts: "He/H = 0.08 ± 0.01 EVERYWHERE"
       metamonism_predicts: "He/H < 0.01 in void CENTERS"
-      
+
       difference: "Factor 8+ (easily distinguishable)"
-      
+
       decisive_test: |
         Measure He/H in single void center.
-        
+
         IF He/H = 0.08 → BBN correct, Metamonism wrong
         IF He/H < 0.05 → Metamonism correct, BBN wrong
-        
+
         NO middle ground possible.
-  
+
   primordial_composition:
     BBN_abundances:
       helium_4: "Y_p = 0.2449 ± 0.0040 (mass fraction)"
       helium_3: "³He/H = 1.1 × 10^-5"
       deuterium: "D/H = 2.6 × 10^-5"
       lithium_7: "⁷Li/H = 1.6 × 10^-10"
-      
       claim: "These ratios UNIVERSAL (set at t=3 min, uniform everywhere)"
-    
+
     metamonist_alternative:
       helium_4: "Y_p varies spatially (< 0.01 in voids → 0.24 in filaments)"
       helium_3: "³He/H near zero in fresh void gas"
       deuterium: "D/H possibly higher in voids (intermediate fusion product)"
       lithium_7: "⁷Li absent in fresh gas (requires stellar processing)"
-      
       claim: "Abundances NOT universal (depend on distance from birth site)"
 
 # =============================================================================
@@ -769,38 +778,38 @@ implications:
       - "Standard ΛCDM cosmology requires fundamental revision"
       - "Eternal reality model VALIDATED"
       - "Baryon cycle existence CONFIRMED"
-      
+
     theoretical_physics:
       - "Processual ontology validated in observational cosmology"
       - "Axiom ban_of_absolute_identity confirmed in physics"
       - "Two-generation dissipation model established"
       - "Space-time as active generator (not passive container)"
-      
+
     observational_astronomy:
       - "Voids are ACTIVE regions (not passive empty space)"
       - "Void surveys become critical cosmology probes"
       - "New research field: void nucleogenesis studies"
       - "Chemical evolution models require complete revision"
-      
+
     practical_applications:
       - "Void gas as probe of nucleogenesis mechanism"
       - "Pristine gas for stellar formation studies"
       - "Test laboratory for low-metallicity physics"
-  
+
   if_falsified:
     metamonism_requires:
       alternative_explanation_1:
         scenario: "Inward dissipation generates OTHER particles (not H)"
         test: "Search for alternative corpuscles in voids"
-        
+
       alternative_explanation_2:
         scenario: "Dissipation rate too slow for current detection"
         test: "Improved sensitivity (next-generation instruments)"
-        
+
       alternative_explanation_3:
         scenario: "Spatial localization different than predicted"
         test: "Search in alternative locations (filaments? clusters?)"
-    
+
     does_NOT_falsify:
       - "Core axioms (ban_of_absolute_identity still valid)"
       - "Two-generation model structure (intact)"
@@ -814,49 +823,47 @@ related_predictions:
   requires_death_mechanism:
     article: "ONTODYNAMICS/ASTROPHYSICS/supernovae_without_remnants.yaml"
     relation: "Birth (nucleogenesis) requires balancing death (axis unlocking)"
-    
+
     cycle_balance: "R_birth ~ R_death (within factor 2-3)"
-    
+
     test: |
       Measure both:
       - Birth rate: H I mass creation in voids
       - Death rate: SN Ia without remnants × 1.4 M_solar
-      
+
       Expected: Rates comparable
-  
+
   drives_gas_migration:
     article: "ONTODYNAMICS/ASTROPHYSICS/gas_migration_voids_to_filaments.yaml"
     relation: "Fresh H flows from voids (birth) to filaments (accumulation)"
-    
+
     mechanism: "Dissipation pressure gradient"
-    
     observable: "Velocity field v_r > 0"
-  
+
   supports_eternal_reality:
     article: "ONTODYNAMICS/COSMOLOGY/eternal_dynamic_reality.yaml"
     relation: "Provides required birth mechanism for eternal baryon cycle"
-    
     necessity: "If confirmed → validates eternal dynamic reality framework"
 
 # =============================================================================
 # NOTES
 # =============================================================================
 notes: |
-  This article details the PRIMARY observational prediction of cold
+  This file specifies the PRIMARY observational prediction of cold
   nucleogenesis, derived necessarily from eternal_dynamic_reality.yaml.
-  
+
   Key points:
   1. NOT hypothesis but NECESSITY (follows from axioms)
   2. Decisive test (He/H in voids: < 0.01 vs 0.08)
   3. Observable NOW with existing instruments (SKA, Keck/VLT)
   4. Falsifiable (clear criteria for rejection)
-  
+
   Epistemology:
   - THAT it happens: DEDUCTIVE (from axioms)
   - WHERE to look: PREDICTIVE (voids)
   - WHAT to see: SPECIFIC (He/H < 0.01, Z ~ 0)
   - HOW internally: EMPIRICAL (topology from observations)
-  
+
   This is the "smoking gun" test for Metamonism cosmology.
   Either voids have fresh H, or they don't. No ambiguity.
 
@@ -868,14 +875,15 @@ version_info:
   framework_version: "v1.3-canonical"
   creation_date: "2026-01-27"
   status: "canonical"
-  
+
   based_on:
     - "ONTODYNAMICS/COSMOLOGY/eternal_dynamic_reality.yaml (v1.0)"
     - "CORE/axioms.yaml#axiom_ban_of_absolute_identity (v1.3)"
     - "CORE/ontology.yaml principles (v1.3)"
     - "FORCES Article Sections 7.7, 7.7.1, 7.7.3 (v1.0)"
-  
+
   references_to_this_article:
+    - "10.5281/zenodo.18667327 (formal paper extension)"
     - "ONTODYNAMICS/ASTROPHYSICS/supernovae_without_remnants.yaml (cycle balance)"
     - "ONTODYNAMICS/ASTROPHYSICS/gas_migration_voids_to_filaments.yaml (gas source)"
     - "All ONTODYNAMICS articles (as example of THAT/WHERE/WHAT epistemology)"
