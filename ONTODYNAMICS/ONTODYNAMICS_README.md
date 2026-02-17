@@ -1,16 +1,18 @@
-# Ontodynamics: The Unfolding of Worlds
+# ONTODYNAMICS: The Unfolding of Worlds
 
 ## Purpose
 
-The ONTODYNAMICS directory is the predictive and applied layer of the Wayward Metamonism framework.
+ONTODYNAMICS is the predictive and applied layer of the Wayward Metamonism framework.
 
-While CORE defines the immutable ontological axioms, ONTODYNAMICS specifies how those axioms unfold into concrete physical domains (“Worlds”).
+While CORE defines immutable ontological axioms, ONTODYNAMICS specifies how those axioms unfold into concrete physical domains (“Worlds”).
 
 It contains machine-readable (M) models describing observable regimes of reality as direct consequences of CORE principles.
 
 These are not independent theories.
 
-They are operational specifications of how the core ontology manifests across disciplines.
+They are operational specifications of how a single ontology manifests across disciplines.
+
+ONTODYNAMICS exists to produce falsifiable structure.
 
 ---
 
@@ -22,13 +24,15 @@ From this follow:
 
 - nodes as localizers of dissipation  
 - mass as topological closure  
-- gravity as screening of flow  
+- gravity as screening of global flow  
 - photons as transport modes of dissipation  
 - matter as stabilized localization  
 - cosmology as distribution of dissipation demand  
 
 CORE answers **what reality is**.  
 ONTODYNAMICS answers **what this implies physically**.
+
+All models implement the transition from metric differentiation (`diff`) to quantitative dissipation (`diss`) as the fundamental mechanism of structure formation.
 
 ---
 
@@ -43,6 +47,8 @@ Each World contains:
 
 Current structure:
 
+---
+
 ### PHYSICS/
 
 Models for physical phenomena.
@@ -50,7 +56,8 @@ Models for physical phenomena.
 - `manifest.yaml` — overview and links  
 - `quantum_mechanics.yaml` — ontological interpretation of quantum states and measurement  
 - `thermodynamics.yaml` — entropy and arrow of time  
-- revised ontological interpretation of quantum mechanics
+
+These models derive conservation laws, decoherence, and thermodynamic irreversibility directly from dissipation enforcement.
 
 ---
 
@@ -63,12 +70,16 @@ Models for cosmological structure and evolution.
 - `large_scale.yaml` — formation of cosmic structure  
 - `cold_nucleogenesis_in_voids.yaml` — continuous baryonic matter formation in voids  
 
-The cosmological cold nucleogenesis model is formally developed in:
+These models implement the metric → quantitative dissipation transition (diff/diss) as the physical basis of cosmological structure.
+
+The cold nucleogenesis model is formally developed in:
 
 Myshko, A. (2026).  
 *Preliminaries of Cold Nucleogenesis: A Wayward Metamonism Processual Model of Continuous Matter Birth.*  
 Zenodo.  
 https://doi.org/10.5281/zenodo.18667327
+
+This is the first externally published result derived directly from ONTODYNAMICS.
 
 ---
 
@@ -76,7 +87,7 @@ https://doi.org/10.5281/zenodo.18667327
 
 Astrophysical consequences of dissipation localization.
 
-- `gravity_as_screening.yaml` — gravitation modeled as screening of global flow by node density gradients
+- `gravity_as_screening.yaml` — gravitation modeled as screening of global flow by node density gradients  
 
 Acceleration emerges from differential under-localization, not attractive force.
 
@@ -86,7 +97,7 @@ Acceleration emerges from differential under-localization, not attractive force.
 
 Processual particle models.
 
-- `photon_complete_cosmology.yaml` — photons treated as dissipation transport modes integrated into global cosmology
+- `photon_complete_cosmology.yaml` — photons treated as dissipation transport modes integrated into global cosmology  
 
 Redshift arises from dissipation, not expansion.
 
@@ -97,7 +108,7 @@ Redshift arises from dissipation, not expansion.
 Models for chemical phenomena.
 
 - `manifest.yaml` — overview and connections  
-- `bonding.yaml` — chemical bonding as localized dissipation coupling
+- `bonding.yaml` — chemical bonding as localized dissipation coupling  
 
 ---
 
@@ -106,7 +117,7 @@ Models for chemical phenomena.
 Every model in this directory must:
 
 - be a logical derivation from CORE axioms (primarily the Indifference Ban)  
-- use the core operators (`diff`, `fix`) as foundational language  
+- use the core operators (`diff`, `diss`, `fix`) as foundational language  
 - remain minimal and falsifiable  
 
 These are not phenomenological fits.
@@ -155,6 +166,8 @@ Further layers under development include:
 
 The framework is cumulative.
 
+Each new World extends the same ontological engine.
+
 ---
 
 ## Summary
@@ -167,4 +180,4 @@ Nodes localize flow.
 Voids lack nodes.  
 Matter forms where dissipation is insufficient.
 
-ONTODYNAMICS documents how this unfolds across physical scales.
+ONTODYNAMICS documents how this unfolds across physical scales — with explicit falsification criteria.
