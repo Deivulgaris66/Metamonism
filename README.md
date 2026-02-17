@@ -15,9 +15,9 @@ Core claim: absolute identity (a state without distinctions) is ontologically im
 **Monos** denotes reality as an ongoing, non-symbolic process.  
 **Logos** denotes fixation regimes (models, classifications, stable forms) used to describe and operate within that process.
 
-Objects do not exist fundamentally. Particles, fields, structures and laws are stable localization modes of dissipation.
+Objects do not exist fundamentally. What appear as particles, fields, structures and laws are stable localization modes of dissipation.
 
-CMI (Conflict–Moment–Impulse) is the canonical dynamic schema: prohibition generates momentum; momentum enforces transformation.  
+CMI (Conflict–Moment–Impulse) is the canonical dynamic schema of this ontology: prohibition generates momentum; momentum enforces transformation.  
 In the formal layer this is expressed through core operators:
 
 - `diff` — differentiation  
@@ -26,7 +26,6 @@ In the formal layer this is expressed through core operators:
 
 Metamonism is not a collection of hypotheses.  
 It is a derivation discipline: all domain models (ONTODYNAMICS) must unfold logically from CORE axioms and produce falsifiable observational signatures.
-
 
 ---
 
