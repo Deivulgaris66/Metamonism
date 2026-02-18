@@ -1,0 +1,20 @@
+metadata:
+  title: Orthogonal Dissipation Principle
+  source_article: ARTICLES/M/04_Ontodynamics/orthogonal_dissipation.yaml
+  status: canonical
+
+principle:
+  statement: >
+    Dissipation unfolds via orthogonal expansion until metric degrees
+    are exhausted, after which it proceeds through quantitative
+    multiplication of localization nodes.
+
+derived_effects:
+  - gravity_shadow_mode
+  - orbit_compensation_zones
+  - force_modalities
+  - mass_localization
+
+derived_from:
+  - CORE/axioms.yaml#axiom_ban_of_absolute_identity
+  - ARTICLES/M/04_Ontodynamics/orthogonal_dissipation.yaml
